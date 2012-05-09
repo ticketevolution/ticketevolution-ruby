@@ -1,937 +1,999 @@
---- 
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :put
     uri: https://api.sandbox.ticketevolution.com:443/clients/2396
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - 7erxJ4+aZE4seVEaOyhPQaooa7uWoS2AwdNeCN8D0qQ=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"b8c467818fffa0a8808b91b86f694905\""
-      x-ua-compatible: 
+      etag:
+      - ! '"b8c467818fffa0a8808b91b86f694905"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.058415"
-      cache-control: 
+      x-runtime:
+      - '0.058415'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T16:52:02Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2396\",\"id\":\"2396\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T16:52:02Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2396","id":"2396"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :put
     uri: https://api.sandbox.ticketevolution.com:443/clients/2396
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - 7erxJ4+aZE4seVEaOyhPQaooa7uWoS2AwdNeCN8D0qQ=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"b8c467818fffa0a8808b91b86f694905\""
-      x-ua-compatible: 
+      etag:
+      - ! '"b8c467818fffa0a8808b91b86f694905"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.058415"
-      cache-control: 
+      x-runtime:
+      - '0.058415'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T16:52:02Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2396\",\"id\":\"2396\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T16:52:02Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2396","id":"2396"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2396?
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - yL/FzLbX4GLucvyTmSNoi8AxHg5hUaFzmYrLYu6TQUM=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"b8c467818fffa0a8808b91b86f694905\""
-      x-ua-compatible: 
+      etag:
+      - ! '"b8c467818fffa0a8808b91b86f694905"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.463169"
-      cache-control: 
+      x-runtime:
+      - '0.463169'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T16:52:02Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2396\",\"id\":\"2396\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T16:52:02Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2396","id":"2396"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2396?
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - yL/FzLbX4GLucvyTmSNoi8AxHg5hUaFzmYrLYu6TQUM=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"b8c467818fffa0a8808b91b86f694905\""
-      x-ua-compatible: 
+      etag:
+      - ! '"b8c467818fffa0a8808b91b86f694905"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.463169"
-      cache-control: 
+      x-runtime:
+      - '0.463169'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T16:52:02Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2396\",\"id\":\"2396\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T16:52:02Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2396","id":"2396"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :put
     uri: https://api.sandbox.ticketevolution.com:443/clients/2398
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - fJprvXg0GrXZ7g971YUZcKEesLxx4DI/V1cvthaBbBo=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"2031976ae6a1ed68506e480836f5009e\""
-      x-ua-compatible: 
+      etag:
+      - ! '"2031976ae6a1ed68506e480836f5009e"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.060569"
-      cache-control: 
+      x-runtime:
+      - '0.060569'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T16:53:24Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2398\",\"id\":\"2398\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T16:53:24Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2398","id":"2398"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :put
     uri: https://api.sandbox.ticketevolution.com:443/clients/2398
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - fJprvXg0GrXZ7g971YUZcKEesLxx4DI/V1cvthaBbBo=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"2031976ae6a1ed68506e480836f5009e\""
-      x-ua-compatible: 
+      etag:
+      - ! '"2031976ae6a1ed68506e480836f5009e"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.060569"
-      cache-control: 
+      x-runtime:
+      - '0.060569'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T16:53:24Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2398\",\"id\":\"2398\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T16:53:24Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2398","id":"2398"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2398?
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - qWvjHcHGAkDlslyilzMY8K9fuAe0BoaQqj402ZH5b/M=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"2031976ae6a1ed68506e480836f5009e\""
-      x-ua-compatible: 
+      etag:
+      - ! '"2031976ae6a1ed68506e480836f5009e"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.037717"
-      cache-control: 
+      x-runtime:
+      - '0.037717'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T16:53:24Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2398\",\"id\":\"2398\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T16:53:24Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2398","id":"2398"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2398?
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - qWvjHcHGAkDlslyilzMY8K9fuAe0BoaQqj402ZH5b/M=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"2031976ae6a1ed68506e480836f5009e\""
-      x-ua-compatible: 
+      etag:
+      - ! '"2031976ae6a1ed68506e480836f5009e"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.037717"
-      cache-control: 
+      x-runtime:
+      - '0.037717'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T16:53:24Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2398\",\"id\":\"2398\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T16:53:24Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2398","id":"2398"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :put
     uri: https://api.sandbox.ticketevolution.com:443/clients/2400
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - 5QIB9+okMQv6cUevHySezdQhJDJS1REzvJOVe30Leuc=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"6f85f667c6ff691f6b085406eb4f7856\""
-      x-ua-compatible: 
+      etag:
+      - ! '"6f85f667c6ff691f6b085406eb4f7856"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.071515"
-      cache-control: 
+      x-runtime:
+      - '0.071515'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T17:06:03Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2400\",\"id\":\"2400\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T17:06:03Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2400","id":"2400"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :put
     uri: https://api.sandbox.ticketevolution.com:443/clients/2400
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - 5QIB9+okMQv6cUevHySezdQhJDJS1REzvJOVe30Leuc=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"6f85f667c6ff691f6b085406eb4f7856\""
-      x-ua-compatible: 
+      etag:
+      - ! '"6f85f667c6ff691f6b085406eb4f7856"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.071515"
-      cache-control: 
+      x-runtime:
+      - '0.071515'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T17:06:03Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2400\",\"id\":\"2400\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T17:06:03Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2400","id":"2400"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2400?
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - llbovrHByaQ52FQDz4dNfE3Qh0qpTEb5t3l6uTYhXAI=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"6f85f667c6ff691f6b085406eb4f7856\""
-      x-ua-compatible: 
+      etag:
+      - ! '"6f85f667c6ff691f6b085406eb4f7856"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.042061"
-      cache-control: 
+      x-runtime:
+      - '0.042061'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T17:06:03Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2400\",\"id\":\"2400\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T17:06:03Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2400","id":"2400"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2400?
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - llbovrHByaQ52FQDz4dNfE3Qh0qpTEb5t3l6uTYhXAI=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"6f85f667c6ff691f6b085406eb4f7856\""
-      x-ua-compatible: 
+      etag:
+      - ! '"6f85f667c6ff691f6b085406eb4f7856"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.042061"
-      cache-control: 
+      x-runtime:
+      - '0.042061'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T17:06:03Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2400\",\"id\":\"2400\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T17:06:03Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2400","id":"2400"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :post
     uri: https://api.sandbox.ticketevolution.com:443/clients
-    body: "{\"clients\":[{\"name\":\"foo\"}]}"
-    headers: 
-      accept: 
+    body: ! '{"clients":[{"name":"foo"}]}'
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - Fjw96P6d0OgfpnxvFdz3E6L4KwmWOG/GzHLYaqPBltE=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 201
       message: Created
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "201"
-      x-powered-by: 
+      status:
+      - '201'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      x-ua-compatible: 
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.075505"
-      cache-control: 
+      x-runtime:
+      - '0.075505'
+      cache-control:
       - no-cache
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"clients\":[{\"updated_at\":\"2012-02-22T17:07:29Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2404\",\"id\":\"2404\"}]}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"clients":[{"updated_at":"2012-02-22T17:07:29Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"foo","url":"/clients/2404","id":"2404"}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :post
     uri: https://api.sandbox.ticketevolution.com:443/clients
-    body: "{\"clients\":[{\"name\":\"foo\"}]}"
-    headers: 
-      accept: 
+    body: ! '{"clients":[{"name":"foo"}]}'
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - Fjw96P6d0OgfpnxvFdz3E6L4KwmWOG/GzHLYaqPBltE=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 201
       message: Created
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "201"
-      x-powered-by: 
+      status:
+      - '201'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      x-ua-compatible: 
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.075505"
-      cache-control: 
+      x-runtime:
+      - '0.075505'
+      cache-control:
       - no-cache
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"clients\":[{\"updated_at\":\"2012-02-22T17:07:29Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2404\",\"id\":\"2404\"}]}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"clients":[{"updated_at":"2012-02-22T17:07:29Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"foo","url":"/clients/2404","id":"2404"}]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :put
     uri: https://api.sandbox.ticketevolution.com:443/clients/2404
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - yoH7VBNazgwMD5qDylTSA6nucOZCbbxNcHercU2NTGU=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"bb1916645af7d9995682c149492980cc\""
-      x-ua-compatible: 
+      etag:
+      - ! '"bb1916645af7d9995682c149492980cc"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.060027"
-      cache-control: 
+      x-runtime:
+      - '0.060027'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T17:07:29Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2404\",\"id\":\"2404\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T17:07:29Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2404","id":"2404"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :put
     uri: https://api.sandbox.ticketevolution.com:443/clients/2404
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - yoH7VBNazgwMD5qDylTSA6nucOZCbbxNcHercU2NTGU=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"bb1916645af7d9995682c149492980cc\""
-      x-ua-compatible: 
+      etag:
+      - ! '"bb1916645af7d9995682c149492980cc"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.060027"
-      cache-control: 
+      x-runtime:
+      - '0.060027'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T17:07:29Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2404\",\"id\":\"2404\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T17:07:29Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2404","id":"2404"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2404?
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - AqJkMduM7JmPcwo+VtPGFmguowzLv60/6AL9ARtrSkk=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"bb1916645af7d9995682c149492980cc\""
-      x-ua-compatible: 
+      etag:
+      - ! '"bb1916645af7d9995682c149492980cc"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.037995"
-      cache-control: 
+      x-runtime:
+      - '0.037995'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T17:07:29Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2404\",\"id\":\"2404\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T17:07:29Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2404","id":"2404"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2404?
-    body: !!null 
-      str: ""
+    body:
+      str: ''
       :@taguri: x-private:null
-    headers: 
-      accept: 
+    headers:
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature: 
+      x-signature:
       - AqJkMduM7JmPcwo+VtPGFmguowzLv60/6AL9ARtrSkk=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"bb1916645af7d9995682c149492980cc\""
-      x-ua-compatible: 
+      etag:
+      - ! '"bb1916645af7d9995682c149492980cc"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.037995"
-      cache-control: 
+      x-runtime:
+      - '0.037995'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T17:07:29Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2404\",\"id\":\"2404\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T17:07:29Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2404","id":"2404"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :put
     uri: https://api.sandbox.ticketevolution.com:443/clients/2404
-    body: "{\"updated_at\":\"2012-02-22T17:07:29Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2404\",\"status_code\":201,\"server_message\":\"Generally returned by successful POST requests. \"}"
-    headers: 
-      x-signature: 
+    body: ! '{"updated_at":"2012-02-22T17:07:29Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2404","status_code":201,"server_message":"Generally
+      returned by successful POST requests. "}'
+    headers:
+      x-signature:
       - igagZ7PD+E0vTGyT3RH4l54mKjOmtf2GrzU4mqyyCIM=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept: 
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"bb1916645af7d9995682c149492980cc\""
-      x-ua-compatible: 
+      etag:
+      - ! '"bb1916645af7d9995682c149492980cc"'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.179335"
-      cache-control: 
+      x-runtime:
+      - '0.179335'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T17:07:29Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2404\",\"id\":\"2404\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T17:07:29Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2404","id":"2404"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.sandbox.ticketevolution.com:443/clients/2404
+    body:
+      str: ''
+      :@taguri: x-private:null
+    headers:
+      x-signature:
+      - AqJkMduM7JmPcwo+VtPGFmguowzLv60/6AL9ARtrSkk=
+      x-token:
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+      accept:
+      - application/vnd.ticketevolution.api+json; version=8
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      etag:
+      - ! '"bb1916645af7d9995682c149492980cc"'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      x-runtime:
+      - '0.140010'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      strict-transport-security:
+      - max-age=31536000
+      server:
+      - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: ! '{"updated_at":"2012-02-22T17:07:29Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2404","id":"2404"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :put
+    uri: https://api.sandbox.ticketevolution.com:443/clients/2404
+    body: ! '{"addresses":[],"email_addresses":[],"name":"bar","phone_numbers":[],"server_message":"Generally
+      returned by successful POST requests. ","status_code":201,"updated_at":"2012-02-22T17:07:29Z","url":"/clients/2404"}'
+    headers:
+      x-signature:
+      - 6qfTnv9NQPgeC4ZDAdzfRiTlYz0/VMBTQgX8SNPlYD0=
+      x-token:
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+      accept:
+      - application/vnd.ticketevolution.api+json; version=8
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 2.2.10
+      etag:
+      - ! '"b58896cd9a50041a033626f2539aec18"'
+      x-runtime:
+      - '0.070331'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      strict-transport-security:
+      - max-age=31536000
+      cache-control:
+      - max-age=0, private, must-revalidate
+      server:
+      - nginx/0.7.65 + Phusion Passenger 2.2.10 (mod_rails/mod_rack)
+    body: ! '{"updated_at":"2012-02-22T17:07:29Z","phone_numbers":[],"url":"/clients/2404","addresses":[{"postal_code":"92154","street_address":"1230
+      Ilexey Ave","extended_address":null,"locality":"San Diego","latitude":null,"country_code":null,"region":"CA","name":"Egbert
+      Purog","longitude":null},{"postal_code":"92154","street_address":"1230 Ilexey
+      Ave","extended_address":null,"locality":"San Diego","latitude":null,"country_code":null,"region":"CA","name":"E
+      Patrick Purog","longitude":null},{"postal_code":"92154","street_address":"1230
+      Ilexey Ave","extended_address":null,"locality":"San Diego","latitude":null,"country_code":null,"region":"CA","name":"Egbert
+      Purog","longitude":null},{"postal_code":"92154","street_address":"1230 Ilexey
+      Ave","extended_address":null,"locality":"San Diego","latitude":null,"country_code":null,"region":"CA","name":"E
+      Patrick Purog","longitude":null}],"name":"bar","id":"2404","email_addresses":[]}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2404
     body: !!null 
-      str: ""
-      :@taguri: x-private:null
-    headers: 
-      x-signature: 
+    headers:
+      x-signature:
       - AqJkMduM7JmPcwo+VtPGFmguowzLv60/6AL9ARtrSkk=
-      x-token: 
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept: 
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-      accept-encoding: 
+      accept-encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"bb1916645af7d9995682c149492980cc\""
-      x-ua-compatible: 
-      - IE=Edge,chrome=1
-      x-runtime: 
-      - "0.140010"
-      cache-control: 
+      etag:
+      - ! '"ca54f1d287709a518ee7f975418c59c0"'
+      cache-control:
       - max-age=0, private, must-revalidate
-      strict-transport-security: 
+      x-runtime:
+      - '0.124917'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      strict-transport-security:
       - max-age=31536000
-      server: 
+      server:
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T17:07:29Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2404\",\"id\":\"2404\"}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+    body: ! '{"updated_at":"2012-02-22T17:07:29Z","phone_numbers":[],"email_addresses":[],"addresses":[{"latitude":null,"postal_code":"92154","longitude":null,"street_address":"1230
+      Ilexey Ave","extended_address":null,"locality":"San Diego","label":null,"name":"Egbert
+      Purog","id":"169999","country_code":null,"region":"CA"},{"latitude":null,"postal_code":"92154","longitude":null,"street_address":"1230
+      Ilexey Ave","extended_address":null,"locality":"San Diego","label":null,"name":"E
+      Patrick Purog","id":"170000","country_code":null,"region":"CA"},{"latitude":null,"postal_code":"92154","longitude":null,"street_address":"1230
+      Ilexey Ave","extended_address":null,"locality":"San Diego","label":null,"name":"Egbert
+      Purog","id":"170001","country_code":null,"region":"CA"},{"latitude":null,"postal_code":"92154","longitude":null,"street_address":"1230
+      Ilexey Ave","extended_address":null,"locality":"San Diego","label":null,"name":"E
+      Patrick Purog","id":"170002","country_code":null,"region":"CA"}],"tags":[],"company":null,"name":"bar","id":"2404","url":"/clients/2404"}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :put
     uri: https://api.sandbox.ticketevolution.com:443/clients/2404
-    body: "{\"addresses\":[],\"email_addresses\":[],\"name\":\"bar\",\"phone_numbers\":[],\"server_message\":\"Generally returned by successful POST requests. \",\"status_code\":201,\"updated_at\":\"2012-02-22T17:07:29Z\",\"url\":\"/clients/2404\"}"
-    headers: 
-      x-signature: 
-      - 6qfTnv9NQPgeC4ZDAdzfRiTlYz0/VMBTQgX8SNPlYD0=
-      x-token: 
+    body: ! '{"name":"bar"}'
+    headers:
+      x-signature:
+      - yoH7VBNazgwMD5qDylTSA6nucOZCbbxNcHercU2NTGU=
+      x-token:
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept: 
+      accept:
       - application/vnd.ticketevolution.api+json; version=8
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      content-type: 
+    headers:
+      content-type:
       - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
-      - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
-      - Phusion Passenger (mod_rails/mod_rack) 2.2.10
-      etag: 
-      - "\"b58896cd9a50041a033626f2539aec18\""
-      x-runtime: 
-      - "0.070331"
-      x-ua-compatible: 
-      - IE=Edge,chrome=1
-      strict-transport-security: 
-      - max-age=31536000
-      cache-control: 
-      - max-age=0, private, must-revalidate
-      server: 
-      - nginx/0.7.65 + Phusion Passenger 2.2.10 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T17:07:29Z\",\"phone_numbers\":[],\"url\":\"/clients/2404\",\"addresses\":[{\"postal_code\":\"92154\",\"street_address\":\"1230 Ilexey Ave\",\"extended_address\":null,\"locality\":\"San Diego\",\"latitude\":null,\"country_code\":null,\"region\":\"CA\",\"name\":\"Egbert Purog\",\"longitude\":null},{\"postal_code\":\"92154\",\"street_address\":\"1230 Ilexey Ave\",\"extended_address\":null,\"locality\":\"San Diego\",\"latitude\":null,\"country_code\":null,\"region\":\"CA\",\"name\":\"E Patrick Purog\",\"longitude\":null},{\"postal_code\":\"92154\",\"street_address\":\"1230 Ilexey Ave\",\"extended_address\":null,\"locality\":\"San Diego\",\"latitude\":null,\"country_code\":null,\"region\":\"CA\",\"name\":\"Egbert Purog\",\"longitude\":null},{\"postal_code\":\"92154\",\"street_address\":\"1230 Ilexey Ave\",\"extended_address\":null,\"locality\":\"San Diego\",\"latitude\":null,\"country_code\":null,\"region\":\"CA\",\"name\":\"E Patrick Purog\",\"longitude\":null}],\"name\":\"bar\",\"id\":\"2404\",\"email_addresses\":[]}"
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
-    method: :get
-    uri: https://api.sandbox.ticketevolution.com:443/clients/2404
-    body: 
-    headers: 
-      x-signature: 
-      - AqJkMduM7JmPcwo+VtPGFmguowzLv60/6AL9ARtrSkk=
-      x-token: 
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept: 
-      - application/vnd.ticketevolution.api+json; version=8
-      accept-encoding: 
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
-      code: 200
-      message: OK
-    headers: 
-      content-type: 
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding: 
-      - chunked
-      connection: 
-      - keep-alive
-      status: 
-      - "200"
-      x-powered-by: 
+      status:
+      - '200'
+      x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag: 
-      - "\"ca54f1d287709a518ee7f975418c59c0\""
-      cache-control: 
+      cache-control:
       - max-age=0, private, must-revalidate
-      x-runtime: 
-      - "0.124917"
-      x-ua-compatible: 
+      x-runtime:
+      - '0.182513'
+      x-ua-compatible:
       - IE=Edge,chrome=1
-      strict-transport-security: 
-      - max-age=31536000
-      server: 
-      - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: "{\"updated_at\":\"2012-02-22T17:07:29Z\",\"phone_numbers\":[],\"email_addresses\":[],\"addresses\":[{\"latitude\":null,\"postal_code\":\"92154\",\"longitude\":null,\"street_address\":\"1230 Ilexey Ave\",\"extended_address\":null,\"locality\":\"San Diego\",\"label\":null,\"name\":\"Egbert Purog\",\"id\":\"169999\",\"country_code\":null,\"region\":\"CA\"},{\"latitude\":null,\"postal_code\":\"92154\",\"longitude\":null,\"street_address\":\"1230 Ilexey Ave\",\"extended_address\":null,\"locality\":\"San Diego\",\"label\":null,\"name\":\"E Patrick Purog\",\"id\":\"170000\",\"country_code\":null,\"region\":\"CA\"},{\"latitude\":null,\"postal_code\":\"92154\",\"longitude\":null,\"street_address\":\"1230 Ilexey Ave\",\"extended_address\":null,\"locality\":\"San Diego\",\"label\":null,\"name\":\"Egbert Purog\",\"id\":\"170001\",\"country_code\":null,\"region\":\"CA\"},{\"latitude\":null,\"postal_code\":\"92154\",\"longitude\":null,\"street_address\":\"1230 Ilexey Ave\",\"extended_address\":null,\"locality\":\"San Diego\",\"label\":null,\"name\":\"E Patrick Purog\",\"id\":\"170002\",\"country_code\":null,\"region\":\"CA\"}],\"tags\":[],\"company\":null,\"name\":\"bar\",\"id\":\"2404\",\"url\":\"/clients/2404\"}"
-    http_version: "1.1"
+      etag:
+      - ! '"7dbda6f275ced9c83a06b0177e275a7d"'
+      server:
+      - nginx/1.0.14 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: ! '{"addresses":[{"region":"CA","street_address":"1230 Ilexey Ave","longitude":null,"country_code":null,"extended_address":null,"name":"Egbert
+      Purog","id":"169999","locality":"San Diego","label":null,"latitude":null,"postal_code":"92154"},{"region":"CA","street_address":"1230
+      Ilexey Ave","longitude":null,"country_code":null,"extended_address":null,"name":"E
+      Patrick Purog","id":"170000","locality":"San Diego","label":null,"latitude":null,"postal_code":"92154"},{"region":"CA","street_address":"1230
+      Ilexey Ave","longitude":null,"country_code":null,"extended_address":null,"name":"Egbert
+      Purog","id":"170001","locality":"San Diego","label":null,"latitude":null,"postal_code":"92154"},{"region":"CA","street_address":"1230
+      Ilexey Ave","longitude":null,"country_code":null,"extended_address":null,"name":"E
+      Patrick Purog","id":"170002","locality":"San Diego","label":null,"latitude":null,"postal_code":"92154"}],"updated_at":"2012-02-22T17:07:29Z","company":null,"email_addresses":[],"phone_numbers":[],"name":"bar","url":"/clients/2404","id":"2404","tags":[]}'
+    http_version: '1.1'

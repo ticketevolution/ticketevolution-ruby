@@ -71,15 +71,10 @@ shared_examples_for "an update endpoint" do
         :last_name => "Doe"
       })) }
       let(:params) { {:first_name => "Bob"} }
-      let(:expected) do
-        data = instance.attributes.merge(params)
-        data.delete(:id)
-        data
-      end
       let(:response) { mock(:response, :attributes => params) }
 
       it "should pass call request as a PUT, passing params" do
-        klass.any_instance.should_receive(:request).with(:PUT, nil, expected).and_return(response)
+        klass.any_instance.should_receive(:request).with(:PUT, nil, params).and_return(response)
 
         instance.update_attributes(params)
       end

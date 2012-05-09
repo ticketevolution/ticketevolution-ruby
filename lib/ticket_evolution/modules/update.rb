@@ -4,9 +4,16 @@ module TicketEvolution
       def self.included(klass)
         Class.new{extend SingularClass}.singular_class(klass.name).send(:include, Module.new{
           def update_attributes(params)
-            atts = self.attributes.merge(params)
+            handle_update_response(plural_class.new({:parent => @connection, :id => self.id}).update(params))
+          end
+
+          def save
+            atts = self.attributes
             id = atts.delete(:id)
-            response = plural_class.new({:parent => @connection, :id => id}).update(atts)
+            handle_update_response(plural_class.new({:parent => @connection, :id => id}).update(atts))
+          end
+
+          def handle_update_response(response)
             if response.is_a?(TicketEvolution::ApiError)
               response
             else
@@ -14,10 +21,7 @@ module TicketEvolution
               self
             end
           end
-
-          def save
-            update_attributes({})
-          end
+          private :handle_update_response
         })
       end
 
