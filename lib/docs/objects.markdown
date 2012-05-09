@@ -13,7 +13,7 @@ Each set of API credentials can be combined with a mode and api version to creat
                           #               More info: [http://developer.ticketevolution.com/signature_tool](http://developer.ticketevolution.com/signature_tool))
       :mode => :sandbox,  # => (optional) Specifies the server environment to use
                                           Valid options: :production or :sandbox
-      :version => 8       # => (optional) API version to use - the only available
+      :version => 8,      # => (optional) API version to use - the only available
                                           version at the time of this writing is 8
       :logger => nil      # => (optional) Object to use for logging requests and
                           #               responses. Any 'Logger' instance object

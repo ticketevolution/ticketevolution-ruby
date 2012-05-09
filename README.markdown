@@ -55,7 +55,7 @@ Each set of API credentials can be combined with a mode and api version to creat
                           #               More info: [http://developer.ticketevolution.com/signature_tool](http://developer.ticketevolution.com/signature_tool))
       :mode => :sandbox,  # => (optional) Specifies the server environment to use
                                           Valid options: :production or :sandbox
-      :version => 8       # => (optional) API version to use - the only available
+      :version => 8,      # => (optional) API version to use - the only available
                                           version at the time of this writing is 8
       :logger => nil      # => (optional) Object to use for logging requests and
                           #               responses. Any 'Logger' instance object
@@ -164,11 +164,11 @@ Click on the links next to each endpoint for more detail.
     @client = @connection.clients.show(id)
     @client = @client.update_attributes(params)
 
-**Company** - [http://developer.ticketevolution.com/endpoints/company](http://developer.ticketevolution.com/endpoints/company)
+**Companies** - [http://developer.ticketevolution.com/endpoints/companies](http://developer.ticketevolution.com/endpoints/companies)
 
-    @company = @connection.company.create(params)
-    @company = @connection.company.list(params)
-    @company = @connection.company.show(id)
+    @company = @connection.companies.create(params)
+    @company = @connection.companies.list(params)
+    @company = @connection.companies.show(id)
     @company = @company.update_attributes(params)
 
 **Configurations** - [http://developer.ticketevolution.com/endpoints/configurations](http://developer.ticketevolution.com/endpoints/configurations)
@@ -239,6 +239,7 @@ Click on the links next to each endpoint for more detail.
 **Shipments** - [http://developer.ticketevolution.com/endpoints/shipments](http://developer.ticketevolution.com/endpoints/shipments)
 
     @shipment = @connection.shipments.create(params)
+    @shipment = @connection.shipments.create_airbill(params)
     @shipment = @connection.shipments.list(params)
     @shipment = @connection.shipments.show(id)
     @shipment = @shipment.update_attributes(params)
