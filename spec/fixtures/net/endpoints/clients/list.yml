@@ -1,48 +1,38 @@
----
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients?per_page=1
-    body: !!null 
-    headers:
-      x-signature:
-      - CVHhWgZb27YMNhFegxDYpGpJJ0dN4Cjf7w4am0cYSmM=
-      x-token:
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
+    body: 
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-      accept-encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+      x-signature: 
+      - CVHhWgZb27YMNhFegxDYpGpJJ0dN4Cjf7w4am0cYSmM=
+      x-token: 
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '200'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      etag:
-      - ! '"46f6caa87384ce7e4bcee3406b641e9d"'
-      cache-control:
+      etag: 
+      - "\"8681e223ff20d6cb63927c674942608e\""
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
+      - nginx/1.0.14 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+      x-runtime: 
+      - "0.045033"
+      cache-control: 
       - max-age=0, private, must-revalidate
-      x-runtime:
-      - '0.153706'
-      strict-transport-security:
-      - max-age=31536000
-      server:
-      - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"current_page":1,"per_page":1,"total_entries":119,"clients":[{"email_addresses":[{"label":null,"address":"tyrique@brown.info","id":"309"}],"addresses":[{"label":"Work","longitude":null,"extended_address":null,"street_address":"555
-      Evergreen Terrace","locality":"Springfield","region":"MG","country_code":"US","name":null,"latitude":null,"postal_code":"58008-0000","id":"170858"}],"office":{"url":"/offices/6","brokerage":{"abbreviation":"Ticket
-      Evolution","url":"/brokerages/61","name":"Ticket Evolution","id":"61"},"name":"Main
-      Office","id":"6"},"url":"/clients/3","updated_at":"2012-03-20T18:06:05Z","company":null,"phone_numbers":[{"number":"(301)555-1234","label":null,"extension":"999","country_code":null,"id":"333"}],"tags":["best
-      seller","promotion","vip"],"name":"Main Office","id":"3"}]}'
-    http_version: '1.1'
+      status: 
+      - "200"
+      transfer-encoding: 
+      - chunked
+    body: "{\"current_page\":1,\"clients\":[{\"addresses\":[],\"office\":{\"brokerage\":{\"abbreviation\":\"Ticket Evolution\",\"name\":\"Ticket Evolution\",\"id\":\"61\",\"url\":\"/brokerages/61\"},\"name\":\"Jersey City\",\"id\":\"6\",\"url\":\"/offices/6\"},\"updated_at\":\"2012-03-20T18:06:05Z\",\"company\":null,\"email_addresses\":[{\"id\":\"309\",\"address\":\"tyrique@brown.info\",\"label\":null}],\"phone_numbers\":[{\"country_code\":null,\"extension\":\"999\",\"id\":\"333\",\"label\":null,\"number\":\"(301)555-1234\"}],\"name\":\"Main Office\",\"url\":\"/clients/3\",\"id\":\"3\",\"tags\":[\"vip\",\"promotion\",\"best seller\"]}],\"per_page\":1,\"total_entries\":125}"
+    http_version: "1.1"

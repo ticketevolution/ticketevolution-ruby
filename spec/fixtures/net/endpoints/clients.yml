@@ -1,916 +1,839 @@
----
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2275?
     body: !!null 
-    headers:
-      accept:
+      str: ""
+      "@taguri": x-private:null
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature:
+      x-signature: 
       - ck+nRaF29sZ+a0iYT3m0+VvDm5svpeLwhwCgWoiwHEs=
-      x-token:
+      x-token: 
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '200'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag:
-      - ! '"3d388f5ffc68db88c982b2f772f04356"'
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '0.030069'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      etag: 
+      - "\"3d388f5ffc68db88c982b2f772f04356\""
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"addresses":[],"phone_numbers":[],"email_addresses":[],"name":"Comish
-      Gordon","url":"/clients/2275","id":"2275","updated_at":"2012-01-24T22:49:11Z"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "0.030069"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - "200"
+      transfer-encoding: 
+      - chunked
+    body: "{\"addresses\":[],\"phone_numbers\":[],\"email_addresses\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2275\",\"id\":\"2275\",\"updated_at\":\"2012-01-24T22:49:11Z\"}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2275?
     body: !!null 
-    headers:
-      accept:
+      str: ""
+      "@taguri": x-private:null
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature:
+      x-signature: 
       - ck+nRaF29sZ+a0iYT3m0+VvDm5svpeLwhwCgWoiwHEs=
-      x-token:
+      x-token: 
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '200'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag:
-      - ! '"3d388f5ffc68db88c982b2f772f04356"'
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '0.030069'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      etag: 
+      - "\"3d388f5ffc68db88c982b2f772f04356\""
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"addresses":[],"phone_numbers":[],"email_addresses":[],"name":"Comish
-      Gordon","url":"/clients/2275","id":"2275","updated_at":"2012-01-24T22:49:11Z"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "0.030069"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - "200"
+      transfer-encoding: 
+      - chunked
+    body: "{\"addresses\":[],\"phone_numbers\":[],\"email_addresses\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2275\",\"id\":\"2275\",\"updated_at\":\"2012-01-24T22:49:11Z\"}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients?
     body: !!null 
-    headers:
-      accept:
+      str: ""
+      "@taguri": x-private:null
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature:
+      x-signature: 
       - oHMe9KFgCudRW9XqDC2pfrbw4KkBje3M2DftUa8xbGQ=
-      x-token:
+      x-token: 
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '200'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag:
-      - ! '"5bb5dd0bc5c9af9a2b7f7a7376a159e8"'
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '1.179774'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      etag: 
+      - "\"5bb5dd0bc5c9af9a2b7f7a7376a159e8\""
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"current_page":1,"per_page":100,"total_entries":27,"clients":[{"email_addresses":[{"label":null,"address":"tyrique@brown.info"}],"phone_numbers":[{"extension":"999","label":null,"country_code":null,"number":"(301)555-1234"}],"url":"/clients/3","updated_at":"2011-08-11T03:12:43Z","name":"Main
-      Office","addresses":[{"latitude":null,"postal_code":"68577","longitude":null,"country_code":"AI","name":null,"locality":"West
-      Lambertfort","extended_address":null,"region":"MN","street_address":"035 McCullough
-      Manor"}],"office":{"url":"/offices/6","brokerage":{"abbreviation":"Ticket Evolution","url":"/brokerages/61","name":"Ticket
-      Evolution","id":"61"},"name":"Main Office","id":"6"},"id":"3"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/1535","updated_at":"2011-08-29T17:08:43Z","name":"Main
-      Office","addresses":[{"latitude":null,"postal_code":"58008-6072","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"125
-      Street"},{"latitude":null,"postal_code":null,"longitude":null,"country_code":null,"name":null,"locality":null,"extended_address":null,"region":null,"street_address":null}],"office":{"url":"/offices/1116","brokerage":{"abbreviation":"Tevo","url":"/brokerages/630","name":"SeatGeek","id":"630"},"name":"Main
-      Office","id":"1116"},"id":"1535"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2022","updated_at":"2011-12-21T19:26:18Z","name":"Will
-      Smith","addresses":[],"id":"2022"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2094","updated_at":"2011-12-30T21:18:39Z","name":"Ms
-      Rogers","addresses":[],"id":"2094"},{"email_addresses":[{"label":"work","address":"moe.szyslak@moestavern.com"},{"label":"home","address":"moeissexxxy69@compuserve.com"}],"phone_numbers":[{"extension":null,"label":"work
-      fax","country_code":null,"number":"243-6698"},{"extension":null,"label":"work","country_code":null,"number":"243-6697"}],"url":"/clients/2098","updated_at":"2012-01-06T04:30:46Z","name":"Morris
-      “Moe” Szyslak","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"id":"2098"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2271","updated_at":"2012-01-24T20:27:04Z","name":"Brad
-      Tatum","addresses":[],"id":"2271"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2273","updated_at":"2012-01-24T22:23:43Z","name":"jimmy
-      buffet","addresses":[],"id":"2273"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2274","updated_at":"2012-01-24T22:30:24Z","name":"Comish
-      Gordon","addresses":[],"id":"2274"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2275","updated_at":"2012-01-24T22:49:11Z","name":"Comish
-      Gordon","addresses":[],"id":"2275"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2302","updated_at":"2012-01-27T10:16:50Z","name":"John
-      Raj","addresses":[],"id":"2302"},{"email_addresses":[{"label":"john","address":"john@riverstonetech.com"},{"label":"john","address":"john@riverstonetech.com"},{"label":"john","address":"john@riverstonetech.com"},{"label":"john","address":"john@riverstonetech.com"},{"label":"john","address":"john@riverstonetech.com"},{"label":"[EMAILLABEL]","address":"[EMAILADDRESS]"}],"phone_numbers":[{"extension":null,"label":"Office","country_code":null,"number":"877-326-7785"},{"extension":null,"label":"Office","country_code":null,"number":"877-326-7785"}],"url":"/clients/2303","updated_at":"2012-01-27T10:45:12Z","name":"John
-      Raj","addresses":[],"id":"2303"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2307","updated_at":"2012-01-28T06:32:37Z","name":"john","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"id":"2307"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2308","updated_at":"2012-01-28T06:44:34Z","name":"Billy","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"office":{"url":"/offices/2","brokerage":{"abbreviation":"Circle
-      City","url":"/brokerages/86","name":"Circle City Tickets","id":"86"},"name":"Downtown
-      Office","id":"2"},"id":"2308"},{"email_addresses":[{"label":"John","address":"john@riverstonetech.com"},{"label":"Billy","address":"billy@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2310","updated_at":"2012-01-28T07:24:57Z","name":"Billy","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"office":{"url":"/offices/970","brokerage":{"abbreviation":"Hello","url":"/brokerages/434","name":"Hello
-      Tickets","id":"434"},"name":"Main Office","id":"970"},"id":"2310"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2323","updated_at":"2012-01-31T05:11:02Z","name":"JohnRaj","addresses":[],"id":"2323"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2324","updated_at":"2012-01-31T05:38:18Z","name":"JohnRaj","addresses":[],"id":"2324"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2325","updated_at":"2012-01-31T05:42:28Z","name":"David","addresses":[],"id":"2325"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2326","updated_at":"2012-01-31T05:47:02Z","name":"David
-      Billy","addresses":[],"id":"2326"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2327","updated_at":"2012-01-31T06:01:19Z","name":"David
-      Billy","addresses":[],"id":"2327"},{"email_addresses":[{"label":"John","address":"john@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"John","country_code":null,"number":"333-444-4444"}],"url":"/clients/2328","updated_at":"2012-01-31T06:06:34Z","name":"David
-      Billy","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"id":"2328"},{"email_addresses":[{"label":"John","address":"john@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"John","country_code":null,"number":"333-444-4444"}],"url":"/clients/2329","updated_at":"2012-01-31T07:31:32Z","name":"JohnRaj","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"id":"2329"},{"email_addresses":[{"label":"Welkins","address":"Welkins@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Welkins","country_code":null,"number":"333-444-4444"}],"url":"/clients/2330","updated_at":"2012-01-31T07:38:31Z","name":"Welkins","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"id":"2330"},{"email_addresses":[{"label":"John","address":"john@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"John","country_code":null,"number":"333-444-4444"}],"url":"/clients/2332","updated_at":"2012-01-31T08:03:15Z","name":"JohnRaj","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"office":{"url":"/offices/1594","brokerage":{"abbreviation":"Ticket
-      Logic","url":"/brokerages/1609","name":"Ticket Logic Pty Ltd","id":"1609"},"name":"Ticket
-      Logic","id":"1594"},"id":"2332"},{"email_addresses":[{"label":"Welkins","address":"Welkins@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Welkins","country_code":null,"number":"333-444-4444"}],"url":"/clients/2333","updated_at":"2012-01-31T08:08:57Z","name":"Welkins","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"office":{"url":"/offices/1593","brokerage":{"abbreviation":"Dare
-      Ticket","url":"/brokerages/1608","name":"Dare Ticket","id":"1608"},"name":"Main
-      Office","id":"1593"},"id":"2333"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2355","updated_at":"2012-02-08T05:13:58Z","name":"Billy","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":"Billy","locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"id":"2355"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2356","updated_at":"2012-02-08T05:30:28Z","name":"Billy","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":"Billy","locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"id":"2356"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2359","updated_at":"2012-02-10T06:02:34Z","name":"Billy","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":"Billy","locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"office":{"url":"/offices/1583","brokerage":{"abbreviation":"Fanprice","url":"/brokerages/1600","name":"Fanprice,
-      Inc.","id":"1600"},"name":"Main Office","id":"1583"},"id":"2359"}]}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "1.179774"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - "200"
+      transfer-encoding: 
+      - chunked
+    body: "{\"current_page\":1,\"per_page\":100,\"total_entries\":27,\"clients\":[{\"email_addresses\":[{\"label\":null,\"address\":\"tyrique@brown.info\"}],\"phone_numbers\":[{\"extension\":\"999\",\"label\":null,\"country_code\":null,\"number\":\"(301)555-1234\"}],\"url\":\"/clients/3\",\"updated_at\":\"2011-08-11T03:12:43Z\",\"name\":\"Main Office\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"68577\",\"longitude\":null,\"country_code\":\"AI\",\"name\":null,\"locality\":\"West Lambertfort\",\"extended_address\":null,\"region\":\"MN\",\"street_address\":\"035 McCullough Manor\"}],\"office\":{\"url\":\"/offices/6\",\"brokerage\":{\"abbreviation\":\"Ticket Evolution\",\"url\":\"/brokerages/61\",\"name\":\"Ticket Evolution\",\"id\":\"61\"},\"name\":\"Main Office\",\"id\":\"6\"},\"id\":\"3\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/1535\",\"updated_at\":\"2011-08-29T17:08:43Z\",\"name\":\"Main Office\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-6072\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"125 Street\"},{\"latitude\":null,\"postal_code\":null,\"longitude\":null,\"country_code\":null,\"name\":null,\"locality\":null,\"extended_address\":null,\"region\":null,\"street_address\":null}],\"office\":{\"url\":\"/offices/1116\",\"brokerage\":{\"abbreviation\":\"Tevo\",\"url\":\"/brokerages/630\",\"name\":\"SeatGeek\",\"id\":\"630\"},\"name\":\"Main Office\",\"id\":\"1116\"},\"id\":\"1535\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2022\",\"updated_at\":\"2011-12-21T19:26:18Z\",\"name\":\"Will Smith\",\"addresses\":[],\"id\":\"2022\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2094\",\"updated_at\":\"2011-12-30T21:18:39Z\",\"name\":\"Ms Rogers\",\"addresses\":[],\"id\":\"2094\"},{\"email_addresses\":[{\"label\":\"work\",\"address\":\"moe.szyslak@moestavern.com\"},{\"label\":\"home\",\"address\":\"moeissexxxy69@compuserve.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"work fax\",\"country_code\":null,\"number\":\"243-6698\"},{\"extension\":null,\"label\":\"work\",\"country_code\":null,\"number\":\"243-6697\"}],\"url\":\"/clients/2098\",\"updated_at\":\"2012-01-06T04:30:46Z\",\"name\":\"Morris \xE2\x80\x9CMoe\xE2\x80\x9D Szyslak\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"id\":\"2098\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2271\",\"updated_at\":\"2012-01-24T20:27:04Z\",\"name\":\"Brad Tatum\",\"addresses\":[],\"id\":\"2271\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2273\",\"updated_at\":\"2012-01-24T22:23:43Z\",\"name\":\"jimmy buffet\",\"addresses\":[],\"id\":\"2273\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2274\",\"updated_at\":\"2012-01-24T22:30:24Z\",\"name\":\"Comish Gordon\",\"addresses\":[],\"id\":\"2274\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2275\",\"updated_at\":\"2012-01-24T22:49:11Z\",\"name\":\"Comish Gordon\",\"addresses\":[],\"id\":\"2275\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2302\",\"updated_at\":\"2012-01-27T10:16:50Z\",\"name\":\"John Raj\",\"addresses\":[],\"id\":\"2302\"},{\"email_addresses\":[{\"label\":\"john\",\"address\":\"john@riverstonetech.com\"},{\"label\":\"john\",\"address\":\"john@riverstonetech.com\"},{\"label\":\"john\",\"address\":\"john@riverstonetech.com\"},{\"label\":\"john\",\"address\":\"john@riverstonetech.com\"},{\"label\":\"john\",\"address\":\"john@riverstonetech.com\"},{\"label\":\"[EMAILLABEL]\",\"address\":\"[EMAILADDRESS]\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Office\",\"country_code\":null,\"number\":\"877-326-7785\"},{\"extension\":null,\"label\":\"Office\",\"country_code\":null,\"number\":\"877-326-7785\"}],\"url\":\"/clients/2303\",\"updated_at\":\"2012-01-27T10:45:12Z\",\"name\":\"John Raj\",\"addresses\":[],\"id\":\"2303\"},{\"email_addresses\":[{\"label\":\"Billy\",\"address\":\"billy@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Billy\",\"country_code\":null,\"number\":\"877-326-7785\"}],\"url\":\"/clients/2307\",\"updated_at\":\"2012-01-28T06:32:37Z\",\"name\":\"john\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"id\":\"2307\"},{\"email_addresses\":[{\"label\":\"Billy\",\"address\":\"billy@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Billy\",\"country_code\":null,\"number\":\"877-326-7785\"}],\"url\":\"/clients/2308\",\"updated_at\":\"2012-01-28T06:44:34Z\",\"name\":\"Billy\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"office\":{\"url\":\"/offices/2\",\"brokerage\":{\"abbreviation\":\"Circle City\",\"url\":\"/brokerages/86\",\"name\":\"Circle City Tickets\",\"id\":\"86\"},\"name\":\"Downtown Office\",\"id\":\"2\"},\"id\":\"2308\"},{\"email_addresses\":[{\"label\":\"John\",\"address\":\"john@riverstonetech.com\"},{\"label\":\"Billy\",\"address\":\"billy@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Billy\",\"country_code\":null,\"number\":\"877-326-7785\"}],\"url\":\"/clients/2310\",\"updated_at\":\"2012-01-28T07:24:57Z\",\"name\":\"Billy\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"office\":{\"url\":\"/offices/970\",\"brokerage\":{\"abbreviation\":\"Hello\",\"url\":\"/brokerages/434\",\"name\":\"Hello Tickets\",\"id\":\"434\"},\"name\":\"Main Office\",\"id\":\"970\"},\"id\":\"2310\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2323\",\"updated_at\":\"2012-01-31T05:11:02Z\",\"name\":\"JohnRaj\",\"addresses\":[],\"id\":\"2323\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2324\",\"updated_at\":\"2012-01-31T05:38:18Z\",\"name\":\"JohnRaj\",\"addresses\":[],\"id\":\"2324\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2325\",\"updated_at\":\"2012-01-31T05:42:28Z\",\"name\":\"David\",\"addresses\":[],\"id\":\"2325\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2326\",\"updated_at\":\"2012-01-31T05:47:02Z\",\"name\":\"David Billy\",\"addresses\":[],\"id\":\"2326\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2327\",\"updated_at\":\"2012-01-31T06:01:19Z\",\"name\":\"David Billy\",\"addresses\":[],\"id\":\"2327\"},{\"email_addresses\":[{\"label\":\"John\",\"address\":\"john@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"John\",\"country_code\":null,\"number\":\"333-444-4444\"}],\"url\":\"/clients/2328\",\"updated_at\":\"2012-01-31T06:06:34Z\",\"name\":\"David Billy\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"id\":\"2328\"},{\"email_addresses\":[{\"label\":\"John\",\"address\":\"john@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"John\",\"country_code\":null,\"number\":\"333-444-4444\"}],\"url\":\"/clients/2329\",\"updated_at\":\"2012-01-31T07:31:32Z\",\"name\":\"JohnRaj\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"id\":\"2329\"},{\"email_addresses\":[{\"label\":\"Welkins\",\"address\":\"Welkins@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Welkins\",\"country_code\":null,\"number\":\"333-444-4444\"}],\"url\":\"/clients/2330\",\"updated_at\":\"2012-01-31T07:38:31Z\",\"name\":\"Welkins\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"id\":\"2330\"},{\"email_addresses\":[{\"label\":\"John\",\"address\":\"john@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"John\",\"country_code\":null,\"number\":\"333-444-4444\"}],\"url\":\"/clients/2332\",\"updated_at\":\"2012-01-31T08:03:15Z\",\"name\":\"JohnRaj\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"office\":{\"url\":\"/offices/1594\",\"brokerage\":{\"abbreviation\":\"Ticket Logic\",\"url\":\"/brokerages/1609\",\"name\":\"Ticket Logic Pty Ltd\",\"id\":\"1609\"},\"name\":\"Ticket Logic\",\"id\":\"1594\"},\"id\":\"2332\"},{\"email_addresses\":[{\"label\":\"Welkins\",\"address\":\"Welkins@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Welkins\",\"country_code\":null,\"number\":\"333-444-4444\"}],\"url\":\"/clients/2333\",\"updated_at\":\"2012-01-31T08:08:57Z\",\"name\":\"Welkins\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"office\":{\"url\":\"/offices/1593\",\"brokerage\":{\"abbreviation\":\"Dare Ticket\",\"url\":\"/brokerages/1608\",\"name\":\"Dare Ticket\",\"id\":\"1608\"},\"name\":\"Main Office\",\"id\":\"1593\"},\"id\":\"2333\"},{\"email_addresses\":[{\"label\":\"Billy\",\"address\":\"billy@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Billy\",\"country_code\":null,\"number\":\"877-326-7785\"}],\"url\":\"/clients/2355\",\"updated_at\":\"2012-02-08T05:13:58Z\",\"name\":\"Billy\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":\"Billy\",\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"id\":\"2355\"},{\"email_addresses\":[{\"label\":\"Billy\",\"address\":\"billy@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Billy\",\"country_code\":null,\"number\":\"877-326-7785\"}],\"url\":\"/clients/2356\",\"updated_at\":\"2012-02-08T05:30:28Z\",\"name\":\"Billy\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":\"Billy\",\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"id\":\"2356\"},{\"email_addresses\":[{\"label\":\"Billy\",\"address\":\"billy@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Billy\",\"country_code\":null,\"number\":\"877-326-7785\"}],\"url\":\"/clients/2359\",\"updated_at\":\"2012-02-10T06:02:34Z\",\"name\":\"Billy\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":\"Billy\",\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"office\":{\"url\":\"/offices/1583\",\"brokerage\":{\"abbreviation\":\"Fanprice\",\"url\":\"/brokerages/1600\",\"name\":\"Fanprice, Inc.\",\"id\":\"1600\"},\"name\":\"Main Office\",\"id\":\"1583\"},\"id\":\"2359\"}]}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients?
     body: !!null 
-    headers:
-      accept:
+      str: ""
+      "@taguri": x-private:null
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature:
+      x-signature: 
       - oHMe9KFgCudRW9XqDC2pfrbw4KkBje3M2DftUa8xbGQ=
-      x-token:
+      x-token: 
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '200'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag:
-      - ! '"5bb5dd0bc5c9af9a2b7f7a7376a159e8"'
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '1.179774'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      etag: 
+      - "\"5bb5dd0bc5c9af9a2b7f7a7376a159e8\""
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"current_page":1,"per_page":100,"total_entries":27,"clients":[{"email_addresses":[{"label":null,"address":"tyrique@brown.info"}],"phone_numbers":[{"extension":"999","label":null,"country_code":null,"number":"(301)555-1234"}],"url":"/clients/3","updated_at":"2011-08-11T03:12:43Z","name":"Main
-      Office","addresses":[{"latitude":null,"postal_code":"68577","longitude":null,"country_code":"AI","name":null,"locality":"West
-      Lambertfort","extended_address":null,"region":"MN","street_address":"035 McCullough
-      Manor"}],"office":{"url":"/offices/6","brokerage":{"abbreviation":"Ticket Evolution","url":"/brokerages/61","name":"Ticket
-      Evolution","id":"61"},"name":"Main Office","id":"6"},"id":"3"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/1535","updated_at":"2011-08-29T17:08:43Z","name":"Main
-      Office","addresses":[{"latitude":null,"postal_code":"58008-6072","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"125
-      Street"},{"latitude":null,"postal_code":null,"longitude":null,"country_code":null,"name":null,"locality":null,"extended_address":null,"region":null,"street_address":null}],"office":{"url":"/offices/1116","brokerage":{"abbreviation":"Tevo","url":"/brokerages/630","name":"SeatGeek","id":"630"},"name":"Main
-      Office","id":"1116"},"id":"1535"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2022","updated_at":"2011-12-21T19:26:18Z","name":"Will
-      Smith","addresses":[],"id":"2022"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2094","updated_at":"2011-12-30T21:18:39Z","name":"Ms
-      Rogers","addresses":[],"id":"2094"},{"email_addresses":[{"label":"work","address":"moe.szyslak@moestavern.com"},{"label":"home","address":"moeissexxxy69@compuserve.com"}],"phone_numbers":[{"extension":null,"label":"work
-      fax","country_code":null,"number":"243-6698"},{"extension":null,"label":"work","country_code":null,"number":"243-6697"}],"url":"/clients/2098","updated_at":"2012-01-06T04:30:46Z","name":"Morris
-      “Moe” Szyslak","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"id":"2098"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2271","updated_at":"2012-01-24T20:27:04Z","name":"Brad
-      Tatum","addresses":[],"id":"2271"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2273","updated_at":"2012-01-24T22:23:43Z","name":"jimmy
-      buffet","addresses":[],"id":"2273"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2274","updated_at":"2012-01-24T22:30:24Z","name":"Comish
-      Gordon","addresses":[],"id":"2274"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2275","updated_at":"2012-01-24T22:49:11Z","name":"Comish
-      Gordon","addresses":[],"id":"2275"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2302","updated_at":"2012-01-27T10:16:50Z","name":"John
-      Raj","addresses":[],"id":"2302"},{"email_addresses":[{"label":"john","address":"john@riverstonetech.com"},{"label":"john","address":"john@riverstonetech.com"},{"label":"john","address":"john@riverstonetech.com"},{"label":"john","address":"john@riverstonetech.com"},{"label":"john","address":"john@riverstonetech.com"},{"label":"[EMAILLABEL]","address":"[EMAILADDRESS]"}],"phone_numbers":[{"extension":null,"label":"Office","country_code":null,"number":"877-326-7785"},{"extension":null,"label":"Office","country_code":null,"number":"877-326-7785"}],"url":"/clients/2303","updated_at":"2012-01-27T10:45:12Z","name":"John
-      Raj","addresses":[],"id":"2303"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2307","updated_at":"2012-01-28T06:32:37Z","name":"john","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"id":"2307"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2308","updated_at":"2012-01-28T06:44:34Z","name":"Billy","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"office":{"url":"/offices/2","brokerage":{"abbreviation":"Circle
-      City","url":"/brokerages/86","name":"Circle City Tickets","id":"86"},"name":"Downtown
-      Office","id":"2"},"id":"2308"},{"email_addresses":[{"label":"John","address":"john@riverstonetech.com"},{"label":"Billy","address":"billy@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2310","updated_at":"2012-01-28T07:24:57Z","name":"Billy","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"office":{"url":"/offices/970","brokerage":{"abbreviation":"Hello","url":"/brokerages/434","name":"Hello
-      Tickets","id":"434"},"name":"Main Office","id":"970"},"id":"2310"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2323","updated_at":"2012-01-31T05:11:02Z","name":"JohnRaj","addresses":[],"id":"2323"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2324","updated_at":"2012-01-31T05:38:18Z","name":"JohnRaj","addresses":[],"id":"2324"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2325","updated_at":"2012-01-31T05:42:28Z","name":"David","addresses":[],"id":"2325"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2326","updated_at":"2012-01-31T05:47:02Z","name":"David
-      Billy","addresses":[],"id":"2326"},{"email_addresses":[],"phone_numbers":[],"url":"/clients/2327","updated_at":"2012-01-31T06:01:19Z","name":"David
-      Billy","addresses":[],"id":"2327"},{"email_addresses":[{"label":"John","address":"john@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"John","country_code":null,"number":"333-444-4444"}],"url":"/clients/2328","updated_at":"2012-01-31T06:06:34Z","name":"David
-      Billy","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"id":"2328"},{"email_addresses":[{"label":"John","address":"john@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"John","country_code":null,"number":"333-444-4444"}],"url":"/clients/2329","updated_at":"2012-01-31T07:31:32Z","name":"JohnRaj","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"id":"2329"},{"email_addresses":[{"label":"Welkins","address":"Welkins@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Welkins","country_code":null,"number":"333-444-4444"}],"url":"/clients/2330","updated_at":"2012-01-31T07:38:31Z","name":"Welkins","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"id":"2330"},{"email_addresses":[{"label":"John","address":"john@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"John","country_code":null,"number":"333-444-4444"}],"url":"/clients/2332","updated_at":"2012-01-31T08:03:15Z","name":"JohnRaj","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"office":{"url":"/offices/1594","brokerage":{"abbreviation":"Ticket
-      Logic","url":"/brokerages/1609","name":"Ticket Logic Pty Ltd","id":"1609"},"name":"Ticket
-      Logic","id":"1594"},"id":"2332"},{"email_addresses":[{"label":"Welkins","address":"Welkins@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Welkins","country_code":null,"number":"333-444-4444"}],"url":"/clients/2333","updated_at":"2012-01-31T08:08:57Z","name":"Welkins","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":null,"locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"office":{"url":"/offices/1593","brokerage":{"abbreviation":"Dare
-      Ticket","url":"/brokerages/1608","name":"Dare Ticket","id":"1608"},"name":"Main
-      Office","id":"1593"},"id":"2333"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2355","updated_at":"2012-02-08T05:13:58Z","name":"Billy","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":"Billy","locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"id":"2355"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2356","updated_at":"2012-02-08T05:30:28Z","name":"Billy","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":"Billy","locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"id":"2356"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2359","updated_at":"2012-02-10T06:02:34Z","name":"Billy","addresses":[{"latitude":null,"postal_code":"58008-0000","longitude":null,"country_code":"US","name":"Billy","locality":"Springfield","extended_address":null,"region":"MG","street_address":"555
-      Evergreen Terrace"}],"office":{"url":"/offices/1583","brokerage":{"abbreviation":"Fanprice","url":"/brokerages/1600","name":"Fanprice,
-      Inc.","id":"1600"},"name":"Main Office","id":"1583"},"id":"2359"}]}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "1.179774"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - "200"
+      transfer-encoding: 
+      - chunked
+    body: "{\"current_page\":1,\"per_page\":100,\"total_entries\":27,\"clients\":[{\"email_addresses\":[{\"label\":null,\"address\":\"tyrique@brown.info\"}],\"phone_numbers\":[{\"extension\":\"999\",\"label\":null,\"country_code\":null,\"number\":\"(301)555-1234\"}],\"url\":\"/clients/3\",\"updated_at\":\"2011-08-11T03:12:43Z\",\"name\":\"Main Office\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"68577\",\"longitude\":null,\"country_code\":\"AI\",\"name\":null,\"locality\":\"West Lambertfort\",\"extended_address\":null,\"region\":\"MN\",\"street_address\":\"035 McCullough Manor\"}],\"office\":{\"url\":\"/offices/6\",\"brokerage\":{\"abbreviation\":\"Ticket Evolution\",\"url\":\"/brokerages/61\",\"name\":\"Ticket Evolution\",\"id\":\"61\"},\"name\":\"Main Office\",\"id\":\"6\"},\"id\":\"3\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/1535\",\"updated_at\":\"2011-08-29T17:08:43Z\",\"name\":\"Main Office\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-6072\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"125 Street\"},{\"latitude\":null,\"postal_code\":null,\"longitude\":null,\"country_code\":null,\"name\":null,\"locality\":null,\"extended_address\":null,\"region\":null,\"street_address\":null}],\"office\":{\"url\":\"/offices/1116\",\"brokerage\":{\"abbreviation\":\"Tevo\",\"url\":\"/brokerages/630\",\"name\":\"SeatGeek\",\"id\":\"630\"},\"name\":\"Main Office\",\"id\":\"1116\"},\"id\":\"1535\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2022\",\"updated_at\":\"2011-12-21T19:26:18Z\",\"name\":\"Will Smith\",\"addresses\":[],\"id\":\"2022\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2094\",\"updated_at\":\"2011-12-30T21:18:39Z\",\"name\":\"Ms Rogers\",\"addresses\":[],\"id\":\"2094\"},{\"email_addresses\":[{\"label\":\"work\",\"address\":\"moe.szyslak@moestavern.com\"},{\"label\":\"home\",\"address\":\"moeissexxxy69@compuserve.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"work fax\",\"country_code\":null,\"number\":\"243-6698\"},{\"extension\":null,\"label\":\"work\",\"country_code\":null,\"number\":\"243-6697\"}],\"url\":\"/clients/2098\",\"updated_at\":\"2012-01-06T04:30:46Z\",\"name\":\"Morris \xE2\x80\x9CMoe\xE2\x80\x9D Szyslak\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"id\":\"2098\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2271\",\"updated_at\":\"2012-01-24T20:27:04Z\",\"name\":\"Brad Tatum\",\"addresses\":[],\"id\":\"2271\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2273\",\"updated_at\":\"2012-01-24T22:23:43Z\",\"name\":\"jimmy buffet\",\"addresses\":[],\"id\":\"2273\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2274\",\"updated_at\":\"2012-01-24T22:30:24Z\",\"name\":\"Comish Gordon\",\"addresses\":[],\"id\":\"2274\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2275\",\"updated_at\":\"2012-01-24T22:49:11Z\",\"name\":\"Comish Gordon\",\"addresses\":[],\"id\":\"2275\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2302\",\"updated_at\":\"2012-01-27T10:16:50Z\",\"name\":\"John Raj\",\"addresses\":[],\"id\":\"2302\"},{\"email_addresses\":[{\"label\":\"john\",\"address\":\"john@riverstonetech.com\"},{\"label\":\"john\",\"address\":\"john@riverstonetech.com\"},{\"label\":\"john\",\"address\":\"john@riverstonetech.com\"},{\"label\":\"john\",\"address\":\"john@riverstonetech.com\"},{\"label\":\"john\",\"address\":\"john@riverstonetech.com\"},{\"label\":\"[EMAILLABEL]\",\"address\":\"[EMAILADDRESS]\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Office\",\"country_code\":null,\"number\":\"877-326-7785\"},{\"extension\":null,\"label\":\"Office\",\"country_code\":null,\"number\":\"877-326-7785\"}],\"url\":\"/clients/2303\",\"updated_at\":\"2012-01-27T10:45:12Z\",\"name\":\"John Raj\",\"addresses\":[],\"id\":\"2303\"},{\"email_addresses\":[{\"label\":\"Billy\",\"address\":\"billy@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Billy\",\"country_code\":null,\"number\":\"877-326-7785\"}],\"url\":\"/clients/2307\",\"updated_at\":\"2012-01-28T06:32:37Z\",\"name\":\"john\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"id\":\"2307\"},{\"email_addresses\":[{\"label\":\"Billy\",\"address\":\"billy@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Billy\",\"country_code\":null,\"number\":\"877-326-7785\"}],\"url\":\"/clients/2308\",\"updated_at\":\"2012-01-28T06:44:34Z\",\"name\":\"Billy\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"office\":{\"url\":\"/offices/2\",\"brokerage\":{\"abbreviation\":\"Circle City\",\"url\":\"/brokerages/86\",\"name\":\"Circle City Tickets\",\"id\":\"86\"},\"name\":\"Downtown Office\",\"id\":\"2\"},\"id\":\"2308\"},{\"email_addresses\":[{\"label\":\"John\",\"address\":\"john@riverstonetech.com\"},{\"label\":\"Billy\",\"address\":\"billy@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Billy\",\"country_code\":null,\"number\":\"877-326-7785\"}],\"url\":\"/clients/2310\",\"updated_at\":\"2012-01-28T07:24:57Z\",\"name\":\"Billy\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"office\":{\"url\":\"/offices/970\",\"brokerage\":{\"abbreviation\":\"Hello\",\"url\":\"/brokerages/434\",\"name\":\"Hello Tickets\",\"id\":\"434\"},\"name\":\"Main Office\",\"id\":\"970\"},\"id\":\"2310\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2323\",\"updated_at\":\"2012-01-31T05:11:02Z\",\"name\":\"JohnRaj\",\"addresses\":[],\"id\":\"2323\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2324\",\"updated_at\":\"2012-01-31T05:38:18Z\",\"name\":\"JohnRaj\",\"addresses\":[],\"id\":\"2324\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2325\",\"updated_at\":\"2012-01-31T05:42:28Z\",\"name\":\"David\",\"addresses\":[],\"id\":\"2325\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2326\",\"updated_at\":\"2012-01-31T05:47:02Z\",\"name\":\"David Billy\",\"addresses\":[],\"id\":\"2326\"},{\"email_addresses\":[],\"phone_numbers\":[],\"url\":\"/clients/2327\",\"updated_at\":\"2012-01-31T06:01:19Z\",\"name\":\"David Billy\",\"addresses\":[],\"id\":\"2327\"},{\"email_addresses\":[{\"label\":\"John\",\"address\":\"john@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"John\",\"country_code\":null,\"number\":\"333-444-4444\"}],\"url\":\"/clients/2328\",\"updated_at\":\"2012-01-31T06:06:34Z\",\"name\":\"David Billy\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"id\":\"2328\"},{\"email_addresses\":[{\"label\":\"John\",\"address\":\"john@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"John\",\"country_code\":null,\"number\":\"333-444-4444\"}],\"url\":\"/clients/2329\",\"updated_at\":\"2012-01-31T07:31:32Z\",\"name\":\"JohnRaj\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"id\":\"2329\"},{\"email_addresses\":[{\"label\":\"Welkins\",\"address\":\"Welkins@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Welkins\",\"country_code\":null,\"number\":\"333-444-4444\"}],\"url\":\"/clients/2330\",\"updated_at\":\"2012-01-31T07:38:31Z\",\"name\":\"Welkins\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"id\":\"2330\"},{\"email_addresses\":[{\"label\":\"John\",\"address\":\"john@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"John\",\"country_code\":null,\"number\":\"333-444-4444\"}],\"url\":\"/clients/2332\",\"updated_at\":\"2012-01-31T08:03:15Z\",\"name\":\"JohnRaj\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"office\":{\"url\":\"/offices/1594\",\"brokerage\":{\"abbreviation\":\"Ticket Logic\",\"url\":\"/brokerages/1609\",\"name\":\"Ticket Logic Pty Ltd\",\"id\":\"1609\"},\"name\":\"Ticket Logic\",\"id\":\"1594\"},\"id\":\"2332\"},{\"email_addresses\":[{\"label\":\"Welkins\",\"address\":\"Welkins@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Welkins\",\"country_code\":null,\"number\":\"333-444-4444\"}],\"url\":\"/clients/2333\",\"updated_at\":\"2012-01-31T08:08:57Z\",\"name\":\"Welkins\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":null,\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"office\":{\"url\":\"/offices/1593\",\"brokerage\":{\"abbreviation\":\"Dare Ticket\",\"url\":\"/brokerages/1608\",\"name\":\"Dare Ticket\",\"id\":\"1608\"},\"name\":\"Main Office\",\"id\":\"1593\"},\"id\":\"2333\"},{\"email_addresses\":[{\"label\":\"Billy\",\"address\":\"billy@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Billy\",\"country_code\":null,\"number\":\"877-326-7785\"}],\"url\":\"/clients/2355\",\"updated_at\":\"2012-02-08T05:13:58Z\",\"name\":\"Billy\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":\"Billy\",\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"id\":\"2355\"},{\"email_addresses\":[{\"label\":\"Billy\",\"address\":\"billy@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Billy\",\"country_code\":null,\"number\":\"877-326-7785\"}],\"url\":\"/clients/2356\",\"updated_at\":\"2012-02-08T05:30:28Z\",\"name\":\"Billy\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":\"Billy\",\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"id\":\"2356\"},{\"email_addresses\":[{\"label\":\"Billy\",\"address\":\"billy@riverstonetech.com\"}],\"phone_numbers\":[{\"extension\":null,\"label\":\"Billy\",\"country_code\":null,\"number\":\"877-326-7785\"}],\"url\":\"/clients/2359\",\"updated_at\":\"2012-02-10T06:02:34Z\",\"name\":\"Billy\",\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"longitude\":null,\"country_code\":\"US\",\"name\":\"Billy\",\"locality\":\"Springfield\",\"extended_address\":null,\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"office\":{\"url\":\"/offices/1583\",\"brokerage\":{\"abbreviation\":\"Fanprice\",\"url\":\"/brokerages/1600\",\"name\":\"Fanprice, Inc.\",\"id\":\"1600\"},\"name\":\"Main Office\",\"id\":\"1583\"},\"id\":\"2359\"}]}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2359/addresses?
     body: !!null 
-    headers:
-      accept:
+      str: ""
+      "@taguri": x-private:null
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature:
+      x-signature: 
       - fiDv7wgSxdmv2nG4hjzRD6V8Ti+7J8P8aijHlZk3ldE=
-      x-token:
+      x-token: 
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '200'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag:
-      - ! '"d1c91f9e7aca9e307c07699f6beee9d9"'
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '0.161420'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      etag: 
+      - "\"d1c91f9e7aca9e307c07699f6beee9d9\""
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"addresses":[{"latitude":null,"postal_code":"58008-0000","label":"Billy","longitude":null,"country_code":"US","url":"/clients/2359/addresses/48597","updated_at":"2012-02-10T06:25:53Z","name":"Billy","locality":"Springfield","extended_address":null,"id":"48597","region":"MG","street_address":"555
-      Evergreen Terrace"}],"current_page":1,"per_page":100,"total_entries":1}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "0.161420"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - "200"
+      transfer-encoding: 
+      - chunked
+    body: "{\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"label\":\"Billy\",\"longitude\":null,\"country_code\":\"US\",\"url\":\"/clients/2359/addresses/48597\",\"updated_at\":\"2012-02-10T06:25:53Z\",\"name\":\"Billy\",\"locality\":\"Springfield\",\"extended_address\":null,\"id\":\"48597\",\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"current_page\":1,\"per_page\":100,\"total_entries\":1}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2359/addresses?
     body: !!null 
-    headers:
-      accept:
+      str: ""
+      "@taguri": x-private:null
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-      x-signature:
+      x-signature: 
       - fiDv7wgSxdmv2nG4hjzRD6V8Ti+7J8P8aijHlZk3ldE=
-      x-token:
+      x-token: 
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '200'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag:
-      - ! '"d1c91f9e7aca9e307c07699f6beee9d9"'
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '0.161420'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
-      - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"addresses":[{"latitude":null,"postal_code":"58008-0000","label":"Billy","longitude":null,"country_code":"US","url":"/clients/2359/addresses/48597","updated_at":"2012-02-10T06:25:53Z","name":"Billy","locality":"Springfield","extended_address":null,"id":"48597","region":"MG","street_address":"555
-      Evergreen Terrace"}],"current_page":1,"per_page":100,"total_entries":1}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: https://api.sandbox.ticketevolution.com:443/clients
-    body: !!null 
-    headers:
-      x-signature:
-      - oHMe9KFgCudRW9XqDC2pfrbw4KkBje3M2DftUa8xbGQ=
-      x-token:
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
-      - application/vnd.ticketevolution.api+json; version=8
-      accept-encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '200'
-      x-powered-by:
+      etag: 
+      - "\"d1c91f9e7aca9e307c07699f6beee9d9\""
+      x-powered-by: 
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag:
-      - ! '"7cc3b565186bf4f43ecb2b35cf66f795"'
-      x-ua-compatible:
-      - IE=Edge,chrome=1
-      x-runtime:
-      - '0.347997'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      strict-transport-security:
-      - max-age=31536000
-      server:
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"total_entries":27,"current_page":1,"clients":[{"email_addresses":[{"label":null,"address":"tyrique@brown.info"}],"addresses":[{"region":"MN","street_address":"035
-      McCullough Manor","postal_code":"68577","latitude":null,"name":null,"country_code":"AI","locality":"West
-      Lambertfort","extended_address":null,"longitude":null}],"office":{"url":"/offices/6","brokerage":{"url":"/brokerages/61","name":"Ticket
-      Evolution","abbreviation":"Ticket Evolution","id":"61"},"name":"Main Office","id":"6"},"phone_numbers":[{"extension":"999","label":null,"country_code":null,"number":"(301)555-1234"}],"url":"/clients/3","updated_at":"2011-08-11T03:12:43Z","name":"Main
-      Office","id":"3"},{"email_addresses":[],"addresses":[{"region":"MG","street_address":"125
-      Street","postal_code":"58008-6072","latitude":null,"name":null,"country_code":"US","locality":"Springfield","extended_address":null,"longitude":null},{"region":null,"street_address":null,"postal_code":null,"latitude":null,"name":null,"country_code":null,"locality":null,"extended_address":null,"longitude":null}],"office":{"url":"/offices/1116","brokerage":{"url":"/brokerages/630","name":"SeatGeek","abbreviation":"Tevo","id":"630"},"name":"Main
-      Office","id":"1116"},"phone_numbers":[],"url":"/clients/1535","updated_at":"2011-08-29T17:08:43Z","name":"Main
-      Office","id":"1535"},{"email_addresses":[],"addresses":[],"phone_numbers":[],"url":"/clients/2022","updated_at":"2011-12-21T19:26:18Z","name":"Will
-      Smith","id":"2022"},{"email_addresses":[],"addresses":[],"phone_numbers":[],"url":"/clients/2094","updated_at":"2011-12-30T21:18:39Z","name":"Ms
-      Rogers","id":"2094"},{"email_addresses":[{"label":"work","address":"moe.szyslak@moestavern.com"},{"label":"home","address":"moeissexxxy69@compuserve.com"}],"addresses":[{"region":"MG","street_address":"555
-      Evergreen Terrace","postal_code":"58008-0000","latitude":null,"name":null,"country_code":"US","locality":"Springfield","extended_address":null,"longitude":null}],"phone_numbers":[{"extension":null,"label":"work
-      fax","country_code":null,"number":"243-6698"},{"extension":null,"label":"work","country_code":null,"number":"243-6697"}],"url":"/clients/2098","updated_at":"2012-01-06T04:30:46Z","name":"Morris
-      “Moe” Szyslak","id":"2098"},{"email_addresses":[],"addresses":[],"phone_numbers":[],"url":"/clients/2271","updated_at":"2012-01-24T20:27:04Z","name":"Brad
-      Tatum","id":"2271"},{"email_addresses":[],"addresses":[],"phone_numbers":[],"url":"/clients/2273","updated_at":"2012-01-24T22:23:43Z","name":"jimmy
-      buffet","id":"2273"},{"email_addresses":[],"addresses":[],"phone_numbers":[],"url":"/clients/2274","updated_at":"2012-01-24T22:30:24Z","name":"Comish
-      Gordon","id":"2274"},{"email_addresses":[],"addresses":[],"phone_numbers":[],"url":"/clients/2275","updated_at":"2012-01-24T22:49:11Z","name":"Comish
-      Gordon","id":"2275"},{"email_addresses":[],"addresses":[],"phone_numbers":[],"url":"/clients/2302","updated_at":"2012-01-27T10:16:50Z","name":"John
-      Raj","id":"2302"},{"email_addresses":[{"label":"john","address":"john@riverstonetech.com"},{"label":"john","address":"john@riverstonetech.com"},{"label":"john","address":"john@riverstonetech.com"},{"label":"john","address":"john@riverstonetech.com"},{"label":"john","address":"john@riverstonetech.com"},{"label":"[EMAILLABEL]","address":"[EMAILADDRESS]"}],"addresses":[],"phone_numbers":[{"extension":null,"label":"Office","country_code":null,"number":"877-326-7785"},{"extension":null,"label":"Office","country_code":null,"number":"877-326-7785"}],"url":"/clients/2303","updated_at":"2012-01-27T10:45:12Z","name":"John
-      Raj","id":"2303"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"addresses":[{"region":"MG","street_address":"555
-      Evergreen Terrace","postal_code":"58008-0000","latitude":null,"name":null,"country_code":"US","locality":"Springfield","extended_address":null,"longitude":null}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2307","updated_at":"2012-01-28T06:32:37Z","name":"john","id":"2307"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"addresses":[{"region":"MG","street_address":"555
-      Evergreen Terrace","postal_code":"58008-0000","latitude":null,"name":null,"country_code":"US","locality":"Springfield","extended_address":null,"longitude":null}],"office":{"url":"/offices/2","brokerage":{"url":"/brokerages/86","name":"Circle
-      City Tickets","abbreviation":"Circle City","id":"86"},"name":"Downtown Office","id":"2"},"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2308","updated_at":"2012-01-28T06:44:34Z","name":"Billy","id":"2308"},{"email_addresses":[{"label":"John","address":"john@riverstonetech.com"},{"label":"Billy","address":"billy@riverstonetech.com"}],"addresses":[{"region":"MG","street_address":"555
-      Evergreen Terrace","postal_code":"58008-0000","latitude":null,"name":null,"country_code":"US","locality":"Springfield","extended_address":null,"longitude":null}],"office":{"url":"/offices/970","brokerage":{"url":"/brokerages/434","name":"Hello
-      Tickets","abbreviation":"Hello","id":"434"},"name":"Main Office","id":"970"},"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2310","updated_at":"2012-01-28T07:24:57Z","name":"Billy","id":"2310"},{"email_addresses":[],"addresses":[],"phone_numbers":[],"url":"/clients/2323","updated_at":"2012-01-31T05:11:02Z","name":"JohnRaj","id":"2323"},{"email_addresses":[],"addresses":[],"phone_numbers":[],"url":"/clients/2324","updated_at":"2012-01-31T05:38:18Z","name":"JohnRaj","id":"2324"},{"email_addresses":[],"addresses":[],"phone_numbers":[],"url":"/clients/2325","updated_at":"2012-01-31T05:42:28Z","name":"David","id":"2325"},{"email_addresses":[],"addresses":[],"phone_numbers":[],"url":"/clients/2326","updated_at":"2012-01-31T05:47:02Z","name":"David
-      Billy","id":"2326"},{"email_addresses":[],"addresses":[],"phone_numbers":[],"url":"/clients/2327","updated_at":"2012-01-31T06:01:19Z","name":"David
-      Billy","id":"2327"},{"email_addresses":[{"label":"John","address":"john@riverstonetech.com"}],"addresses":[{"region":"MG","street_address":"555
-      Evergreen Terrace","postal_code":"58008-0000","latitude":null,"name":null,"country_code":"US","locality":"Springfield","extended_address":null,"longitude":null}],"phone_numbers":[{"extension":null,"label":"John","country_code":null,"number":"333-444-4444"}],"url":"/clients/2328","updated_at":"2012-01-31T06:06:34Z","name":"David
-      Billy","id":"2328"},{"email_addresses":[{"label":"John","address":"john@riverstonetech.com"}],"addresses":[{"region":"MG","street_address":"555
-      Evergreen Terrace","postal_code":"58008-0000","latitude":null,"name":null,"country_code":"US","locality":"Springfield","extended_address":null,"longitude":null}],"phone_numbers":[{"extension":null,"label":"John","country_code":null,"number":"333-444-4444"}],"url":"/clients/2329","updated_at":"2012-01-31T07:31:32Z","name":"JohnRaj","id":"2329"},{"email_addresses":[{"label":"Welkins","address":"Welkins@riverstonetech.com"}],"addresses":[{"region":"MG","street_address":"555
-      Evergreen Terrace","postal_code":"58008-0000","latitude":null,"name":null,"country_code":"US","locality":"Springfield","extended_address":null,"longitude":null}],"phone_numbers":[{"extension":null,"label":"Welkins","country_code":null,"number":"333-444-4444"}],"url":"/clients/2330","updated_at":"2012-01-31T07:38:31Z","name":"Welkins","id":"2330"},{"email_addresses":[{"label":"John","address":"john@riverstonetech.com"}],"addresses":[{"region":"MG","street_address":"555
-      Evergreen Terrace","postal_code":"58008-0000","latitude":null,"name":null,"country_code":"US","locality":"Springfield","extended_address":null,"longitude":null}],"office":{"url":"/offices/1594","brokerage":{"url":"/brokerages/1609","name":"Ticket
-      Logic Pty Ltd","abbreviation":"Ticket Logic","id":"1609"},"name":"Ticket Logic","id":"1594"},"phone_numbers":[{"extension":null,"label":"John","country_code":null,"number":"333-444-4444"}],"url":"/clients/2332","updated_at":"2012-01-31T08:03:15Z","name":"JohnRaj","id":"2332"},{"email_addresses":[{"label":"Welkins","address":"Welkins@riverstonetech.com"}],"addresses":[{"region":"MG","street_address":"555
-      Evergreen Terrace","postal_code":"58008-0000","latitude":null,"name":null,"country_code":"US","locality":"Springfield","extended_address":null,"longitude":null}],"office":{"url":"/offices/1593","brokerage":{"url":"/brokerages/1608","name":"Dare
-      Ticket","abbreviation":"Dare Ticket","id":"1608"},"name":"Main Office","id":"1593"},"phone_numbers":[{"extension":null,"label":"Welkins","country_code":null,"number":"333-444-4444"}],"url":"/clients/2333","updated_at":"2012-01-31T08:08:57Z","name":"Welkins","id":"2333"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"addresses":[{"region":"MG","street_address":"555
-      Evergreen Terrace","postal_code":"58008-0000","latitude":null,"name":"Billy","country_code":"US","locality":"Springfield","extended_address":null,"longitude":null}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2355","updated_at":"2012-02-08T05:13:58Z","name":"Billy","id":"2355"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"addresses":[{"region":"MG","street_address":"555
-      Evergreen Terrace","postal_code":"58008-0000","latitude":null,"name":"Billy","country_code":"US","locality":"Springfield","extended_address":null,"longitude":null}],"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2356","updated_at":"2012-02-08T05:30:28Z","name":"Billy","id":"2356"},{"email_addresses":[{"label":"Billy","address":"billy@riverstonetech.com"}],"addresses":[{"region":"MG","street_address":"555
-      Evergreen Terrace","postal_code":"58008-0000","latitude":null,"name":"Billy","country_code":"US","locality":"Springfield","extended_address":null,"longitude":null}],"office":{"url":"/offices/1583","brokerage":{"url":"/brokerages/1600","name":"Fanprice,
-      Inc.","abbreviation":"Fanprice","id":"1600"},"name":"Main Office","id":"1583"},"phone_numbers":[{"extension":null,"label":"Billy","country_code":null,"number":"877-326-7785"}],"url":"/clients/2359","updated_at":"2012-02-10T06:02:34Z","name":"Billy","id":"2359"}],"per_page":100}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "0.161420"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - "200"
+      transfer-encoding: 
+      - chunked
+    body: "{\"addresses\":[{\"latitude\":null,\"postal_code\":\"58008-0000\",\"label\":\"Billy\",\"longitude\":null,\"country_code\":\"US\",\"url\":\"/clients/2359/addresses/48597\",\"updated_at\":\"2012-02-10T06:25:53Z\",\"name\":\"Billy\",\"locality\":\"Springfield\",\"extended_address\":null,\"id\":\"48597\",\"region\":\"MG\",\"street_address\":\"555 Evergreen Terrace\"}],\"current_page\":1,\"per_page\":100,\"total_entries\":1}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2359/addresses
     body: !!null 
-    headers:
-      x-signature:
-      - fiDv7wgSxdmv2nG4hjzRD6V8Ti+7J8P8aijHlZk3ldE=
-      x-token:
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
+      str: ""
+      "@taguri": x-private:null
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-      accept-encoding:
+      accept-encoding: 
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+      x-signature: 
+      - fiDv7wgSxdmv2nG4hjzRD6V8Ti+7J8P8aijHlZk3ldE=
+      x-token: 
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '200'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag:
-      - ! '"6755f734cec02f9901dd6711e67f8fc4"'
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '0.053843'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      etag: 
+      - "\"6755f734cec02f9901dd6711e67f8fc4\""
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"total_entries":1,"addresses":[{"region":"MG","label":"Billy","street_address":"555
-      Evergreen Terrace","postal_code":"58008-0000","url":"/clients/2359/addresses/48597","latitude":null,"updated_at":"2012-02-10T06:25:53Z","name":"Billy","country_code":"US","id":"48597","locality":"Springfield","extended_address":null,"longitude":null}],"current_page":1,"per_page":100}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "0.053843"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - "200"
+      transfer-encoding: 
+      - chunked
+    body: "{\"total_entries\":1,\"addresses\":[{\"region\":\"MG\",\"label\":\"Billy\",\"street_address\":\"555 Evergreen Terrace\",\"postal_code\":\"58008-0000\",\"url\":\"/clients/2359/addresses/48597\",\"latitude\":null,\"updated_at\":\"2012-02-10T06:25:53Z\",\"name\":\"Billy\",\"country_code\":\"US\",\"id\":\"48597\",\"locality\":\"Springfield\",\"extended_address\":null,\"longitude\":null}],\"current_page\":1,\"per_page\":100}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :post
     uri: https://api.sandbox.ticketevolution.com:443/clients
     body: !!null 
-    headers:
-      x-signature:
-      - eUQH8qJ9MDhnENYM83QehsKb5k7P/mxuThcPHVCA8lU=
-      x-token:
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
+      str: ""
+      "@taguri": x-private:null
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-      content-length:
-      - '0'
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+      x-signature: 
+      - eUQH8qJ9MDhnENYM83QehsKb5k7P/mxuThcPHVCA8lU=
+      content-length: 
+      - "0"
+      x-token: 
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 401
       message: Unauthorized
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '401'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '0.310506'
-      cache-control:
-      - no-cache
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"error":"Your signature is incorrect. Please ensure you are generating
-      it correctly"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "0.310506"
+      cache-control: 
+      - no-cache
+      status: 
+      - "401"
+      transfer-encoding: 
+      - chunked
+    body: "{\"error\":\"Your signature is incorrect. Please ensure you are generating it correctly\"}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :post
     uri: https://api.sandbox.ticketevolution.com:443/clients?bob=test
     body: !!null 
-    headers:
-      x-signature:
-      - eUQH8qJ9MDhnENYM83QehsKb5k7P/mxuThcPHVCA8lU=
-      x-token:
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
+      str: ""
+      "@taguri": x-private:null
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-      content-length:
-      - '0'
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+      x-signature: 
+      - eUQH8qJ9MDhnENYM83QehsKb5k7P/mxuThcPHVCA8lU=
+      content-length: 
+      - "0"
+      x-token: 
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 401
       message: Unauthorized
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '401'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '0.340612'
-      cache-control:
-      - no-cache
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"error":"Your signature is incorrect. Please ensure you are generating
-      it correctly"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "0.340612"
+      cache-control: 
+      - no-cache
+      status: 
+      - "401"
+      transfer-encoding: 
+      - chunked
+    body: "{\"error\":\"Your signature is incorrect. Please ensure you are generating it correctly\"}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :post
     uri: https://api.sandbox.ticketevolution.com:443/clients?clients=%7B:name=%3E%22Comish%20Gordon%22%7D
     body: !!null 
-    headers:
-      x-signature:
-      - eUQH8qJ9MDhnENYM83QehsKb5k7P/mxuThcPHVCA8lU=
-      x-token:
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
+      str: ""
+      "@taguri": x-private:null
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-      content-length:
-      - '0'
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+      x-signature: 
+      - eUQH8qJ9MDhnENYM83QehsKb5k7P/mxuThcPHVCA8lU=
+      content-length: 
+      - "0"
+      x-token: 
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 401
       message: Unauthorized
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '401'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '0.288885'
-      cache-control:
-      - no-cache
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"error":"Your signature is incorrect. Please ensure you are generating
-      it correctly"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "0.288885"
+      cache-control: 
+      - no-cache
+      status: 
+      - "401"
+      transfer-encoding: 
+      - chunked
+    body: "{\"error\":\"Your signature is incorrect. Please ensure you are generating it correctly\"}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2362
     body: !!null 
-    headers:
-      x-signature:
-      - IcPb3O++m8bXQuke6A28Rn8L0mrcnubHIIfIlIPLud4=
-      x-token:
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
+      str: ""
+      "@taguri": x-private:null
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-      accept-encoding:
+      accept-encoding: 
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+      x-signature: 
+      - IcPb3O++m8bXQuke6A28Rn8L0mrcnubHIIfIlIPLud4=
+      x-token: 
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '200'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag:
-      - ! '"bef4da6303e8673e0d1a75c8b893a101"'
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '0.060492'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      etag: 
+      - "\"bef4da6303e8673e0d1a75c8b893a101\""
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"updated_at":"2012-02-21T22:33:37Z","email_addresses":[],"addresses":[],"phone_numbers":[],"name":"Comish
-      Gordon","url":"/clients/2362","id":"2362"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "0.060492"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - "200"
+      transfer-encoding: 
+      - chunked
+    body: "{\"updated_at\":\"2012-02-21T22:33:37Z\",\"email_addresses\":[],\"addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2362\",\"id\":\"2362\"}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2363
     body: !!null 
-    headers:
-      x-signature:
-      - alm767YtRvhQe/FdZWptV4VKBDZwTAmB2GD+x/yKKb8=
-      x-token:
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
+      str: ""
+      "@taguri": x-private:null
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-      accept-encoding:
+      accept-encoding: 
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+      x-signature: 
+      - alm767YtRvhQe/FdZWptV4VKBDZwTAmB2GD+x/yKKb8=
+      x-token: 
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '200'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag:
-      - ! '"51515e638ef69eb9fc7a9883bd494d20"'
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '0.059034'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      etag: 
+      - "\"51515e638ef69eb9fc7a9883bd494d20\""
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"updated_at":"2012-02-21T22:37:58Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"Comish
-      Gordon","url":"/clients/2363","id":"2363"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "0.059034"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - "200"
+      transfer-encoding: 
+      - chunked
+    body: "{\"updated_at\":\"2012-02-21T22:37:58Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2363\",\"id\":\"2363\"}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :post
     uri: https://api.sandbox.ticketevolution.com:443/clients
-    body: ! '{"clients":[{"name":"James Gordon"}]}'
-    headers:
-      x-signature:
-      - /KNEbnM20jikzDftKQi+TCtKoZHvyuQZQOG3GIcsHbc=
-      x-token:
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
+    body: "{\"clients\":[{\"name\":\"James Gordon\"}]}"
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+      x-signature: 
+      - /KNEbnM20jikzDftKQi+TCtKoZHvyuQZQOG3GIcsHbc=
+      x-token: 
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 500
       message: Internal Server Error
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '500'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '0.303332'
-      cache-control:
-      - no-cache
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"error":"Error"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "0.303332"
+      cache-control: 
+      - no-cache
+      status: 
+      - "500"
+      transfer-encoding: 
+      - chunked
+    body: "{\"error\":\"Error\"}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :post
     uri: https://api.sandbox.ticketevolution.com:443/clients
-    body: ! '{"clients":[{"name":""}]}'
-    headers:
-      x-signature:
-      - p98E1mu3XCyp//XqsxaKakNHKnSqeWI0crCOVP6bPSM=
-      x-token:
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
+    body: "{\"clients\":[{\"name\":\"\"}]}"
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+      x-signature: 
+      - p98E1mu3XCyp//XqsxaKakNHKnSqeWI0crCOVP6bPSM=
+      x-token: 
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 422
       message: Unprocessable Entity
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '422'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '0.052186'
-      cache-control:
-      - no-cache
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"clients":[{"updated_at":null,"errors":{"name":["can''t be blank"]},"addresses":[],"email_addresses":[],"phone_numbers":[],"name":null,"id":null}]}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "0.052186"
+      cache-control: 
+      - no-cache
+      status: 
+      - "422"
+      transfer-encoding: 
+      - chunked
+    body: "{\"clients\":[{\"updated_at\":null,\"errors\":{\"name\":[\"can't be blank\"]},\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":null,\"id\":null}]}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :post
     uri: https://api.sandbox.ticketevolution.com:443/clients
-    body: ! '{"clients":[{"name":"Comish Gordon"}]}'
-    headers:
-      x-signature:
-      - eUQH8qJ9MDhnENYM83QehsKb5k7P/mxuThcPHVCA8lU=
-      x-token:
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
+    body: "{\"clients\":[{\"name\":\"Comish Gordon\"}]}"
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+      x-signature: 
+      - eUQH8qJ9MDhnENYM83QehsKb5k7P/mxuThcPHVCA8lU=
+      x-token: 
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 201
       message: Created
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '201'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '0.205866'
-      cache-control:
-      - no-cache
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"clients":[{"updated_at":"2012-02-22T14:54:47Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"Comish
-      Gordon","url":"/clients/2364","id":"2364"}]}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "0.205866"
+      cache-control: 
+      - no-cache
+      status: 
+      - "201"
+      transfer-encoding: 
+      - chunked
+    body: "{\"clients\":[{\"updated_at\":\"2012-02-22T14:54:47Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2364\",\"id\":\"2364\"}]}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/2364
     body: !!null 
-    headers:
-      x-signature:
+      str: ""
+      "@taguri": x-private:null
+    headers: 
+      accept: 
+      - application/vnd.ticketevolution.api+json; version=8
+      accept-encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      x-signature: 
       - t0+U9cUeLOHMTheTZKfJeTt+hPfv4HQ173TN/rZ7Cqg=
-      x-token:
+      x-token: 
       - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
-      - application/vnd.ticketevolution.api+json; version=8
-      accept-encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '200'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag:
-      - ! '"ff630d667483b5b9fdab6f616915fcaa"'
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '0.033686'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
-      - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"updated_at":"2012-02-22T14:54:47Z","addresses":[],"email_addresses":[],"phone_numbers":[],"name":"Comish
-      Gordon","url":"/clients/2364","id":"2364"}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: https://api.sandbox.ticketevolution.com:443/clients/3/addresses
-    body: !!null 
-    headers:
-      x-signature:
-      - APq/BBoPcfvNrgaOfRhClqcnCWJEXZ89M3a2mKSl3cA=
-      x-token:
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
-      - application/vnd.ticketevolution.api+json; version=8
-      accept-encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '200'
-      x-powered-by:
+      etag: 
+      - "\"ff630d667483b5b9fdab6f616915fcaa\""
+      x-powered-by: 
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag:
-      - ! '"5c4ea522651f1e83780e56a66ca3bc39"'
-      x-ua-compatible:
-      - IE=Edge,chrome=1
-      x-runtime:
-      - '0.057687'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      strict-transport-security:
-      - max-age=31536000
-      server:
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"current_page":1,"addresses":[{"updated_at":"2012-01-04T18:55:29Z","latitude":null,"street_address":"035
-      McCullough Manor","locality":"West Lambertfort","extended_address":null,"longitude":null,"country_code":"AI","region":"MN","label":null,"postal_code":"68577","name":null,"url":"/clients/3/addresses/46685","id":"46685"}],"per_page":100,"total_entries":1}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
+      x-runtime: 
+      - "0.033686"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - "200"
+      transfer-encoding: 
+      - chunked
+    body: "{\"updated_at\":\"2012-02-22T14:54:47Z\",\"addresses\":[],\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2364\",\"id\":\"2364\"}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
     method: :get
     uri: https://api.sandbox.ticketevolution.com:443/clients/addresses
     body: !!null 
-    headers:
-      x-signature:
-      - LqXlCG7JDLxST4u8SXpVMVftmxL0LJSsXIBoJO76yNQ=
-      x-token:
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
+      str: ""
+      "@taguri": x-private:null
+    headers: 
+      accept: 
       - application/vnd.ticketevolution.api+json; version=8
-      accept-encoding:
+      accept-encoding: 
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+      x-signature: 
+      - LqXlCG7JDLxST4u8SXpVMVftmxL0LJSsXIBoJO76yNQ=
+      x-token: 
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
       code: 404
       message: Not Found
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      connection:
-      - keep-alive
-      status:
-      - '404'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      x-ua-compatible:
+    headers: 
+      x-ua-compatible: 
       - IE=Edge,chrome=1
-      x-runtime:
-      - '3.312279'
-      cache-control:
-      - no-cache
-      strict-transport-security:
+      strict-transport-security: 
       - max-age=31536000
-      server:
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      connection: 
+      - keep-alive
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
       - nginx/1.0.11 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"error":"Not Found","message":"Couldn''t find Client with ID=addresses"}'
-    http_version: '1.1'
+      x-runtime: 
+      - "3.312279"
+      cache-control: 
+      - no-cache
+      status: 
+      - "404"
+      transfer-encoding: 
+      - chunked
+    body: "{\"error\":\"Not Found\",\"message\":\"Couldn't find Client with ID=addresses\"}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://api.sandbox.ticketevolution.com:443/clients/3/addresses
+    body: 
+    headers: 
+      accept: 
+      - application/vnd.ticketevolution.api+json; version=8
+      x-signature: 
+      - APq/BBoPcfvNrgaOfRhClqcnCWJEXZ89M3a2mKSl3cA=
+      x-token: 
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-ua-compatible: 
+      - IE=Edge,chrome=1
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      etag: 
+      - "\"3d771e418723034f30b7a94d81a86e3e\""
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      x-runtime: 
+      - "0.028606"
+      server: 
+      - nginx/1.0.14 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+      status: 
+      - "200"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      transfer-encoding: 
+      - chunked
+    body: "{\"addresses\":[],\"current_page\":1,\"per_page\":100,\"total_entries\":0}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://api.sandbox.ticketevolution.com:443/clients
+    body: 
+    headers: 
+      accept: 
+      - application/vnd.ticketevolution.api+json; version=8
+      x-signature: 
+      - oHMe9KFgCudRW9XqDC2pfrbw4KkBje3M2DftUa8xbGQ=
+      x-token: 
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-ua-compatible: 
+      - IE=Edge,chrome=1
+      etag: 
+      - "\"d9b44180af0708d265a3802d20889b82\""
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
+      - nginx/1.0.14 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+      x-runtime: 
+      - "1.906731"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - "200"
+      transfer-encoding: 
+      - chunked
+    body: "{\"current_page\":1,\"clients\":[{\"addresses\":[],\"office\":{\"brokerage\":{\"abbreviation\":\"Ticket Evolution\",\"name\":\"Ticket Evolution\",\"id\":\"61\",\"url\":\"/brokerages/61\"},\"name\":\"Jersey City\",\"id\":\"6\",\"url\":\"/offices/6\"},\"updated_at\":\"2012-03-20T18:06:05Z\",\"company\":null,\"email_addresses\":[{\"id\":\"309\",\"address\":\"tyrique@brown.info\",\"label\":null}],\"phone_numbers\":[{\"country_code\":null,\"extension\":\"999\",\"id\":\"333\",\"label\":null,\"number\":\"(301)555-1234\"}],\"name\":\"Main Office\",\"url\":\"/clients/3\",\"id\":\"3\",\"tags\":[\"vip\",\"promotion\",\"best seller\"]},{\"addresses\":[],\"office\":{\"brokerage\":{\"abbreviation\":\"Tevo\",\"name\":\"SeatGeek\",\"id\":\"630\",\"url\":\"/brokerages/630\"},\"name\":\"Main Office\",\"id\":\"1116\",\"url\":\"/offices/1116\"},\"updated_at\":\"2011-08-29T17:08:43Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Main Office\",\"url\":\"/clients/1535\",\"id\":\"1535\",\"tags\":[]},{\"addresses\":[{\"region\":\"SC\",\"street_address\":\"550 harbor cove lane\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Apt 15j\",\"name\":\"Brittany Davis\",\"id\":\"98888\",\"locality\":\"Charleston\",\"label\":null,\"latitude\":null,\"postal_code\":\"29412\"},{\"region\":\"SC\",\"street_address\":\"550 harbor cove lane\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Apt 15j\",\"name\":\"Brittany Davis\",\"id\":\"98889\",\"locality\":\"Charleston\",\"label\":null,\"latitude\":null,\"postal_code\":\"29412\"}],\"updated_at\":\"2011-12-21T19:26:18Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Will Smith\",\"url\":\"/clients/2022\",\"id\":\"2022\",\"tags\":[]},{\"addresses\":[{\"region\":\"TN\",\"street_address\":\"1855 Hwy 52 East\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"112896\",\"locality\":\"Portland\",\"label\":null,\"latitude\":null,\"postal_code\":\"37148\"},{\"region\":\"TN\",\"street_address\":\"1855 Hwy 52 East\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"112897\",\"locality\":\"Portland\",\"label\":null,\"latitude\":null,\"postal_code\":\"37148\"}],\"updated_at\":\"2011-12-30T21:18:39Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Ms Rogers\",\"url\":\"/clients/2094\",\"id\":\"2094\",\"tags\":[]},{\"addresses\":[{\"region\":\"Tx\",\"street_address\":\"3030 hudson street\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Sara Risner\",\"id\":\"112904\",\"locality\":\"Nacogdoches\",\"label\":null,\"latitude\":null,\"postal_code\":\"75961\"}],\"updated_at\":\"2012-01-06T04:30:46Z\",\"company\":null,\"email_addresses\":[{\"id\":\"307\",\"address\":\"moeissexxxy69@compuserve.com\",\"label\":\"home\"},{\"id\":\"308\",\"address\":\"moe.szyslak@moestavern.com\",\"label\":\"work\"}],\"phone_numbers\":[{\"country_code\":null,\"extension\":null,\"id\":\"336\",\"label\":\"work\",\"number\":\"243-6697\"},{\"country_code\":null,\"extension\":null,\"id\":\"337\",\"label\":\"work fax\",\"number\":\"243-6698\"}],\"name\":\"Morris \xE2\x80\x9CMoe\xE2\x80\x9D Szyslak\",\"url\":\"/clients/2098\",\"id\":\"2098\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"1225 Island Ave Unit 204\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"John Waggoner\",\"id\":\"141233\",\"locality\":\"San Diego\",\"label\":null,\"latitude\":null,\"postal_code\":\"92101\"},{\"region\":\"CA\",\"street_address\":\"1225 Island Ave Unit 204\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"John Waggoner\",\"id\":\"141232\",\"locality\":\"San Diego\",\"label\":null,\"latitude\":null,\"postal_code\":\"92101\"}],\"updated_at\":\"2012-01-24T20:27:04Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Brad Tatum\",\"url\":\"/clients/2271\",\"id\":\"2271\",\"tags\":[]},{\"addresses\":[{\"region\":\"MD\",\"street_address\":\"11016 Ardwick drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Paolo Lusso\",\"id\":\"141237\",\"locality\":\"Rockville\",\"label\":null,\"latitude\":null,\"postal_code\":\"20852\"},{\"region\":\"MD\",\"street_address\":\"11016 Ardwick drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Paolo Lusso\",\"id\":\"141236\",\"locality\":\"Rockville\",\"label\":null,\"latitude\":null,\"postal_code\":\"20852\"}],\"updated_at\":\"2012-01-24T22:23:43Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"jimmy buffet\",\"url\":\"/clients/2273\",\"id\":\"2273\",\"tags\":[]},{\"addresses\":[{\"region\":\"IL\",\"street_address\":\"1234 test\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":\"test test\",\"id\":\"141238\",\"locality\":\"chicago\",\"label\":\"Shipping\",\"latitude\":null,\"postal_code\":\"60618\"},{\"region\":\"IL\",\"street_address\":\"1234 test\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":\"test test\",\"id\":\"141239\",\"locality\":\"chicago\",\"label\":\"Billing\",\"latitude\":null,\"postal_code\":\"60618\"}],\"updated_at\":\"2012-01-24T22:30:24Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2274\",\"id\":\"2274\",\"tags\":[]},{\"addresses\":[{\"region\":\"AZ\",\"street_address\":\"13951 North Scottsdale Road Suite\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Suite 133\",\"name\":\"Test\",\"id\":\"141240\",\"locality\":\"Scottsdale\",\"label\":null,\"latitude\":null,\"postal_code\":\"85254\"},{\"region\":\"AZ\",\"street_address\":\"13951 North Scottsdale Road Suite\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Suite 133\",\"name\":null,\"id\":\"141241\",\"locality\":\"Scottsdale\",\"label\":null,\"latitude\":null,\"postal_code\":\"85254\"}],\"updated_at\":\"2012-01-24T22:49:11Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2275\",\"id\":\"2275\",\"tags\":[]},{\"addresses\":[{\"region\":\"MS\",\"street_address\":\"229 58th Avenue\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"148389\",\"locality\":\"Meridian\",\"label\":null,\"latitude\":null,\"postal_code\":\"39307\"},{\"region\":\"MS\",\"street_address\":\"229 58th Avenue\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"148390\",\"locality\":\"Meridian\",\"label\":null,\"latitude\":null,\"postal_code\":\"39307\"}],\"updated_at\":\"2012-01-27T10:16:50Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"John Raj\",\"url\":\"/clients/2302\",\"id\":\"2302\",\"tags\":[]},{\"addresses\":[{\"region\":\"TX\",\"street_address\":\"P.O. Box 6141\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Aubrey White\",\"id\":\"148391\",\"locality\":\"Abilene\",\"label\":null,\"latitude\":null,\"postal_code\":\"79608\"},{\"region\":\"TX\",\"street_address\":\"1818 Hillside\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Patty  White\",\"id\":\"148392\",\"locality\":\"Abilene\",\"label\":null,\"latitude\":null,\"postal_code\":\"79603\"}],\"updated_at\":\"2012-01-27T10:45:12Z\",\"company\":null,\"email_addresses\":[{\"id\":\"345\",\"address\":\"[EMAILADDRESS]\",\"label\":\"[EMAILLABEL]\"},{\"id\":\"346\",\"address\":\"john@riverstonetech.com\",\"label\":\"john\"}],\"phone_numbers\":[{\"country_code\":null,\"extension\":null,\"id\":\"575\",\"label\":\"Office\",\"number\":\"877-326-7785\"}],\"name\":\"John Raj\",\"url\":\"/clients/2303\",\"id\":\"2303\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"9000 Harratt Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Apt 8\",\"name\":\"Anthony Barnes\",\"id\":\"148405\",\"locality\":\"West Hollywood\",\"label\":null,\"latitude\":null,\"postal_code\":\"90069\"},{\"region\":\"CA\",\"street_address\":\"9000 Harratt Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Apt 8\",\"name\":null,\"id\":\"148406\",\"locality\":\"West Hollywood\",\"label\":null,\"latitude\":null,\"postal_code\":\"90069\"}],\"updated_at\":\"2012-01-28T06:32:37Z\",\"company\":null,\"email_addresses\":[{\"id\":\"351\",\"address\":\"billy@riverstonetech.com\",\"label\":\"Billy\"}],\"phone_numbers\":[{\"country_code\":null,\"extension\":null,\"id\":\"595\",\"label\":\"Billy\",\"number\":\"877-326-7785\"}],\"name\":\"john\",\"url\":\"/clients/2307\",\"id\":\"2307\",\"tags\":[]},{\"addresses\":[{\"region\":\"NM\",\"street_address\":\"313 Quebrada Ln NE\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Debra Johannes-Novak\",\"id\":\"148407\",\"locality\":\"Albuquerque\",\"label\":null,\"latitude\":null,\"postal_code\":\"87113\"},{\"region\":\"NM\",\"street_address\":\"313 Quebrada Ln NE\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Debra Johannes-Novak\",\"id\":\"148408\",\"locality\":\"Albuquerque\",\"label\":null,\"latitude\":null,\"postal_code\":\"87113\"}],\"office\":{\"brokerage\":{\"abbreviation\":\"Circle City\",\"name\":\"Circle City Tickets\",\"id\":\"86\",\"url\":\"/brokerages/86\"},\"name\":\"Downtown Office\",\"id\":\"2\",\"url\":\"/offices/2\"},\"updated_at\":\"2012-01-28T06:44:34Z\",\"company\":null,\"email_addresses\":[{\"id\":\"352\",\"address\":\"billy@riverstonetech.com\",\"label\":\"Billy\"}],\"phone_numbers\":[{\"country_code\":null,\"extension\":null,\"id\":\"596\",\"label\":\"Billy\",\"number\":\"877-326-7785\"}],\"name\":\"Billy\",\"url\":\"/clients/2308\",\"id\":\"2308\",\"tags\":[]},{\"addresses\":[{\"region\":\"FL\",\"street_address\":\"3830 WINDMILL LAKE ROAD\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"ELIZABETH HARRIS\",\"id\":\"148411\",\"locality\":\"WESTON\",\"label\":null,\"latitude\":null,\"postal_code\":\"33332\"},{\"region\":\"FL\",\"street_address\":\"3830 WINDMILL LAKE ROAD\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"ELIZABETH HARRIS\",\"id\":\"148412\",\"locality\":\"WESTON\",\"label\":null,\"latitude\":null,\"postal_code\":\"33332\"},{\"region\":\"FL\",\"street_address\":\"3830 WINDMILL LAKE ROAD\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"ELIZABETH HARRIS\",\"id\":\"148413\",\"locality\":\"WESTON\",\"label\":null,\"latitude\":null,\"postal_code\":\"33332\"},{\"region\":\"FL\",\"street_address\":\"3830 WINDMILL LAKE ROAD\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"ELIZABETH HARRIS\",\"id\":\"148414\",\"locality\":\"WESTON\",\"label\":null,\"latitude\":null,\"postal_code\":\"33332\"},{\"region\":\"FL\",\"street_address\":\"3830 WINDMILL LAKE ROAD\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"ELIZABETH HARRIS\",\"id\":\"148415\",\"locality\":\"WESTON\",\"label\":null,\"latitude\":null,\"postal_code\":\"33332\"},{\"region\":\"FL\",\"street_address\":\"3830 WINDMILL LAKE ROAD\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"ELIZABETH HARRIS\",\"id\":\"148416\",\"locality\":\"WESTON\",\"label\":null,\"latitude\":null,\"postal_code\":\"33332\"},{\"region\":\"FL\",\"street_address\":\"3830 WINDMILL LAKE ROAD\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"ELIZABETH HARRIS\",\"id\":\"148417\",\"locality\":\"WESTON\",\"label\":null,\"latitude\":null,\"postal_code\":\"33332\"},{\"region\":\"FL\",\"street_address\":\"3830 WINDMILL LAKE ROAD\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"ELIZABETH HARRIS\",\"id\":\"148418\",\"locality\":\"WESTON\",\"label\":null,\"latitude\":null,\"postal_code\":\"33332\"},{\"region\":\"FL\",\"street_address\":\"3830 WINDMILL LAKE ROAD\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"ELIZABETH HARRIS\",\"id\":\"148419\",\"locality\":\"WESTON\",\"label\":null,\"latitude\":null,\"postal_code\":\"33332\"},{\"region\":\"FL\",\"street_address\":\"3830 WINDMILL LAKE ROAD\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"ELIZABETH HARRIS\",\"id\":\"148420\",\"locality\":\"WESTON\",\"label\":null,\"latitude\":null,\"postal_code\":\"33332\"},{\"region\":\"FL\",\"street_address\":\"3830 WINDMILL LAKE ROAD\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"ELIZABETH HARRIS\",\"id\":\"148421\",\"locality\":\"WESTON\",\"label\":null,\"latitude\":null,\"postal_code\":\"33332\"},{\"region\":\"FL\",\"street_address\":\"3830 WINDMILL LAKE ROAD\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"ELIZABETH HARRIS\",\"id\":\"148422\",\"locality\":\"WESTON\",\"label\":null,\"latitude\":null,\"postal_code\":\"33332\"}],\"office\":{\"brokerage\":{\"abbreviation\":\"Hello\",\"name\":\"Hello Tickets\",\"id\":\"434\",\"url\":\"/brokerages/434\"},\"name\":\"Main Office\",\"id\":\"970\",\"url\":\"/offices/970\"},\"updated_at\":\"2012-01-28T07:24:57Z\",\"company\":null,\"email_addresses\":[{\"id\":\"353\",\"address\":\"billy@riverstonetech.com\",\"label\":\"Billy\"},{\"id\":\"363\",\"address\":\"john@riverstonetech.com\",\"label\":\"John\"}],\"phone_numbers\":[{\"country_code\":null,\"extension\":null,\"id\":\"597\",\"label\":\"Billy\",\"number\":\"877-326-7785\"}],\"name\":\"Billy\",\"url\":\"/clients/2310\",\"id\":\"2310\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"17308 Gard Ave\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"David  Evans\",\"id\":\"155641\",\"locality\":\"Artesia\",\"label\":null,\"latitude\":null,\"postal_code\":\"90701\"},{\"region\":\"CA\",\"street_address\":\"17308 Gard Ave\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"David  Evans\",\"id\":\"155642\",\"locality\":\"Artesia\",\"label\":null,\"latitude\":null,\"postal_code\":\"90701\"}],\"updated_at\":\"2012-01-31T05:11:02Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"JohnRaj\",\"url\":\"/clients/2323\",\"id\":\"2323\",\"tags\":[]},{\"addresses\":[{\"region\":\"IL\",\"street_address\":\"101 E Erie\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":\"Amy Toft\",\"id\":\"155643\",\"locality\":\"Chicago\",\"label\":\"Shipping\",\"latitude\":null,\"postal_code\":\"60611\"},{\"region\":\"IL\",\"street_address\":\"101 E Erie\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":\"Amy Toft\",\"id\":\"155644\",\"locality\":\"Chicago\",\"label\":\"Billing\",\"latitude\":null,\"postal_code\":\"60611\"}],\"updated_at\":\"2012-01-31T05:38:18Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"JohnRaj\",\"url\":\"/clients/2324\",\"id\":\"2324\",\"tags\":[]},{\"addresses\":[{\"region\":\"IL\",\"street_address\":\"101 e erie\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":\"Amy Toft\",\"id\":\"155645\",\"locality\":\"Chicago\",\"label\":\"Shipping\",\"latitude\":null,\"postal_code\":\"60611\"},{\"region\":\"IL\",\"street_address\":\"101 e erie\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":\"Amy Toft\",\"id\":\"155646\",\"locality\":\"Chicago\",\"label\":\"Billing\",\"latitude\":null,\"postal_code\":\"60611\"}],\"updated_at\":\"2012-01-31T05:42:28Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"David\",\"url\":\"/clients/2325\",\"id\":\"2325\",\"tags\":[]},{\"addresses\":[{\"region\":\"IL\",\"street_address\":\"8568 Cedar Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Michael Martinson\",\"id\":\"155648\",\"locality\":\"Fox Lake\",\"label\":null,\"latitude\":null,\"postal_code\":\"60020\"},{\"region\":\"IL\",\"street_address\":\"8568 Cedar Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Michael Martinson\",\"id\":\"155647\",\"locality\":\"Fox Lake\",\"label\":null,\"latitude\":null,\"postal_code\":\"60020\"}],\"updated_at\":\"2012-01-31T05:47:02Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"David Billy\",\"url\":\"/clients/2326\",\"id\":\"2326\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"121 Orange Avenue #67\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Grace Vazquez\",\"id\":\"155650\",\"locality\":\"Chula Vista\",\"label\":null,\"latitude\":null,\"postal_code\":\"91911\"},{\"region\":\"CA\",\"street_address\":\"121 Orange Avenue #67\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Grace Vazquez\",\"id\":\"155649\",\"locality\":\"Chula Vista\",\"label\":null,\"latitude\":null,\"postal_code\":\"91911\"}],\"updated_at\":\"2012-01-31T06:01:19Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"David Billy\",\"url\":\"/clients/2327\",\"id\":\"2327\",\"tags\":[]},{\"addresses\":[{\"region\":\"AZ\",\"street_address\":\"3644 E. Bartlett Way\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Stan Bottoms\",\"id\":\"155652\",\"locality\":\"Chandler\",\"label\":null,\"latitude\":null,\"postal_code\":\"85249\"},{\"region\":\"AZ\",\"street_address\":\"3644 E. Bartlett Way\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Stan Bottoms\",\"id\":\"155651\",\"locality\":\"Chandler\",\"label\":null,\"latitude\":null,\"postal_code\":\"85249\"}],\"updated_at\":\"2012-01-31T06:06:34Z\",\"company\":null,\"email_addresses\":[{\"id\":\"364\",\"address\":\"john@riverstonetech.com\",\"label\":\"John\"}],\"phone_numbers\":[{\"country_code\":null,\"extension\":null,\"id\":\"617\",\"label\":\"John\",\"number\":\"333-444-4444\"}],\"name\":\"David Billy\",\"url\":\"/clients/2328\",\"id\":\"2328\",\"tags\":[]},{\"addresses\":[{\"region\":\"FL\",\"street_address\":\"1470 NE  101 Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"STEPHEN KAHN\",\"id\":\"155653\",\"locality\":\"Miami Shres\",\"label\":null,\"latitude\":null,\"postal_code\":\"33138\"},{\"region\":\"FL\",\"street_address\":\"1470 NE  101 Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"STEPHEN KAHN\",\"id\":\"155654\",\"locality\":\"Miami Shres\",\"label\":null,\"latitude\":null,\"postal_code\":\"33138\"},{\"region\":\"FL\",\"street_address\":\"1470 NE  101 Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"STEPHEN KAHN\",\"id\":\"155656\",\"locality\":\"Miami Shres\",\"label\":null,\"latitude\":null,\"postal_code\":\"33138\"},{\"region\":\"FL\",\"street_address\":\"1470 NE  101 Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"STEPHEN KAHN\",\"id\":\"155655\",\"locality\":\"Miami Shres\",\"label\":null,\"latitude\":null,\"postal_code\":\"33138\"}],\"updated_at\":\"2012-01-31T07:31:32Z\",\"company\":null,\"email_addresses\":[{\"id\":\"365\",\"address\":\"john@riverstonetech.com\",\"label\":\"John\"}],\"phone_numbers\":[{\"country_code\":null,\"extension\":null,\"id\":\"618\",\"label\":\"John\",\"number\":\"333-444-4444\"}],\"name\":\"JohnRaj\",\"url\":\"/clients/2329\",\"id\":\"2329\",\"tags\":[]},{\"addresses\":[{\"region\":\"UT\",\"street_address\":\"1473 East 250 North\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Jordan Cardinal\",\"id\":\"155659\",\"locality\":\"Bountiful\",\"label\":null,\"latitude\":null,\"postal_code\":\"84010\"},{\"region\":\"UT\",\"street_address\":\"448 East 600 North Apt. 32\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Jordan Cardinal\",\"id\":\"155660\",\"locality\":\"Provo\",\"label\":null,\"latitude\":null,\"postal_code\":\"84606\"}],\"updated_at\":\"2012-01-31T07:38:31Z\",\"company\":null,\"email_addresses\":[{\"id\":\"366\",\"address\":\"Welkins@riverstonetech.com\",\"label\":\"Welkins\"}],\"phone_numbers\":[{\"country_code\":null,\"extension\":null,\"id\":\"619\",\"label\":\"Welkins\",\"number\":\"333-444-4444\"}],\"name\":\"Welkins\",\"url\":\"/clients/2330\",\"id\":\"2330\",\"tags\":[]},{\"addresses\":[{\"region\":\"OR\",\"street_address\":\"15280  SW Warbler Way #101\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":\"Chester Yee\",\"id\":\"155665\",\"locality\":\"Beaverton\",\"label\":\"Billing\",\"latitude\":null,\"postal_code\":\"97007\"},{\"region\":\"OR\",\"street_address\":\"15280  SW Warbler Way #101\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":\"Chester Yee\",\"id\":\"155666\",\"locality\":\"Beaverton\",\"label\":\"Shipping\",\"latitude\":null,\"postal_code\":\"97007\"}],\"office\":{\"brokerage\":{\"abbreviation\":\"Ticket Logic\",\"name\":\"Ticket Logic Pty Ltd\",\"id\":\"1609\",\"url\":\"/brokerages/1609\"},\"name\":\"Ticket Logic\",\"id\":\"1594\",\"url\":\"/offices/1594\"},\"updated_at\":\"2012-01-31T08:03:15Z\",\"company\":null,\"email_addresses\":[{\"id\":\"367\",\"address\":\"john@riverstonetech.com\",\"label\":\"John\"}],\"phone_numbers\":[{\"country_code\":null,\"extension\":null,\"id\":\"620\",\"label\":\"John\",\"number\":\"333-444-4444\"}],\"name\":\"JohnRaj\",\"url\":\"/clients/2332\",\"id\":\"2332\",\"tags\":[]},{\"addresses\":[{\"region\":\"TX\",\"street_address\":\"1807 Grand Avenue\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Charlotte Daniel\",\"id\":\"155667\",\"locality\":\"Liberty\",\"label\":null,\"latitude\":null,\"postal_code\":\"77575\"},{\"region\":\"TX\",\"street_address\":\"1807 Grand Avenue\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Charlotte Daniel\",\"id\":\"155668\",\"locality\":\"Liberty\",\"label\":null,\"latitude\":null,\"postal_code\":\"77575\"}],\"office\":{\"brokerage\":{\"abbreviation\":\"Dare Ticket\",\"name\":\"Dare Ticket\",\"id\":\"1608\",\"url\":\"/brokerages/1608\"},\"name\":\"Main Office\",\"id\":\"1593\",\"url\":\"/offices/1593\"},\"updated_at\":\"2012-01-31T08:08:57Z\",\"company\":null,\"email_addresses\":[{\"id\":\"368\",\"address\":\"Welkins@riverstonetech.com\",\"label\":\"Welkins\"}],\"phone_numbers\":[{\"country_code\":null,\"extension\":null,\"id\":\"621\",\"label\":\"Welkins\",\"number\":\"333-444-4444\"}],\"name\":\"Welkins\",\"url\":\"/clients/2333\",\"id\":\"2333\",\"tags\":[]},{\"addresses\":[{\"region\":\"CO\",\"street_address\":\"1051 14th St\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Calvin Trujillo\",\"id\":\"162799\",\"locality\":\"Denver\",\"label\":null,\"latitude\":null,\"postal_code\":\"80202\"},{\"region\":\"CO\",\"street_address\":\"1051 14th St\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"162800\",\"locality\":\"Denver\",\"label\":null,\"latitude\":null,\"postal_code\":\"80202\"}],\"updated_at\":\"2012-02-08T05:13:58Z\",\"company\":null,\"email_addresses\":[{\"id\":\"369\",\"address\":\"billy@riverstonetech.com\",\"label\":\"Billy\"}],\"phone_numbers\":[{\"country_code\":null,\"extension\":null,\"id\":\"631\",\"label\":\"Billy\",\"number\":\"877-326-7785\"}],\"name\":\"Billy\",\"url\":\"/clients/2355\",\"id\":\"2355\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"5137 Abuela Drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"David Drummond\",\"id\":\"162801\",\"locality\":\"San Diego\",\"label\":null,\"latitude\":null,\"postal_code\":\"92124\"},{\"region\":\"CA\",\"street_address\":\"5137 Abuela Drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"David Drummond\",\"id\":\"162802\",\"locality\":\"San Diego\",\"label\":null,\"latitude\":null,\"postal_code\":\"92124\"}],\"updated_at\":\"2012-02-08T05:30:28Z\",\"company\":null,\"email_addresses\":[{\"id\":\"370\",\"address\":\"billy@riverstonetech.com\",\"label\":\"Billy\"}],\"phone_numbers\":[{\"country_code\":null,\"extension\":null,\"id\":\"632\",\"label\":\"Billy\",\"number\":\"877-326-7785\"}],\"name\":\"Billy\",\"url\":\"/clients/2356\",\"id\":\"2356\",\"tags\":[]},{\"addresses\":[{\"region\":\"GA\",\"street_address\":\"205 Eagles Landing Way\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Jenkins Bush\",\"id\":\"162808\",\"locality\":\"McDonough\",\"label\":null,\"latitude\":null,\"postal_code\":\"30253\"},{\"region\":\"GA\",\"street_address\":\"205 Eagles Landing Way\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"162809\",\"locality\":\"McDonough\",\"label\":null,\"latitude\":null,\"postal_code\":\"30253\"}],\"office\":{\"brokerage\":{\"abbreviation\":\"Fanprice\",\"name\":\"Fanprice, Inc.\",\"id\":\"1600\",\"url\":\"/brokerages/1600\"},\"name\":\"Main Office\",\"id\":\"1583\",\"url\":\"/offices/1583\"},\"updated_at\":\"2012-02-10T06:02:34Z\",\"company\":null,\"email_addresses\":[{\"id\":\"371\",\"address\":\"billy@riverstonetech.com\",\"label\":\"Billy\"}],\"phone_numbers\":[{\"country_code\":null,\"extension\":null,\"id\":\"634\",\"label\":\"Billy\",\"number\":\"877-326-7785\"}],\"name\":\"Billy\",\"url\":\"/clients/2359\",\"id\":\"2359\",\"tags\":[]},{\"addresses\":[{\"region\":\"FL\",\"street_address\":\"37 Tam Oshanter Lane\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Mark Lowry\",\"id\":\"162812\",\"locality\":\"Boca Raton\",\"label\":null,\"latitude\":null,\"postal_code\":\"33431\"},{\"region\":\"FL\",\"street_address\":\"37 Tam Oshanter Lane\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"162813\",\"locality\":\"Boca Raton\",\"label\":null,\"latitude\":null,\"postal_code\":\"33431\"}],\"updated_at\":\"2012-02-21T15:26:50Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2361\",\"id\":\"2361\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"33205 Ocean Ridge\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Albert Salazar II\",\"id\":\"162814\",\"locality\":\"Dana Point\",\"label\":null,\"latitude\":null,\"postal_code\":\"92629\"},{\"region\":\"CA\",\"street_address\":\"33205 Ocean Ridge\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Albert Salazar II\",\"id\":\"162815\",\"locality\":\"Dana Point\",\"label\":null,\"latitude\":null,\"postal_code\":\"92629\"}],\"updated_at\":\"2012-02-21T22:33:37Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2362\",\"id\":\"2362\",\"tags\":[]},{\"addresses\":[{\"region\":\"Tx\",\"street_address\":\"14500 dallas pkwy # 2069\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Tony alvarez\",\"id\":\"162816\",\"locality\":\"Dallas\",\"label\":null,\"latitude\":null,\"postal_code\":\"75254\"},{\"region\":\"Tx\",\"street_address\":\"14500 dallas pkwy # 2069\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"162817\",\"locality\":\"Dallas\",\"label\":null,\"latitude\":null,\"postal_code\":\"75254\"}],\"updated_at\":\"2012-02-21T22:37:58Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2363\",\"id\":\"2363\",\"tags\":[]},{\"addresses\":[{\"region\":\"NY\",\"street_address\":\"94 medford road\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"raymond krietchman\",\"id\":\"162820\",\"locality\":\"staten island\",\"label\":null,\"latitude\":null,\"postal_code\":\"10304\"},{\"region\":\"NY\",\"street_address\":\"175 zoe street apt 1e\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"christopher krietchman\",\"id\":\"162821\",\"locality\":\"staten island\",\"label\":null,\"latitude\":null,\"postal_code\":\"10305\"}],\"updated_at\":\"2012-02-22T14:54:47Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2364\",\"id\":\"2364\",\"tags\":[]},{\"addresses\":[{\"region\":\"TBA\",\"street_address\":\"Flat 2, 112 Gifford Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Ignacio Aspe Ortiz\",\"id\":\"162822\",\"locality\":\"London\",\"label\":null,\"latitude\":null,\"postal_code\":\"N1 0DF\"},{\"region\":\"TBA\",\"street_address\":\"84 Long Lane\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Ignacio Aspe Ortiz\",\"id\":\"162823\",\"locality\":\"London\",\"label\":null,\"latitude\":null,\"postal_code\":\"SE1 4AU\"}],\"updated_at\":\"2012-02-22T16:04:58Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2365\",\"id\":\"2365\",\"tags\":[]},{\"addresses\":[{\"region\":\"IL\",\"street_address\":\"4119 n shefield\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":\"apt 342\",\"name\":\"John Doe\",\"id\":\"162824\",\"locality\":\"Chicago\",\"label\":\"shipping\",\"latitude\":null,\"postal_code\":\"60618\"},{\"region\":\"IL\",\"street_address\":\"4119 n shefield\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":\"apt 342\",\"name\":\"John Doe\",\"id\":\"162825\",\"locality\":\"Chicago\",\"label\":\"billing\",\"latitude\":null,\"postal_code\":\"60618\"}],\"updated_at\":\"2012-02-22T16:05:23Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2366\",\"id\":\"2366\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"106 Alviso Drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Kim Danebrock\",\"id\":\"169899\",\"locality\":\"camarillo\",\"label\":null,\"latitude\":null,\"postal_code\":\"93010\"},{\"region\":\"CA\",\"street_address\":\"106 Alviso Drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Kim Danebrock\",\"id\":\"169900\",\"locality\":\"camarillo\",\"label\":null,\"latitude\":null,\"postal_code\":\"93010\"}],\"updated_at\":\"2012-02-22T16:36:42Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2367\",\"id\":\"2367\",\"tags\":[]},{\"addresses\":[{\"region\":\"ON\",\"street_address\":\"1000 1st Av\",\"longitude\":null,\"country_code\":\"CA\",\"extended_address\":null,\"name\":\"John Doe\",\"id\":\"169909\",\"locality\":\"Toronoto\",\"label\":\"billing address\",\"latitude\":null,\"postal_code\":\"10101\"},{\"region\":null,\"street_address\":null,\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"John Doe\",\"id\":\"169910\",\"locality\":null,\"label\":\"shipping address\",\"latitude\":null,\"postal_code\":null},{\"region\":\"100 Feet Road\",\"street_address\":\"190/B-1\",\"longitude\":null,\"country_code\":\"CA\",\"extended_address\":null,\"name\":\"Akash Heranjal\",\"id\":\"169911\",\"locality\":\"6 Main\",\"label\":\"billing address\",\"latitude\":null,\"postal_code\":\"ON\"},{\"region\":\"ON\",\"street_address\":\"190/B-1\",\"longitude\":null,\"country_code\":\"CA\",\"extended_address\":null,\"name\":\"Akash Heranjal\",\"id\":\"169912\",\"locality\":\"6 Main\",\"label\":\"billing address\",\"latitude\":null,\"postal_code\":\"ON\"},{\"region\":\"ON\",\"street_address\":\"190/B-1\",\"longitude\":null,\"country_code\":\"CA\",\"extended_address\":null,\"name\":\"Akash Heranjal\",\"id\":\"170268\",\"locality\":\"6 Main\",\"label\":\"billing address\",\"latitude\":null,\"postal_code\":\"ON\"},{\"region\":\"ON\",\"street_address\":\"190/B-1\",\"longitude\":null,\"country_code\":\"CA\",\"extended_address\":null,\"name\":\"Akash Heranjal\",\"id\":\"170267\",\"locality\":\"6 Main\",\"label\":\"billing address\",\"latitude\":null,\"postal_code\":\"ON\"},{\"region\":\"ON\",\"street_address\":\"190/B-1\",\"longitude\":null,\"country_code\":\"CA\",\"extended_address\":null,\"name\":\"Akash Heranjal\",\"id\":\"170271\",\"locality\":\"6 Main\",\"label\":\"billing address\",\"latitude\":null,\"postal_code\":\"ON\"},{\"region\":\"ON\",\"street_address\":\"190/B-1. 1st floor. 3rd stage\",\"longitude\":null,\"country_code\":\"CA\",\"extended_address\":null,\"name\":\"Akash Heranjal\",\"id\":\"170407\",\"locality\":\"Toronto\",\"label\":\"billing address\",\"latitude\":null,\"postal_code\":\"10101\"},{\"region\":\"ON\",\"street_address\":\"190/B-1. 1st floor. 3rd stage\",\"longitude\":null,\"country_code\":\"CA\",\"extended_address\":null,\"name\":\"Akash Heranjal\",\"id\":\"170467\",\"locality\":\"Toronto\",\"label\":\"billing address\",\"latitude\":null,\"postal_code\":\"10101\"},{\"region\":\"ON\",\"street_address\":\"190/B-1. 1st floor. 3rd stage\",\"longitude\":null,\"country_code\":\"CA\",\"extended_address\":null,\"name\":\"Akash H\",\"id\":\"170472\",\"locality\":\"Toronto\",\"label\":\"billing address\",\"latitude\":null,\"postal_code\":\"10101\"}],\"updated_at\":\"2012-02-22T16:36:44Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2368\",\"id\":\"2368\",\"tags\":[]},{\"addresses\":[{\"region\":\"TX\",\"street_address\":\"2125 Yale St\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Unit 534\",\"name\":\"Kerryn Hall\",\"id\":\"169901\",\"locality\":\"Houston\",\"label\":null,\"latitude\":null,\"postal_code\":\"77008\"},{\"region\":\"TX\",\"street_address\":\"2125 Yale St\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Unit 534\",\"name\":\"Kerryn Hall\",\"id\":\"169902\",\"locality\":\"Houston\",\"label\":null,\"latitude\":null,\"postal_code\":\"77008\"}],\"updated_at\":\"2012-02-22T16:37:21Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2369\",\"id\":\"2369\",\"tags\":[]},{\"addresses\":[{\"region\":\"NJ\",\"street_address\":\"2 Malibu Court\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Barbara Heffernan\",\"id\":\"169903\",\"locality\":\"Jackson\",\"label\":null,\"latitude\":null,\"postal_code\":\"08527\"},{\"region\":\"NJ\",\"street_address\":\"1345 Campus Parkway\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Barbara Heffernan\",\"id\":\"169904\",\"locality\":\"Neptune\",\"label\":null,\"latitude\":null,\"postal_code\":\"07753\"}],\"updated_at\":\"2012-02-22T16:37:22Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2370\",\"id\":\"2370\",\"tags\":[]},{\"addresses\":[{\"region\":\"VA\",\"street_address\":\"1854 Cedar Cove Way\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Unit 201\",\"name\":\"Jessica Bevel\",\"id\":\"169905\",\"locality\":\"Woodbridge\",\"label\":null,\"latitude\":null,\"postal_code\":\"22191\"},{\"region\":\"VA\",\"street_address\":\"1854 Cedar Cove Way\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Unit 201\",\"name\":\"Jessica Bevel\",\"id\":\"169906\",\"locality\":\"Woodbridge\",\"label\":null,\"latitude\":null,\"postal_code\":\"22191\"}],\"updated_at\":\"2012-02-22T16:37:49Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2371\",\"id\":\"2371\",\"tags\":[]},{\"addresses\":[{\"region\":\"AR\",\"street_address\":\"3905 Brookenhill Dr\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Bradley short\",\"id\":\"169907\",\"locality\":\"Ft smith\",\"label\":null,\"latitude\":null,\"postal_code\":\"72908\"},{\"region\":\"AR\",\"street_address\":\"3905 Brookenhill Dr\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"169908\",\"locality\":\"Ft Smith\",\"label\":null,\"latitude\":null,\"postal_code\":\"72908\"}],\"updated_at\":\"2012-02-22T16:37:50Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2372\",\"id\":\"2372\",\"tags\":[]},{\"addresses\":[{\"region\":\"OH\",\"street_address\":\"408 McDonough st.\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"169913\",\"locality\":\"Sandusky\",\"label\":null,\"latitude\":null,\"postal_code\":\"44870\"},{\"region\":\"OH\",\"street_address\":\"408 McDonough st.\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"169914\",\"locality\":\"Sandusky\",\"label\":null,\"latitude\":null,\"postal_code\":\"44870\"}],\"updated_at\":\"2012-02-22T16:38:51Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2373\",\"id\":\"2373\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"2601 S. Cherokee Way\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Kelly Dunne\",\"id\":\"169915\",\"locality\":\"Palm Springs\",\"label\":null,\"latitude\":null,\"postal_code\":\"92264\"},{\"region\":\"CA\",\"street_address\":\"2601 S. Cherokee Way\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Kelly Dunne\",\"id\":\"169916\",\"locality\":\"Palm Springs\",\"label\":null,\"latitude\":null,\"postal_code\":\"92264\"}],\"updated_at\":\"2012-02-22T16:38:53Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2374\",\"id\":\"2374\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"1415 Scott Str\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Ilya Teplitsky\",\"id\":\"169917\",\"locality\":\"San Francisco\",\"label\":null,\"latitude\":null,\"postal_code\":\"94115\"},{\"region\":\"CA\",\"street_address\":\"1415 Scott Str\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Ilya Teplitsky\",\"id\":\"169918\",\"locality\":\"San Francisco\",\"label\":null,\"latitude\":null,\"postal_code\":\"94115\"}],\"updated_at\":\"2012-02-22T16:40:02Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2375\",\"id\":\"2375\",\"tags\":[]},{\"addresses\":[{\"region\":\"AZ\",\"street_address\":\"510 E HARMONY AVE\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Tim Kolacny\",\"id\":\"169919\",\"locality\":\"Mesa\",\"label\":null,\"latitude\":null,\"postal_code\":\"85204\"},{\"region\":\"AZ\",\"street_address\":\"510 E HARMONY AVE\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Tim Kolacny\",\"id\":\"169920\",\"locality\":\"Mesa\",\"label\":null,\"latitude\":null,\"postal_code\":\"85204\"}],\"updated_at\":\"2012-02-22T16:40:03Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2376\",\"id\":\"2376\",\"tags\":[]},{\"addresses\":[{\"region\":\"TX\",\"street_address\":\"3410 texas ave\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"tammy steubing\",\"id\":\"169921\",\"locality\":\"bryan\",\"label\":null,\"latitude\":null,\"postal_code\":\"77802\"},{\"region\":\"TX\",\"street_address\":\"3410 texas ave\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"tammy steubing\",\"id\":\"169922\",\"locality\":\"bryan\",\"label\":null,\"latitude\":null,\"postal_code\":\"77802\"}],\"updated_at\":\"2012-02-22T16:41:02Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2377\",\"id\":\"2377\",\"tags\":[]},{\"addresses\":[{\"region\":\"MD\",\"street_address\":\"3302 curtis dr #304\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Romal Jennings\",\"id\":\"169923\",\"locality\":\"Hillcrest heights\",\"label\":null,\"latitude\":null,\"postal_code\":\"20746\"},{\"region\":\"MD\",\"street_address\":\"3302 curtis dr #304\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"169924\",\"locality\":\"Hillcrest heights\",\"label\":null,\"latitude\":null,\"postal_code\":\"20746\"}],\"updated_at\":\"2012-02-22T16:41:04Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2378\",\"id\":\"2378\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"Number 5 3rd Street Suite 1000\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Haig Mardikian\",\"id\":\"169925\",\"locality\":\"San Francisco\",\"label\":null,\"latitude\":null,\"postal_code\":\"94103\"},{\"region\":\"CA\",\"street_address\":\"Number 5 3rd Street Suite 1000\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Haig Mardikian\",\"id\":\"169926\",\"locality\":\"San Francisco\",\"label\":null,\"latitude\":null,\"postal_code\":\"94103\"}],\"updated_at\":\"2012-02-22T16:41:49Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2379\",\"id\":\"2379\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"1152 Stratford drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Mengyi Tang\",\"id\":\"169929\",\"locality\":\"Encinitas\",\"label\":null,\"latitude\":null,\"postal_code\":\"92024\"},{\"region\":\"TBA\",\"street_address\":\"Tongzipo road Gaoxinlucheng\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Building 4, door1 apt401\",\"name\":\"Zhuozhi Tuo\",\"id\":\"169927\",\"locality\":\"Changsha\",\"label\":null,\"latitude\":null,\"postal_code\":\"410000\"},{\"region\":\"CA\",\"street_address\":\"1152 Stratford drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Mengyi Tang\",\"id\":\"169928\",\"locality\":\"Encinitas\",\"label\":null,\"latitude\":null,\"postal_code\":\"92024\"},{\"region\":\"CA\",\"street_address\":\"1152 Stratford drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Mengyi Tang\",\"id\":\"169930\",\"locality\":\"Encinitas\",\"label\":null,\"latitude\":null,\"postal_code\":\"92024\"}],\"updated_at\":\"2012-02-22T16:41:50Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2380\",\"id\":\"2380\",\"tags\":[]},{\"addresses\":[{\"region\":\"Sct\",\"street_address\":\"FEISIDH, Feshiebridge , Kingussie, Invernesshire\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Ross Dudgeon\",\"id\":\"169931\",\"locality\":\"Kingussie\",\"label\":null,\"latitude\":null,\"postal_code\":\"PH21 1NG\"},{\"region\":\"Sct\",\"street_address\":\"FEISIDH, Feshiebridge , Kingussie, Invernesshire\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Ross Dudgeon\",\"id\":\"169932\",\"locality\":\"Kingussie\",\"label\":null,\"latitude\":null,\"postal_code\":\"PH21 1NG\"}],\"updated_at\":\"2012-02-22T16:42:58Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2381\",\"id\":\"2381\",\"tags\":[]},{\"addresses\":[{\"region\":\"TX\",\"street_address\":\"405 heather lane\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"tammy steubing\",\"id\":\"169933\",\"locality\":\"college station\",\"label\":null,\"latitude\":null,\"postal_code\":\"77845\"},{\"region\":\"TX\",\"street_address\":\"405 heather lane\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"tammy steubing\",\"id\":\"169934\",\"locality\":\"college station\",\"label\":null,\"latitude\":null,\"postal_code\":\"77845\"}],\"updated_at\":\"2012-02-22T16:42:58Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2382\",\"id\":\"2382\",\"tags\":[]},{\"addresses\":[{\"region\":\"IL\",\"street_address\":\"4119 n shefield\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":\"apt 342\",\"name\":\"John Doe\",\"id\":\"169935\",\"locality\":\"Chicago\",\"label\":\"shipping\",\"latitude\":null,\"postal_code\":\"60618\"},{\"region\":\"IL\",\"street_address\":\"4119 n shefield\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":\"apt 342\",\"name\":\"John Doe\",\"id\":\"169936\",\"locality\":\"Chicago\",\"label\":\"billing\",\"latitude\":null,\"postal_code\":\"60618\"}],\"updated_at\":\"2012-02-22T16:44:36Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2383\",\"id\":\"2383\",\"tags\":[]},{\"addresses\":[{\"region\":\"Tx\",\"street_address\":\"3117 georgetown st\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Kim craig\",\"id\":\"169937\",\"locality\":\"Houston\",\"label\":null,\"latitude\":null,\"postal_code\":\"77005\"},{\"region\":\"Tx\",\"street_address\":\"3117 georgetown st\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"169938\",\"locality\":\"Houston\",\"label\":null,\"latitude\":null,\"postal_code\":\"77005\"}],\"updated_at\":\"2012-02-22T16:44:38Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2384\",\"id\":\"2384\",\"tags\":[]},{\"addresses\":[{\"region\":\"WI\",\"street_address\":\"14335 W Capitol Dr #300\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Jennifer Frahm\",\"id\":\"169939\",\"locality\":\"Brookfield\",\"label\":null,\"latitude\":null,\"postal_code\":\"53005\"},{\"region\":\"WI\",\"street_address\":\"14335 W Capitol Dr #300\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Jennifer Frahm\",\"id\":\"169940\",\"locality\":\"Brookfield\",\"label\":null,\"latitude\":null,\"postal_code\":\"53005\"}],\"updated_at\":\"2012-02-22T16:45:18Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2385\",\"id\":\"2385\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"4950 E CRESCENT DR\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Laurelyn MYNHIER\",\"id\":\"169941\",\"locality\":\"ANAHEIM\",\"label\":null,\"latitude\":null,\"postal_code\":\"92807\"},{\"region\":\"CA\",\"street_address\":\"4950 E CRESCENT DR\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Laurelyn MYNHIER\",\"id\":\"169942\",\"locality\":\"ANAHEIM\",\"label\":null,\"latitude\":null,\"postal_code\":\"92807\"},{\"region\":\"CA\",\"street_address\":\"4950 E CRESCENT DR\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Laurelyn MYNHIER\",\"id\":\"169943\",\"locality\":\"ANAHEIM\",\"label\":null,\"latitude\":null,\"postal_code\":\"92807\"},{\"region\":\"CA\",\"street_address\":\"4950 E CRESCENT DR\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Laurelyn MYNHIER\",\"id\":\"169944\",\"locality\":\"ANAHEIM\",\"label\":null,\"latitude\":null,\"postal_code\":\"92807\"}],\"updated_at\":\"2012-02-22T16:45:19Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2386\",\"id\":\"2386\",\"tags\":[]},{\"addresses\":[{\"region\":\"PA\",\"street_address\":\"323 Penwyllt Court\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Floyd J Perkins\",\"id\":\"169945\",\"locality\":\"Exton\",\"label\":null,\"latitude\":null,\"postal_code\":\"19341\"},{\"region\":\"PA\",\"street_address\":\"323 Penwyllt Court\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"169946\",\"locality\":\"Exton\",\"label\":null,\"latitude\":null,\"postal_code\":\"19341\"}],\"updated_at\":\"2012-02-22T16:46:09Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2387\",\"id\":\"2387\",\"tags\":[]},{\"addresses\":[{\"region\":\"AR\",\"street_address\":\"116 HWY 71N\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"SANDRA GANDARA\",\"id\":\"169947\",\"locality\":\"DE QUEEN\",\"label\":null,\"latitude\":null,\"postal_code\":\"71832\"},{\"region\":\"AR\",\"street_address\":\"116 HWY 71N\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"SANDRA GANDARA\",\"id\":\"169948\",\"locality\":\"DE QUEEN\",\"label\":null,\"latitude\":null,\"postal_code\":\"71832\"}],\"updated_at\":\"2012-02-22T16:46:10Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2388\",\"id\":\"2388\",\"tags\":[]},{\"addresses\":[{\"region\":\"ME\",\"street_address\":\"71 main st\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"apartment 1\",\"name\":\"laurie mueller\",\"id\":\"169949\",\"locality\":\"presque isle\",\"label\":null,\"latitude\":null,\"postal_code\":\"04769\"},{\"region\":\"ME\",\"street_address\":\"71 main st\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"apartment 1\",\"name\":\"laurie mueller\",\"id\":\"169950\",\"locality\":\"presque isle\",\"label\":null,\"latitude\":null,\"postal_code\":\"04769\"}],\"updated_at\":\"2012-02-22T16:46:20Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2389\",\"id\":\"2389\",\"tags\":[]},{\"addresses\":[{\"region\":\"TX\",\"street_address\":\"3300 fallmeadow st\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"apt 2219a\",\"name\":\"jennifer burns\",\"id\":\"169966\",\"locality\":\"denton\",\"label\":null,\"latitude\":null,\"postal_code\":\"76207\"},{\"region\":\"TX\",\"street_address\":\"3300 fallmeadow st\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"apt 2219a\",\"name\":\"jennifer burns\",\"id\":\"169967\",\"locality\":\"denton\",\"label\":null,\"latitude\":null,\"postal_code\":\"76207\"}],\"updated_at\":\"2012-02-22T16:46:21Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2390\",\"id\":\"2390\",\"tags\":[]},{\"addresses\":[{\"region\":\"Sct\",\"street_address\":\"7D Mossknowe\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Kildrum\",\"name\":\"May Mclean\",\"id\":\"169968\",\"locality\":\"cumbernauld\",\"label\":null,\"latitude\":null,\"postal_code\":\"G67 2HU\"},{\"region\":\"Sct\",\"street_address\":\"7D Mossknowe\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Kildrum\",\"name\":\"May Mclean\",\"id\":\"169969\",\"locality\":\"cumbernauld\",\"label\":null,\"latitude\":null,\"postal_code\":\"G67 2HU\"}],\"updated_at\":\"2012-02-22T16:47:23Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2391\",\"id\":\"2391\",\"tags\":[]},{\"addresses\":[{\"region\":\"NY\",\"street_address\":\"466 west 150st. 2D\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Alexis Rodriguez\",\"id\":\"169970\",\"locality\":\"New York\",\"label\":null,\"latitude\":null,\"postal_code\":\"10031\"},{\"region\":\"NY\",\"street_address\":\"466 west 150st. 2D\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"169971\",\"locality\":\"New York\",\"label\":null,\"latitude\":null,\"postal_code\":\"10031\"}],\"updated_at\":\"2012-02-22T16:47:24Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2392\",\"id\":\"2392\",\"tags\":[]},{\"addresses\":[{\"region\":\"NJ\",\"street_address\":\"70 John Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"kevin Domanski\",\"id\":\"169972\",\"locality\":\"Carteret\",\"label\":null,\"latitude\":null,\"postal_code\":\"07008\"},{\"region\":\"NJ\",\"street_address\":\"70 John Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"kevin Domanski\",\"id\":\"169973\",\"locality\":\"Carteret\",\"label\":null,\"latitude\":null,\"postal_code\":\"07008\"}],\"updated_at\":\"2012-02-22T16:50:09Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2393\",\"id\":\"2393\",\"tags\":[]},{\"addresses\":[{\"region\":\"OH\",\"street_address\":\"76 Township Road 1329\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"169974\",\"locality\":\"Ironton\",\"label\":null,\"latitude\":null,\"postal_code\":\"45638\"},{\"region\":\"OH\",\"street_address\":\"4587 Gallia Pike\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"169975\",\"locality\":\"Franklin Furnace\",\"label\":null,\"latitude\":null,\"postal_code\":\"45629\"},{\"region\":\"OH\",\"street_address\":\"76 Township Road 1329\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"169976\",\"locality\":\"Ironton\",\"label\":null,\"latitude\":null,\"postal_code\":\"45638\"},{\"region\":\"OH\",\"street_address\":\"4587 Gallia Pike\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"169977\",\"locality\":\"Franklin Furnace\",\"label\":null,\"latitude\":null,\"postal_code\":\"45629\"},{\"region\":\"OH\",\"street_address\":\"76 Township Road 1329\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"169978\",\"locality\":\"Ironton\",\"label\":null,\"latitude\":null,\"postal_code\":\"45638\"},{\"region\":\"OH\",\"street_address\":\"4587 Gallia Pike\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"169979\",\"locality\":\"Franklin Furnace\",\"label\":null,\"latitude\":null,\"postal_code\":\"45629\"}],\"updated_at\":\"2012-02-22T16:50:35Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2394\",\"id\":\"2394\",\"tags\":[]},{\"addresses\":[{\"region\":\"NY\",\"street_address\":\"200 East 89th Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Apt 7E\",\"name\":\"Brijesh Patel\",\"id\":\"169980\",\"locality\":\"New York\",\"label\":null,\"latitude\":null,\"postal_code\":\"10128\"},{\"region\":\"NY\",\"street_address\":\"200 East 89th Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Apt 7E\",\"name\":\"Brijesh Patel\",\"id\":\"169981\",\"locality\":\"New York\",\"label\":null,\"latitude\":null,\"postal_code\":\"10128\"}],\"updated_at\":\"2012-02-22T16:50:36Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2395\",\"id\":\"2395\",\"tags\":[]},{\"addresses\":[{\"region\":\"Pa\",\"street_address\":\"629 Benshoff Hill Road\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Bill Killinger\",\"id\":\"169982\",\"locality\":\"Johnstown\",\"label\":null,\"latitude\":null,\"postal_code\":\"15906\"},{\"region\":\"Pa\",\"street_address\":\"629 Benshoff Hill Road\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"169983\",\"locality\":\"Johnstown\",\"label\":null,\"latitude\":null,\"postal_code\":\"15906\"}],\"updated_at\":\"2012-02-22T16:52:02Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2396\",\"id\":\"2396\",\"tags\":[]},{\"addresses\":[{\"region\":\"TBA\",\"street_address\":\"3 Elmfield Close\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Harrow\",\"name\":\"Catherina Keyes\",\"id\":\"169984\",\"locality\":\"Middlesex\",\"label\":null,\"latitude\":null,\"postal_code\":\"ha1 3tl\"},{\"region\":\"TBA\",\"street_address\":\"3 Elmfield Close\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Harrow\",\"name\":\"Catherina Keyes\",\"id\":\"169985\",\"locality\":\"Middlesex\",\"label\":null,\"latitude\":null,\"postal_code\":\"ha1 3tl\"}],\"updated_at\":\"2012-02-22T16:52:03Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2397\",\"id\":\"2397\",\"tags\":[]},{\"addresses\":[{\"region\":\"WA\",\"street_address\":\"1417 Queen Anne Avenue North\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"#311\",\"name\":\"Nicole Chastain\",\"id\":\"169986\",\"locality\":\"Seattle\",\"label\":null,\"latitude\":null,\"postal_code\":\"98109\"},{\"region\":\"WA\",\"street_address\":\"1417 Queen Anne Avenue North\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"#311\",\"name\":\"Nicole Chastain\",\"id\":\"169987\",\"locality\":\"Seattle\",\"label\":null,\"latitude\":null,\"postal_code\":\"98109\"}],\"updated_at\":\"2012-02-22T16:53:24Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2398\",\"id\":\"2398\",\"tags\":[]},{\"addresses\":[{\"region\":\"TBA\",\"street_address\":\"20 Celsus Grove\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Saam  Nikravi\",\"id\":\"169988\",\"locality\":\"Swindon\",\"label\":null,\"latitude\":null,\"postal_code\":\"SN1 4GT\"},{\"region\":\"NY\",\"street_address\":\"44 West 44th Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Hotel  Manager\",\"id\":\"169989\",\"locality\":\"New York\",\"label\":null,\"latitude\":null,\"postal_code\":\"10036\"}],\"updated_at\":\"2012-02-22T16:53:25Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2399\",\"id\":\"2399\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"9342 cresta drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"wendy marcus\",\"id\":\"169990\",\"locality\":\"los angeles\",\"label\":null,\"latitude\":null,\"postal_code\":\"90035\"},{\"region\":\"CA\",\"street_address\":\"9342 cresta drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"wendy marcus\",\"id\":\"169991\",\"locality\":\"los angeles\",\"label\":null,\"latitude\":null,\"postal_code\":\"90035\"},{\"region\":\"CA\",\"street_address\":\"9342 cresta drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"wendy marcus\",\"id\":\"169992\",\"locality\":\"los angeles\",\"label\":null,\"latitude\":null,\"postal_code\":\"90035\"},{\"region\":\"CA\",\"street_address\":\"9342 cresta drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"wendy marcus\",\"id\":\"169993\",\"locality\":\"los angeles\",\"label\":null,\"latitude\":null,\"postal_code\":\"90035\"}],\"updated_at\":\"2012-02-22T17:06:03Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2400\",\"id\":\"2400\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"3717 Forest rd\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Gonzalo Marquez\",\"id\":\"169994\",\"locality\":\"Oceanside\",\"label\":null,\"latitude\":null,\"postal_code\":\"92058\"},{\"region\":\"CA\",\"street_address\":\"3717 Forest rd\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Gonzalo Marquez\",\"id\":\"169995\",\"locality\":\"Oceanside\",\"label\":null,\"latitude\":null,\"postal_code\":\"92058\"}],\"updated_at\":\"2012-02-22T17:06:10Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2401\",\"id\":\"2401\",\"tags\":[]},{\"addresses\":[{\"region\":\"NM\",\"street_address\":\"4208 Saint Michaels Drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Joseph Foutz\",\"id\":\"169996\",\"locality\":\"Farmington\",\"label\":null,\"latitude\":null,\"postal_code\":\"87401\"},{\"region\":\"NM\",\"street_address\":\"4208 Saint Michaels Drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Joseph Foutz\",\"id\":\"169997\",\"locality\":\"Farmington\",\"label\":null,\"latitude\":null,\"postal_code\":\"87401\"},{\"region\":\"NM\",\"street_address\":\"4208 Saint Michaels Drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Joseph Foutz\",\"id\":\"170355\",\"locality\":\"Farmington\",\"label\":null,\"latitude\":null,\"postal_code\":\"87401\"},{\"region\":\"NM\",\"street_address\":\"4208 Saint Michaels Drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Joseph Foutz\",\"id\":\"170356\",\"locality\":\"Farmington\",\"label\":null,\"latitude\":null,\"postal_code\":\"87401\"}],\"updated_at\":\"2012-02-22T17:07:06Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2402\",\"id\":\"2402\",\"tags\":[]},{\"addresses\":[{\"region\":\"Fl\",\"street_address\":\"5601 Collins Ave. apt 921\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Miguel Petrizan\",\"id\":\"169998\",\"locality\":\"Miami\",\"label\":null,\"latitude\":null,\"postal_code\":\"33140\"}],\"updated_at\":\"2012-02-22T17:07:22Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2403\",\"id\":\"2403\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"1230 Ilexey Ave\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Egbert Purog\",\"id\":\"169999\",\"locality\":\"San Diego\",\"label\":null,\"latitude\":null,\"postal_code\":\"92154\"},{\"region\":\"CA\",\"street_address\":\"1230 Ilexey Ave\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"E Patrick Purog\",\"id\":\"170000\",\"locality\":\"San Diego\",\"label\":null,\"latitude\":null,\"postal_code\":\"92154\"},{\"region\":\"CA\",\"street_address\":\"1230 Ilexey Ave\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Egbert Purog\",\"id\":\"170001\",\"locality\":\"San Diego\",\"label\":null,\"latitude\":null,\"postal_code\":\"92154\"},{\"region\":\"CA\",\"street_address\":\"1230 Ilexey Ave\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"E Patrick Purog\",\"id\":\"170002\",\"locality\":\"San Diego\",\"label\":null,\"latitude\":null,\"postal_code\":\"92154\"}],\"updated_at\":\"2012-02-22T17:07:29Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2404\",\"id\":\"2404\",\"tags\":[]},{\"addresses\":[{\"region\":\"Tx\",\"street_address\":\"21338 maple harvest lane\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Martil martinez\",\"id\":\"170037\",\"locality\":\"Humble\",\"label\":null,\"latitude\":null,\"postal_code\":\"77338\"},{\"region\":\"Tx\",\"street_address\":\"21338 maple harvest lane\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"170038\",\"locality\":\"Humble\",\"label\":null,\"latitude\":null,\"postal_code\":\"77338\"}],\"updated_at\":\"2012-02-22T17:07:30Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2405\",\"id\":\"2405\",\"tags\":[]},{\"addresses\":[{\"region\":\"MD\",\"street_address\":\"140 Paden Court\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Mike Dinicola\",\"id\":\"170039\",\"locality\":\"Forest Hill\",\"label\":null,\"latitude\":null,\"postal_code\":\"21050\"}],\"updated_at\":\"2012-02-22T17:14:47Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2406\",\"id\":\"2406\",\"tags\":[]},{\"addresses\":[{\"region\":\"ENG\",\"street_address\":\"51 Ballanard Rd\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Douglas\",\"name\":\"Simon Nicholas\",\"id\":\"170041\",\"locality\":\"Isle of Man\",\"label\":null,\"latitude\":null,\"postal_code\":\"IM2 5HD\"},{\"region\":\"NV\",\"street_address\":\"Cosmopolitan Hotel\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"3708 Las Vegas Boulevard South\",\"name\":\"Simon Nicholas\",\"id\":\"170042\",\"locality\":\"Las Vegas\",\"label\":null,\"latitude\":null,\"postal_code\":\"89109\"}],\"updated_at\":\"2012-02-22T17:23:24Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2407\",\"id\":\"2407\",\"tags\":[]},{\"addresses\":[{\"region\":\"NJ\",\"street_address\":\"762 greens ave\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"malgorzata klama\",\"id\":\"170043\",\"locality\":\"long branch\",\"label\":null,\"latitude\":null,\"postal_code\":\"07740\"},{\"region\":\"NJ\",\"street_address\":\"one ocean blvd\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"gosia klama\",\"id\":\"170044\",\"locality\":\"long branch\",\"label\":null,\"latitude\":null,\"postal_code\":\"07740\"}],\"updated_at\":\"2012-02-22T17:23:26Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2408\",\"id\":\"2408\",\"tags\":[]},{\"addresses\":[{\"region\":\"ONT\",\"street_address\":\"434 County Rd.46\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Randall Henricks\",\"id\":\"170045\",\"locality\":\"Maidstone\",\"label\":null,\"latitude\":null,\"postal_code\":\"N0R1K0\"},{\"region\":\"ONT\",\"street_address\":\"49 Rymal Rd. East\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Randall Henricks\",\"id\":\"170046\",\"locality\":\"Hamilton\",\"label\":null,\"latitude\":null,\"postal_code\":\"L9B1B9\"}],\"updated_at\":\"2012-02-22T17:23:36Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2409\",\"id\":\"2409\",\"tags\":[]},{\"addresses\":[{\"region\":\"FL\",\"street_address\":\"392 White Marsh Cir.\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"170047\",\"locality\":\"Orlando\",\"label\":null,\"latitude\":null,\"postal_code\":\"32824\"},{\"region\":\"FL\",\"street_address\":\"392 White Marsh Cir.\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"170048\",\"locality\":\"Orlando\",\"label\":null,\"latitude\":null,\"postal_code\":\"32824\"}],\"updated_at\":\"2012-02-22T17:23:41Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2410\",\"id\":\"2410\",\"tags\":[]},{\"addresses\":[{\"region\":\"PEI\",\"street_address\":\"1482 Whites Rd.\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"John Keoughan\",\"id\":\"170049\",\"locality\":\"Donagh\",\"label\":null,\"latitude\":null,\"postal_code\":\"C1B 3J7\"},{\"region\":\"PEI\",\"street_address\":\"12 Selkirk Avenue\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"Chateau Estates\",\"name\":\"Mike MacEwen\",\"id\":\"170050\",\"locality\":\"Cornwall\",\"label\":null,\"latitude\":null,\"postal_code\":\"C0A 1H5\"}],\"updated_at\":\"2012-02-22T17:23:43Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2411\",\"id\":\"2411\",\"tags\":[]},{\"addresses\":[{\"region\":\"IL\",\"street_address\":\"4119 n shefield\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":\"apt 342\",\"name\":\"John Doe\",\"id\":\"170051\",\"locality\":\"Chicago\",\"label\":\"shipping\",\"latitude\":null,\"postal_code\":\"60618\"},{\"region\":\"IL\",\"street_address\":\"4119 n shefield\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":\"apt 342\",\"name\":\"John Doe\",\"id\":\"170052\",\"locality\":\"Chicago\",\"label\":\"billing\",\"latitude\":null,\"postal_code\":\"60618\"}],\"updated_at\":\"2012-02-22T17:23:46Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2412\",\"id\":\"2412\",\"tags\":[]},{\"addresses\":[{\"region\":\"IL\",\"street_address\":\"4119 n shefield\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":\"apt 342\",\"name\":\"John Doe\",\"id\":\"170053\",\"locality\":\"Chicago\",\"label\":\"shipping\",\"latitude\":null,\"postal_code\":\"60618\"},{\"region\":\"IL\",\"street_address\":\"4119 n shefield\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":\"apt 342\",\"name\":\"John Doe\",\"id\":\"170054\",\"locality\":\"Chicago\",\"label\":\"billing\",\"latitude\":null,\"postal_code\":\"60618\"}],\"updated_at\":\"2012-02-22T17:23:48Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2413\",\"id\":\"2413\",\"tags\":[]},{\"addresses\":[{\"region\":\"IL\",\"street_address\":\"4119 n shefield\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":\"apt 342\",\"name\":\"John Doe\",\"id\":\"170055\",\"locality\":\"Chicago\",\"label\":\"shipping\",\"latitude\":null,\"postal_code\":\"60618\"},{\"region\":\"IL\",\"street_address\":\"4119 n shefield\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":\"apt 342\",\"name\":\"John Doe\",\"id\":\"170056\",\"locality\":\"Chicago\",\"label\":\"billing\",\"latitude\":null,\"postal_code\":\"60618\"}],\"updated_at\":\"2012-02-22T17:23:52Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2414\",\"id\":\"2414\",\"tags\":[]},{\"addresses\":[{\"region\":\"IL\",\"street_address\":\"4119 n shefield\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":\"apt 342\",\"name\":\"John Doe\",\"id\":\"170057\",\"locality\":\"Chicago\",\"label\":\"shipping\",\"latitude\":null,\"postal_code\":\"60618\"},{\"region\":\"IL\",\"street_address\":\"4119 n shefield\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":\"apt 342\",\"name\":\"John Doe\",\"id\":\"170058\",\"locality\":\"Chicago\",\"label\":\"billing\",\"latitude\":null,\"postal_code\":\"60618\"}],\"updated_at\":\"2012-02-22T17:23:57Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2415\",\"id\":\"2415\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"642 florence st\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"jasmine alarid\",\"id\":\"170061\",\"locality\":\"imperial beach\",\"label\":null,\"latitude\":null,\"postal_code\":\"91932\"},{\"region\":\"CA\",\"street_address\":\"642 florence st\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"jasmine alarid\",\"id\":\"170062\",\"locality\":\"imperial beach\",\"label\":null,\"latitude\":null,\"postal_code\":\"91932\"}],\"updated_at\":\"2012-02-22T17:26:47Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2416\",\"id\":\"2416\",\"tags\":[]},{\"addresses\":[{\"region\":\"TBA\",\"street_address\":\"46 parklands\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"cronton\",\"name\":\"chris morgan\",\"id\":\"170063\",\"locality\":\"widnes\",\"label\":null,\"latitude\":null,\"postal_code\":\"wa84nq\"},{\"region\":\"TBA\",\"street_address\":\"46 parklands\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"cronton\",\"name\":\"chris morgan\",\"id\":\"170064\",\"locality\":\"widnes\",\"label\":null,\"latitude\":null,\"postal_code\":\"wa84nq\"}],\"updated_at\":\"2012-02-22T17:26:49Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2417\",\"id\":\"2417\",\"tags\":[]},{\"addresses\":[{\"region\":\"NY\",\"street_address\":\"114 East 72nd Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"lance klima\",\"id\":\"170065\",\"locality\":\"new york\",\"label\":null,\"latitude\":null,\"postal_code\":\"10021\"},{\"region\":\"NY\",\"street_address\":\"114 East 72nd Street\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"lance klima\",\"id\":\"170066\",\"locality\":\"new york\",\"label\":null,\"latitude\":null,\"postal_code\":\"10021\"}],\"updated_at\":\"2012-02-22T17:26:59Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2418\",\"id\":\"2418\",\"tags\":[]},{\"addresses\":[{\"region\":\"california\",\"street_address\":\"6029 Loma ave\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"ning wang\",\"id\":\"170067\",\"locality\":\"temple city\",\"label\":null,\"latitude\":null,\"postal_code\":\"91780\"},{\"region\":\"ca\",\"street_address\":\"222 genoa st\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"170068\",\"locality\":\"arcadia\",\"label\":null,\"latitude\":null,\"postal_code\":\"91006\"}],\"updated_at\":\"2012-02-22T17:27:02Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2419\",\"id\":\"2419\",\"tags\":[]},{\"addresses\":[{\"region\":\"ALB\",\"street_address\":\"6, 1420 28th Street NE\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Jeffrey Smith\",\"id\":\"170069\",\"locality\":\"Calgary\",\"label\":null,\"latitude\":null,\"postal_code\":\"T2A7W6\"},{\"region\":\"ALB\",\"street_address\":\"6, 1420 28th Street NE\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Jeffrey Smith\",\"id\":\"170070\",\"locality\":\"Calgary\",\"label\":null,\"latitude\":null,\"postal_code\":\"T2A7W6\"}],\"updated_at\":\"2012-02-22T17:27:04Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2420\",\"id\":\"2420\",\"tags\":[]},{\"addresses\":[{\"region\":\"Nc\",\"street_address\":\"5311 cardinal way\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"William Gooch\",\"id\":\"170120\",\"locality\":\"Greensboro\",\"label\":null,\"latitude\":null,\"postal_code\":\"27410\"},{\"region\":\"Nc\",\"street_address\":\"5311 cardinal way\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"170121\",\"locality\":\"Greensboro\",\"label\":null,\"latitude\":null,\"postal_code\":\"27410\"}],\"updated_at\":\"2012-02-22T17:27:13Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2421\",\"id\":\"2421\",\"tags\":[]},{\"addresses\":[{\"region\":\"MN\",\"street_address\":\"PO Box 1016\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Jessica Timmons\",\"id\":\"170122\",\"locality\":\"Anoka\",\"label\":null,\"latitude\":null,\"postal_code\":\"55303\"}],\"updated_at\":\"2012-02-22T17:27:49Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2422\",\"id\":\"2422\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"1067 Brookwood Road\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Harold Friedman\",\"id\":\"170126\",\"locality\":\"Oakland\",\"label\":null,\"latitude\":null,\"postal_code\":\"94610\"},{\"region\":\"CA\",\"street_address\":\"1067 Brookwood Road\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Harold Friedman\",\"id\":\"170127\",\"locality\":\"Oakland\",\"label\":null,\"latitude\":null,\"postal_code\":\"94610\"},{\"region\":\"CA\",\"street_address\":\"1067 Brookwood Road\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Harold Friedman\",\"id\":\"170136\",\"locality\":\"Oakland\",\"label\":null,\"latitude\":null,\"postal_code\":\"94610\"},{\"region\":\"CA\",\"street_address\":\"1067 Brookwood Road\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Harold Friedman\",\"id\":\"170137\",\"locality\":\"Oakland\",\"label\":null,\"latitude\":null,\"postal_code\":\"94610\"}],\"updated_at\":\"2012-02-22T17:27:51Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2423\",\"id\":\"2423\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"210 QUINTARD ST APT B7\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"SONIA TORRES\",\"id\":\"170128\",\"locality\":\"CHULA VISTA\",\"label\":null,\"latitude\":null,\"postal_code\":\"91911\"},{\"region\":\"CA\",\"street_address\":\"210 QUINTARD ST APT B7\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"SONIA TORRES\",\"id\":\"170129\",\"locality\":\"CHULA VISTA\",\"label\":null,\"latitude\":null,\"postal_code\":\"91911\"}],\"updated_at\":\"2012-02-22T17:28:00Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2424\",\"id\":\"2424\",\"tags\":[]},{\"addresses\":[{\"region\":\"IL\",\"street_address\":\"4015 meadow view drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"cordry johns\",\"id\":\"170131\",\"locality\":\"st charles\",\"label\":null,\"latitude\":null,\"postal_code\":\"60175\"},{\"region\":\"IL\",\"street_address\":\"4015 meadow view drive\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"cordry johns\",\"id\":\"170130\",\"locality\":\"st charles\",\"label\":null,\"latitude\":null,\"postal_code\":\"60175\"}],\"updated_at\":\"2012-02-22T19:07:28Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2425\",\"id\":\"2425\",\"tags\":[]},{\"addresses\":[{\"region\":\"Illinois\",\"street_address\":\"19730 governors hwy ste 2\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"170132\",\"locality\":null,\"label\":null,\"latitude\":null,\"postal_code\":\"60422\"}],\"updated_at\":\"2012-02-22T19:07:31Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2426\",\"id\":\"2426\",\"tags\":[]},{\"addresses\":[{\"region\":\"Illinois\",\"street_address\":\"19730 governors hwy ste 2\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":null,\"name\":null,\"id\":\"170134\",\"locality\":null,\"label\":null,\"latitude\":null,\"postal_code\":\"60422\"}],\"updated_at\":\"2012-02-22T19:07:34Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2427\",\"id\":\"2427\",\"tags\":[]},{\"addresses\":[{\"region\":\"Illinois\",\"street_address\":\"513 Long Hill Road\",\"longitude\":null,\"country_code\":\"US\",\"extended_address\":\"-\",\"name\":null,\"id\":\"170140\",\"locality\":null,\"label\":null,\"latitude\":null,\"postal_code\":\"60031\"}],\"updated_at\":\"2012-02-22T19:07:36Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2428\",\"id\":\"2428\",\"tags\":[]},{\"addresses\":[{\"region\":\"FL\",\"street_address\":\"5410 lyons rd\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"apartment 104\",\"name\":\"julian torres\",\"id\":\"170138\",\"locality\":\"coconut creek\",\"label\":null,\"latitude\":null,\"postal_code\":\"33073\"},{\"region\":\"FL\",\"street_address\":\"5410 lyons rd\",\"longitude\":null,\"country_code\":null,\"extended_address\":\"apartment 104\",\"name\":\"julian torres\",\"id\":\"170139\",\"locality\":\"coconut creek\",\"label\":null,\"latitude\":null,\"postal_code\":\"33073\"}],\"updated_at\":\"2012-02-22T19:07:40Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"bar\",\"url\":\"/clients/2429\",\"id\":\"2429\",\"tags\":[]},{\"addresses\":[{\"region\":\"Mn\",\"street_address\":\"12 point road\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Jeff klinget\",\"id\":\"170141\",\"locality\":\"Bayport\",\"label\":null,\"latitude\":null,\"postal_code\":\"55003\"},{\"region\":\"Mn\",\"street_address\":\"12 point road\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"170142\",\"locality\":\"Bayport\",\"label\":null,\"latitude\":null,\"postal_code\":\"55003\"}],\"updated_at\":\"2012-02-22T19:07:40Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2430\",\"id\":\"2430\",\"tags\":[]},{\"addresses\":[{\"region\":\"IL\",\"street_address\":\"411 S Dodson\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Bailey chapman\",\"id\":\"170143\",\"locality\":\"Urbana\",\"label\":null,\"latitude\":null,\"postal_code\":\"61802\"},{\"region\":\"IL\",\"street_address\":\"411 S Dodson\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"170144\",\"locality\":\"Urbana\",\"label\":null,\"latitude\":null,\"postal_code\":\"61802\"}],\"updated_at\":\"2012-02-22T19:07:42Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"foo\",\"url\":\"/clients/2431\",\"id\":\"2431\",\"tags\":[]},{\"addresses\":[{\"region\":\"Ga\",\"street_address\":\"22 verde bend\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Shauna wells\",\"id\":\"170145\",\"locality\":\"Savannah\",\"label\":null,\"latitude\":null,\"postal_code\":\"31419\"},{\"region\":\"Ga\",\"street_address\":\"22 verde bend\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":null,\"id\":\"170146\",\"locality\":\"Savannah\",\"label\":null,\"latitude\":null,\"postal_code\":\"31419\"}],\"updated_at\":\"2012-02-22T19:07:45Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2432\",\"id\":\"2432\",\"tags\":[]},{\"addresses\":[{\"region\":\"CA\",\"street_address\":\"450 B Street Suite 1900\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Nicholas Wilson\",\"id\":\"170147\",\"locality\":\"San Diego\",\"label\":null,\"latitude\":null,\"postal_code\":\"92101\"},{\"region\":\"CA\",\"street_address\":\"450 B Street Suite 1900\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Nicholas Wilson\",\"id\":\"170148\",\"locality\":\"San Diego\",\"label\":null,\"latitude\":null,\"postal_code\":\"92101\"},{\"region\":\"CA\",\"street_address\":\"450 B Street Suite 1900\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Nicholas Wilson\",\"id\":\"170149\",\"locality\":\"San Diego\",\"label\":null,\"latitude\":null,\"postal_code\":\"92101\"},{\"region\":\"CA\",\"street_address\":\"450 B Street Suite 1900\",\"longitude\":null,\"country_code\":null,\"extended_address\":null,\"name\":\"Nicholas Wilson\",\"id\":\"170150\",\"locality\":\"San Diego\",\"label\":null,\"latitude\":null,\"postal_code\":\"92101\"}],\"updated_at\":\"2012-03-14T23:32:44Z\",\"company\":null,\"email_addresses\":[],\"phone_numbers\":[],\"name\":\"Comish Gordon\",\"url\":\"/clients/2433\",\"id\":\"2433\",\"tags\":[]}],\"per_page\":100,\"total_entries\":125}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://api.sandbox.ticketevolution.com:443/clients/3/email_addresses
+    body: 
+    headers: 
+      accept: 
+      - application/vnd.ticketevolution.api+json; version=8
+      x-signature: 
+      - vSoYWJJO0rbtHUcV5nm5Aaygwvb7BBV574zOIfrGxMQ=
+      x-token: 
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-ua-compatible: 
+      - IE=Edge,chrome=1
+      etag: 
+      - "\"cef4124331508dca27eb21005bfc06b7\""
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      content-type: 
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      server: 
+      - nginx/1.0.14 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+      x-runtime: 
+      - "0.033115"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      status: 
+      - "200"
+      transfer-encoding: 
+      - chunked
+    body: "{\"email_addresses\":[{\"updated_at\":\"2012-01-06T19:41:45Z\",\"label\":null,\"address\":\"tyrique@brown.info\",\"url\":\"/clients/3/email_addresses/309\",\"id\":\"309\"}],\"current_page\":1,\"per_page\":100,\"total_entries\":1}"
+    http_version: "1.1"

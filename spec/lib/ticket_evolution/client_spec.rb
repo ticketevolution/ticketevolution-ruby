@@ -9,10 +9,10 @@ describe TicketEvolution::Client do
     let(:client) { TicketEvolution::Clients.new(:parent => connection).list.first }
 
     it "should pass the request to the appropriate endpoint and get back an appropriate response" do
-      collection = client.addresses.list
+      collection = client.email_addresses.list
       collection.should be_a TicketEvolution::Collection
       collection.total_entries.should == collection.size
-      collection.first.should be_a TicketEvolution::Address
+      collection.first.should be_a TicketEvolution::EmailAddress
     end
   end
 
