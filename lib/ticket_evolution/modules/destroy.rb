@@ -19,7 +19,7 @@ module TicketEvolution
       def destroy(&handler)
         ensure_id
         handler ||= method(:build_for_destroy)
-        request(:DELETE, "/#{id}", nil, &handler)
+        request(:DELETE, nil, nil, &handler)
       end
 
       def build_for_destroy(response)
