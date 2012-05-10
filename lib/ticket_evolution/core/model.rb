@@ -5,7 +5,7 @@ module TicketEvolution
       raise TicketEvolution::ConnectionNotFound.new \
         "#{self.class.name} must receive a TicketEvolution::Connection object on initialize" \
         unless @connection.is_a? TicketEvolution::Connection
-      @scope = params['url'].split('/')[0..2].join('/') if params['url'] =~ /^(\/[a-z_]+s\/\d){2}$/
+      @scope = params['url'].split('/')[0..2].join('/') if params['url'] =~ /^(\/[a-z_]+s\/\d+){2}$/
       super(params)
     end
 

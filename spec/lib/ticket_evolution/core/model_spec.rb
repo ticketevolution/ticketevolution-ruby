@@ -31,8 +31,8 @@ describe TicketEvolution::Model do
     end
 
     context "when it detects a scope in the url" do
-      let(:instance) { klass.new({:connection => connection, 'url' => '/clients/2/addresses/1'}) }
-      let(:scope) { '/clients/2' }
+      let(:instance) { klass.new({:connection => connection, 'url' => '/clients/234/addresses/123'}) }
+      let(:scope) { '/clients/234' }
 
       it "should set @scope" do
         instance.instance_eval{ @scope }.should == scope
