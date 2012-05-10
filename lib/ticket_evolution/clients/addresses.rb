@@ -5,6 +5,7 @@ module TicketEvolution
       include TicketEvolution::Modules::List
       include TicketEvolution::Modules::Show
       include TicketEvolution::Modules::Update
+      include TicketEvolution::Modules::Destroy
     end
   end
 end
