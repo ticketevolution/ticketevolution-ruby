@@ -1,6 +1,6 @@
 module TicketEvolution
   module Modules
-    module Destroy 
+    module Destroy
       def self.included(klass)
         Class.new{extend SingularClass}.singular_class(klass.name).send(:include, Module.new{
           def destroy
@@ -19,7 +19,7 @@ module TicketEvolution
       def destroy(&handler)
         ensure_id
         handler ||= method(:build_for_destroy)
-        request(:DELETE, nil, nil, &handler)
+        request(:DELETE, "/#{id}", nil, &handler)
       end
 
       def build_for_destroy(response)
