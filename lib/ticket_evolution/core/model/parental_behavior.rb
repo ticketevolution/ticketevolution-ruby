@@ -9,14 +9,11 @@ module TicketEvolution
       def process_datum(v, k = nil)
         v = super
         if k and v.is_a? Array and v.singleton_class.ancestors.first == Array
-          endpoint = "#{self.plural_class_name}::#{k.to_s.chomp('=').camelize}".constantize.new({
-            :parent => self.plural_class.new({
-              :id => self.id,
-              :parent => @connection
-            })
+          e = "#{self.plural_class_name}::#{k.to_s.chomp('=').camelize}".constantize.new({
+            :parent => endpoint
           })
           v.extend(TicketEvolution::EndpointBehavior)
-          v.endpoint = endpoint
+          v.endpoint = e
         end
       ensure
         return v

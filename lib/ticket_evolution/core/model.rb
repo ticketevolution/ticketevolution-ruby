@@ -41,6 +41,15 @@ module TicketEvolution
       end
     end
 
+    def endpoint
+      parent = if scope.present?
+        scope[:class].constantize.new(:parent => @connection, :id => scope[:id])
+      else
+        @connection
+      end
+      plural_class.new({:id => id, :parent => parent})
+    end
+
     private
 
     def process_datum(v, k=nil)

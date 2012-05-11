@@ -4,7 +4,7 @@ module TicketEvolution
       def self.included(klass)
         Class.new{extend SingularClass}.singular_class(klass.name).send(:include, Module.new{
           def destroy
-            response = plural_class.new({:parent => @connection, :id => self.id}).destroy
+            response = endpoint.try(:destroy)
             if response === true
               self.freeze
             end

@@ -1,0 +1,124 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.sandbox.ticketevolution.com:443/clients?per_page=1
+    body: !!null 
+    headers:
+      x-signature:
+      - CVHhWgZb27YMNhFegxDYpGpJJ0dN4Cjf7w4am0cYSmM=
+      x-token:
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+      accept:
+      - application/vnd.ticketevolution.api+json; version=8
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      transfer-encoding:
+      - chunked
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-runtime:
+      - '0.040684'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - ! '"4b8d246e7524197509098486fec1b9a6"'
+      server:
+      - nginx/1.0.14 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: ! '{"per_page":1,"total_entries":127,"clients":[{"phone_numbers":[{"extension":"999","id":"333","country_code":null,"label":null,"number":"(301)555-1234"}],"updated_at":"2012-03-20T18:06:05Z","addresses":[],"office":{"brokerage":{"name":"Ticket
+      Evolution","abbreviation":"Ticket Evolution","id":"61","url":"/brokerages/61"},"name":"Jersey
+      City","id":"6","url":"/offices/6"},"company":null,"name":"Main Office","url":"/clients/3","id":"3","tags":["vip","promotion","best
+      seller"],"email_addresses":[{"id":"309","address":"tyrique@brown.info","label":null}]}],"current_page":1}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.sandbox.ticketevolution.com:443/clients?per_page=1
+    body: !!null 
+    headers:
+      x-signature:
+      - CVHhWgZb27YMNhFegxDYpGpJJ0dN4Cjf7w4am0cYSmM=
+      x-token:
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+      accept:
+      - application/vnd.ticketevolution.api+json; version=8
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      transfer-encoding:
+      - chunked
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-runtime:
+      - '0.037819'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - ! '"4b8d246e7524197509098486fec1b9a6"'
+      server:
+      - nginx/1.0.14 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: ! '{"per_page":1,"total_entries":127,"clients":[{"phone_numbers":[{"extension":"999","id":"333","country_code":null,"label":null,"number":"(301)555-1234"}],"updated_at":"2012-03-20T18:06:05Z","addresses":[],"office":{"brokerage":{"name":"Ticket
+      Evolution","abbreviation":"Ticket Evolution","id":"61","url":"/brokerages/61"},"name":"Jersey
+      City","id":"6","url":"/offices/6"},"company":null,"name":"Main Office","url":"/clients/3","id":"3","tags":["vip","promotion","best
+      seller"],"email_addresses":[{"id":"309","address":"tyrique@brown.info","label":null}]}],"current_page":1}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://api.sandbox.ticketevolution.com:443/clients/3/email_addresses/309
+    body: !!null 
+    headers:
+      x-signature:
+      - kTRDmz5sd6qjIp3xziYMJDOvWwvyVkUk7LNcO/kkJxU=
+      x-token:
+      - b2b5a7a33b1a78896ed1b53d81c5c9cc
+      accept:
+      - application/vnd.ticketevolution.api+json; version=8
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
+      transfer-encoding:
+      - chunked
+      status:
+      - '200'
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-runtime:
+      - '0.053443'
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      etag:
+      - ! '"df3f788d26af79b5968756324cc1b647"'
+      server:
+      - nginx/1.0.14 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: ! '{"updated_at":"2012-01-06T19:41:45Z","label":null,"address":"tyrique@brown.info","url":"/clients/3/email_addresses/309","id":"309"}'
+    http_version: '1.1'

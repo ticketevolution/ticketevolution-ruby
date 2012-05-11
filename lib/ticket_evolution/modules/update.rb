@@ -4,13 +4,13 @@ module TicketEvolution
       def self.included(klass)
         Class.new{extend SingularClass}.singular_class(klass.name).send(:include, Module.new{
           def update_attributes(params)
-            handle_update_response(plural_class.new({:parent => @connection, :id => self.id}).update(params))
+            handle_update_response(endpoint.update(params))
           end
 
           def save
             atts = self.attributes
             id = atts.delete(:id)
-            handle_update_response(plural_class.new({:parent => @connection, :id => id}).update(atts))
+            handle_update_response(endpoint.update(atts))
           end
 
           def handle_update_response(response)
