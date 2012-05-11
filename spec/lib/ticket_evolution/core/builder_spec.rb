@@ -65,11 +65,9 @@ describe TicketEvolution::Builder do
   end
 
   describe "#class_name_from_url" do
-    it "extracts a TicketEvolution class name from a url, searching segments right to left" do
+    it "extracts a TicketEvolution class name from a url" do
       {
-        '/events' => 'TicketEvolution::Events',
         '/events/12' => 'TicketEvolution::Events',
-        '/events/deleted' => 'TicketEvolution::Events',
         '/events/21/venues/12' => 'TicketEvolution::Venues'
       }.each do |given, expected|
         instance.send(:class_name_from_url, given).should == expected

@@ -76,9 +76,13 @@ describe TicketEvolution::Connection do
       end
 
       context "if not passed" do
+        let(:options) {
+          opts = valid_options.clone
+          opts.delete(:ssl_verify)
+          opts
+        }
         it "sets the request object to ssl verify true" do
-          pending "sandbox ssl being fixed"
-          connection = klass.new(valid_options)
+          connection = klass.new(options)
           request = connection.build_request(:GET, '/')
           request.ssl[:verify].should be_true
         end

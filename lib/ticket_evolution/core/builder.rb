@@ -68,9 +68,7 @@ module TicketEvolution
     end
 
     def class_name_from_url(url)
-      url.split('/').reverse.each do |segment|
-        return "TicketEvolution::#{segment.capitalize}" if segment.split('')[-1] == 's'
-      end
+      return "TicketEvolution::#{url.match(/\/(\w+)\/\d+$/)[1].camelize}" rescue nil
     end
   end
 end

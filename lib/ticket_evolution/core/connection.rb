@@ -78,7 +78,6 @@ module TicketEvolution
           :verify => @config[:ssl_verify]
         }
       }
-      options[:ssl][:verify] = false unless @config[:mode].to_s == 'production' ## REMOVE ME WHEN SANDBOX SSL IS FIXED
       options[:params] = params if method == :GET
       options[:headers]["Accept"] = "application/vnd.ticketevolution.api+json; version=#{@config[:version]}" unless @config[:version] > 8
       Faraday.new(self.uri(path), options) do |builder|
