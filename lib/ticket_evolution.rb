@@ -118,3 +118,5 @@ i.req 'clients', 'addresses'
 i.req 'clients', 'credit_cards'
 i.req 'clients', 'email_addresses'
 i.req 'clients', 'phone_numbers'
+
+i.req 'offices', 'credit_cards'
