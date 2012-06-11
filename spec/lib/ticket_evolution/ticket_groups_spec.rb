@@ -11,4 +11,14 @@ describe TicketEvolution::TicketGroups do
   it "should have a base path of /ticket_groups" do
     klass.new({:parent => Fake.connection}).base_path.should == '/ticket_groups'
   end
+
+  context "integration tests" do
+    let(:instance) { klass.new({:parent => connection}) }
+    use_vcr_cassette "ticket_groups/index_cart", :record => :new_episodes
+
+    it "returns a list of ticket_groups with ids in params[:id].split" do
+      instance.should_receive(:request).with(:GET, "/index_cart", '1,2')
+      instance.index_cart('1,2')
+    end
+  end
 end
