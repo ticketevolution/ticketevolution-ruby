@@ -24,5 +24,14 @@ describe 'Hash' do
       keys = ordered_hash.keys.clone
       keys.sort_by{|x|x.to_s}.should == ordered_hash.keys
     end
+
+    context "when a value is an array" do
+      let(:hash) { { :one => [2, 3, 1], :two => ['b', 'a', 'c'] } }
+
+      it "should sort the array" do
+        ordered_hash[:one].should == [1, 2, 3]
+        ordered_hash[:two].should == ['a', 'b', 'c']
+      end
+    end
   end
 end

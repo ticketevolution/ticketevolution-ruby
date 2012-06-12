@@ -58,7 +58,6 @@ shared_examples_for "a destroy endpoint" do
 
       it "should pass call request as a DELETE" do
         klass.any_instance.should_receive(:request).with(:DELETE, nil, nil).and_return(true)
-
         instance.destroy.should == true
       end
     end
