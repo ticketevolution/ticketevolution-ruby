@@ -5,13 +5,16 @@ require 'ostruct'
 
 describe FaradayLocalhostHeader do
   let(:url) { URI("http://#{hostname}:8080/hello") }
+  let(:patterns) do
+    [ /(?:^|\.)lvh\.me$/i, /(?:^|\.)((?:\d+\.){4})xip\.io$/i ]
+  end
 
   let(:env) do
     { :url => url, :request_headers => {} }
   end
 
   let(:app) do
-    described_class.new lambda {|env| env }
+    described_class.new lambda {|env| env }, patterns
   end
 
   subject do

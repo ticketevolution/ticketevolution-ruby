@@ -84,7 +84,7 @@ module TicketEvolution
       options[:headers]["Accept"] = "application/vnd.ticketevolution.api+json; version=#{@config[:version]}" unless @config[:version] > 8
       Faraday.new(self.uri(path), options) do |builder|
         builder.use Faraday::Response::VerboseLogger, self.logger if self.logger.present?
-        builder.use FaradayLocalhostHeader
+        builder.use FaradayLocalhostHeader, [ /(?:^|\.)lvh\.me$/i, /(?:^|\.)((?:\d+\.){4})xip\.io$/i ]
         builder.adapter @adapter
       end
     end
