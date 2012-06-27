@@ -1,3 +1,5 @@
+require 'faraday/localhost_header'
+
 module TicketEvolution
   class Connection < Base
     cattr_reader :default_options, :expected_options, :oldest_version_in_service
@@ -82,6 +84,7 @@ module TicketEvolution
       options[:headers]["Accept"] = "application/vnd.ticketevolution.api+json; version=#{@config[:version]}" unless @config[:version] > 8
       Faraday.new(self.uri(path), options) do |builder|
         builder.use Faraday::Response::VerboseLogger, self.logger if self.logger.present?
+        builder.use FaradayLocalhostHeader
         builder.adapter @adapter
       end
     end
