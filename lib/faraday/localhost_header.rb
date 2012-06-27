@@ -1,6 +1,6 @@
 # Faraday request middleware that processes requests made to *.lvh.me or
 # *.xip.io domains. When encountering one, it swaps out the hostname with the
-# raw API, but puts the original hostname to the 'Host' request HTTP header.
+# raw IP, but populates the 'Host' request HTTP header with the original hostname.
 #
 # This enables usage of lvh.me and xip.io domains even when their DNS service
 # is down, because it completely circumvents any DNS lookup.
