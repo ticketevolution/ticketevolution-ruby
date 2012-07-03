@@ -79,6 +79,36 @@ class Fake
     r
   end
 
+  def self.list_response_with_unique_categories
+    r = self.response
+    r.body = {
+      :connection => Fake.connection,
+      "current_page" => 1,
+      "per_page" => 2,
+      "brokerages" => [
+        {
+          "url" => "/brokerages/1",
+          "updated_at" => "2011-12-18T19:06:19Z",
+          "natb_member" => true,
+          "name" => "National Event Company",
+          "id" => "1",
+          "abbreviation" => "NECO"
+        },
+        {
+          "url" => "/brokerages/2",
+          "updated_at" => "2011-12-18T17:30:06Z",
+          "natb_member" => true,
+          "name" => "Golden Tickets",
+          "id" => "2",
+          "abbreviation" => "Golden Tickets"
+        }
+      ],
+      "total_entries" => 1379,
+      "unique_categories" => [1,2,3,4,5]
+    }
+    r
+  end
+
   def self.create_response(endpoint = nil, connection = Fake.connection, number = 1)
     r = self.response
     r.body = {
