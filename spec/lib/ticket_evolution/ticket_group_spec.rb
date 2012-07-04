@@ -14,7 +14,7 @@ describe TicketEvolution::TicketGroup do
     let!(:plural_klass_instance) { plural_klass.new(:parent => connection) }
 
     before do
-      plural_klass.should_receive(:new).with(:parent => connection).and_return(plural_klass_instance)
+      plural_klass.should_receive(:new).with(:parent => connection, :id => instance.id).and_return(plural_klass_instance)
     end
 
     it "should pass the request to TicketEvolution::TicketGroups#hold" do
