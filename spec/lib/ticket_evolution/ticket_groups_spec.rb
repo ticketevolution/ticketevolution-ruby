@@ -16,11 +16,24 @@ describe TicketEvolution::TicketGroups do
 
   context "integration tests" do
     let(:instance) { klass.new({:parent => connection}) }
-    use_vcr_cassette "ticket_groups/index_cart", :record => :new_episodes
 
-    it "returns a list of ticket_groups with ids in params[:id].split" do
-      instance.should_receive(:request).with(:GET, "/index_cart", '1,2')
-      instance.index_cart('1,2')
+    describe "hold" do
+      let(:instance) { klass.new({ :parent => connection, :id => 1 }) }
+      use_vcr_cassette "ticket_groups/hold"
+
+      it "places a ticket_group's specified tickets on hold" do
+        instance.should_receive(:request).with(:POST, "/1/hold", { low_seat: 10 })
+        instance.hold({ low_seat: 10 })
+      end
+    end
+
+    describe "index_cart" do
+      use_vcr_cassette "ticket_groups/index_cart", :record => :new_episodes
+
+      it "returns a list of ticket_groups with ids in params[:id].split" do
+        instance.should_receive(:request).with(:GET, "/index_cart", '1,2')
+        instance.index_cart('1,2')
+      end
     end
   end
 end
