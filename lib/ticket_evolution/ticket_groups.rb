@@ -9,6 +9,11 @@ module TicketEvolution
       request(:POST, "/#{self.id}/hold", params, &method(:build_for_show))
     end
 
+    def waste(params = nil)
+      ensure_id
+      request(:POST, "/waste", params, &method(:build_for_show))
+    end
+
     def index_cart(ids = [])
       handler ||= method(:collection_handler)
       request(:GET, '/index_cart', ids, &handler)
