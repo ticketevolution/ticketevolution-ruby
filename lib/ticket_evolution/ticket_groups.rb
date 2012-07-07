@@ -6,7 +6,7 @@ module TicketEvolution
 
     def hold(params = nil)
       ensure_id
-      request(:POST, "/#{self.id}/hold", params, &method(:build_for_show))
+      request(:POST, "/hold", params, &method(:build_for_show))
     end
 
     def waste(params = nil)
