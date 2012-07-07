@@ -22,7 +22,7 @@ describe TicketEvolution::TicketGroups do
       use_vcr_cassette "ticket_groups/hold"
 
       it "places a ticket_group's specified tickets on hold" do
-        instance.should_receive(:request).with(:POST, "/1/hold", { :low_seat => 10 })
+        instance.should_receive(:request).with(:POST, "/hold", { :low_seat => 10 })
         instance.hold({ :low_seat => 10 })
       end
     end
