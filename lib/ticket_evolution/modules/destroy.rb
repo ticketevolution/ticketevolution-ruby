@@ -23,7 +23,7 @@ module TicketEvolution
       end
 
       def build_for_destroy(response)
-        return true
+        response.body
       end
     end
   end
