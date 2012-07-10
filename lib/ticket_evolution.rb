@@ -80,6 +80,7 @@ i.req 'email_address'
 i.req 'event'
 i.req 'office'
 i.req 'order'
+i.req 'payment'
 i.req 'performer'
 i.req 'phone_number'
 i.req 'quote'
@@ -120,3 +121,5 @@ i.req 'clients', 'email_addresses'
 i.req 'clients', 'phone_numbers'
 
 i.req 'offices', 'credit_cards'
+
+i.req 'orders', 'payments'
