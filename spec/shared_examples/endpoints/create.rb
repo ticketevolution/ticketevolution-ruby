@@ -24,6 +24,16 @@ shared_examples_for "a create endpoint" do
       end
     end
 
+		context "when passed an array" do
+			let(:params) { [{:name => "item1"}, {:name => "item2"}] }
+			
+			it "should pass call request as a POST, passing params" do
+        instance.should_receive(:request).with(:POST, nil, instance.endpoint_name.to_sym => params)
+
+        instance.create(params)				
+			end
+		end
+
     context "when passed a block" do
       let(:block) { Fake.response_alt }
       let(:response) { Fake.create_response }
