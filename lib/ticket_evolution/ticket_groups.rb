@@ -14,6 +14,11 @@ module TicketEvolution
       request(:POST, "/waste", params, &method(:build_for_show))
     end
 
+    def toggle_broadcast(params = nil)
+      ensure_id
+      request(:POST, "/broadcast", params, &method(:build_for_show))
+    end
+
     def index_cart(ids = [])
       handler ||= method(:collection_handler)
       request(:GET, '/index_cart', ids, &handler)
