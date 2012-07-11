@@ -63,6 +63,7 @@ module TicketEvolution
 
     def method_missing(method, *args)
       begin
+        method = method.to_s.gsub("_endpoint", "") if method.to_s.end_with? "_endpoint"
         "#{plural_class_name}::#{method.to_s.camelize}".constantize.new(:parent => plural_class.new(:parent => @connection, :id => self.id))
       rescue
         super

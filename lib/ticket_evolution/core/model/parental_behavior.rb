@@ -1,7 +1,9 @@
 module TicketEvolution
   module EndpointBehavior
     def endpoint=(e); @endpoint = e; end
-    def method_missing(method, *args); @endpoint.send(method, *args); end
+    def method_missing(method, *args)
+      @endpoint.send(method, *args)
+    end
   end
 
   class Model
