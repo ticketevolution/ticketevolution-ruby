@@ -76,6 +76,7 @@ i.req 'company'
 i.req 'client'
 i.req 'configuration'
 i.req 'credit_card'
+i.req 'ticket_hold'
 i.req 'email_address'
 i.req 'event'
 i.req 'office'
@@ -123,3 +124,5 @@ i.req 'clients', 'phone_numbers'
 i.req 'offices', 'credit_cards'
 
 i.req 'orders', 'payments'
+
+i.req 'ticket_groups', 'ticket_holds'
