@@ -120,4 +120,15 @@ describe TicketEvolution::Orders do
       end
     end
   end
+
+  describe "#balance" do
+    context "with params" do
+      let(:params) { {'some' => {'order' => 'info'}} }
+
+      it "should pass call request as a GET, passing params" do
+        instance.should_receive(:request).with(:GET, "/balance", params)
+        instance.balance(params)
+      end
+    end
+  end
 end

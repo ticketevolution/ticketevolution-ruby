@@ -9,6 +9,10 @@ module TicketEvolution
     alias :create_client_order :create
     alias :create_customer_order :create
 
+    def balance(params = nil)
+      request(:GET, '/balance', params, &method(:build_for_show))
+    end
+
     def accept_order(params = nil)
       ensure_id
       request(:POST, "/#{self.id}/accept", params, &method(:build_for_create))
