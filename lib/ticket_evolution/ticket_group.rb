@@ -3,6 +3,9 @@ module TicketEvolution
     def hold(params)
       plural_class.new(:parent => @connection, :id => self.id).hold(params)
     end
+    def release_hold(params)
+      plural_class.new(:parent => @connection, :id => self.id).release_hold(params)
+    end
     def waste(params)
       plural_class.new(:parent => @connection, :id => self.id).waste(params)
     end
