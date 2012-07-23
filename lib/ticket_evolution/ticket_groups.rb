@@ -13,6 +13,10 @@ module TicketEvolution
       ensure_id
       request(:POST, "/take", params, &method(:build_for_show))
     end
+    def release_hold(params = nil)
+      ensure_id
+      request(:POST, "/release_hold/#{params[:ticket_hold_id]}", nil, &method(:build_for_show))
+    end
 
     def waste(params = nil)
       ensure_id
