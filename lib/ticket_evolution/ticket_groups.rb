@@ -9,6 +9,11 @@ module TicketEvolution
       request(:POST, "/hold", params, &method(:build_for_show))
     end
 
+    def take(params = nil)
+      ensure_id
+      request(:POST, "/take", params, &method(:build_for_show))
+    end
+
     def waste(params = nil)
       ensure_id
       request(:POST, "/waste", params, &method(:build_for_show))

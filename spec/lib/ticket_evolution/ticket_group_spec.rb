@@ -22,4 +22,21 @@ describe TicketEvolution::TicketGroup do
       instance.hold(params)
     end
   end
+
+  describe "#take" do
+    let(:connection) { Fake.connection }
+    let(:instance) { klass.new({:connection => connection, 'id' => 1}) }
+    let(:params) { {:test => "1... 2... 3..."} }
+    let(:plural_klass) { TicketEvolution::TicketGroups }
+    let!(:plural_klass_instance) { plural_klass.new(:parent => connection) }
+
+    before do
+      plural_klass.should_receive(:new).with(:parent => connection, :id => instance.id).and_return(plural_klass_instance)
+    end
+
+    it "should pass the request to TicketEvolution::TicketGroups#take" do
+      plural_klass_instance.should_receive(:take).with(params).and_return(:dont_care)
+      instance.take(params)
+    end
+  end
 end

@@ -27,6 +27,16 @@ describe TicketEvolution::TicketGroups do
       end
     end
 
+    describe "take" do
+      let(:instance) { klass.new({ :parent => connection, :id => 1 }) }
+      use_vcr_cassette "ticket_groups/take"
+
+      it "takes a ticket_group's specified tickets" do
+        instance.should_receive(:request).with(:POST, "/take", { :low_seat => 10 })
+        instance.take({ :low_seat => 10 })
+      end
+    end
+
     describe "index_cart" do
       use_vcr_cassette "ticket_groups/index_cart", :record => :new_episodes
 
