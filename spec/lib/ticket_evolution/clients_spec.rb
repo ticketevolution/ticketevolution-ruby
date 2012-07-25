@@ -33,6 +33,17 @@ describe TicketEvolution::Clients do
         same_client.name.should == name
       end
     end
+
+    describe '#create_from_office' do
+      use_vcr_cassette 'endpoints/clients/create_from_office'
+
+      let(:instance) { klass.new({ :parent => connection })}
+
+      it "creates a client from a given office_id" do
+        instance.should_receive(:request).with(:POST, '/create_from_office/1', nil)
+        instance.create_from_office({ :office_id => 1})
+      end
+    end
   end
 
   describe "chained endpoints" do
