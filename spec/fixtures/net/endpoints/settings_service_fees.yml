@@ -2,45 +2,6 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: https://api.sandbox.ticketevolution.com:443/settings/shipping
-    body: !!null 
-    headers:
-      x-signature:
-      - WHd27OtPC4QiHuQvUCzFcPqNghgmfGbro1i6U3pVFPI=
-      x-token:
-      - b2b5a7a33b1a78896ed1b53d81c5c9cc
-      accept:
-      - application/vnd.ticketevolution.api+json; version=8
-      accept-encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      content-type:
-      - application/vnd.ticketevolution.api+json; version=8; charset=utf-8
-      transfer-encoding:
-      - chunked
-      status:
-      - '200'
-      x-powered-by:
-      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
-      etag:
-      - ! '"6112da850ca26595698e455adafcae04"'
-      cache-control:
-      - max-age=0, private, must-revalidate
-      x-runtime:
-      - '0.043076'
-      x-ua-compatible:
-      - IE=Edge,chrome=1
-      server:
-      - nginx/1.0.14 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
-    body: ! '{"settings":[]}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
     uri: https://api.sandbox.ticketevolution.com:443/settings/service_fees
     body: !!null 
     headers:
@@ -66,7 +27,7 @@
       x-powered-by:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.11
       x-runtime:
-      - '0.031390'
+      - '0.032803'
       cache-control:
       - no-cache
       x-ua-compatible:
