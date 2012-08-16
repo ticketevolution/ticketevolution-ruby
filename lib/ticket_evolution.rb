@@ -114,7 +114,6 @@ i.req 'shipments'
 i.req 'taken_tickets'
 i.req 'ticket_groups'
 i.req 'track_details'
-i.req 'transactions'
 i.req 'users'
 i.req 'venues'
 i.req 'search'
@@ -123,6 +122,8 @@ i.req 'clients', 'addresses'
 i.req 'clients', 'credit_cards'
 i.req 'clients', 'email_addresses'
 i.req 'clients', 'phone_numbers'
+
+i.req 'accounts', 'transactions'
 
 i.req 'offices', 'credit_cards'
 
