@@ -16,8 +16,8 @@ describe TicketEvolution::Orders::Payments do
       use_vcr_cassette 'payments/apply'
 
       it 'applies a payment' do
-        instance.should_receive(:request).with(:POST, '/apply', { :order_id => 1 })
-        instance.apply({ :order_id => 1 })
+        instance.should_receive(:request).with(:POST, '/1/apply', { :order_id => 1, :id => 1 })
+        instance.apply({ :order_id => 1, :id => 1 })
       end
     end
 
@@ -26,8 +26,8 @@ describe TicketEvolution::Orders::Payments do
       use_vcr_cassette 'payments/cancel'
 
       it 'applies a payment' do
-        instance.should_receive(:request).with(:POST, '/cancel', { :order_id => 1 })
-        instance.cancel({ :order_id => 1 })
+        instance.should_receive(:request).with(:POST, '/1/cancel', { :order_id => 1, :id => 1 })
+        instance.cancel({ :order_id => 1, :id => 1 })
       end
     end
   end
