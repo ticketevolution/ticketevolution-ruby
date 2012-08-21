@@ -7,4 +7,28 @@ describe TicketEvolution::Orders::Payments do
   it_behaves_like 'a ticket_evolution endpoint class'
   it_behaves_like 'a create endpoint'
   it_behaves_like 'a list endpoint'
+
+  context 'integration tests' do
+    let(:instance) { klass.new({ :parent => connection }) }
+
+    describe 'apply' do
+      let(:instance) { klass.new({ :parent => connection, :id => 1 }) }
+      use_vcr_cassette 'payments/apply'
+
+      it 'applies a payment' do
+        instance.should_receive(:request).with(:POST, '/apply', { :order_id => 1 })
+        instance.apply({ :order_id => 1 })
+      end
+    end
+
+    describe 'cancel' do
+      let(:instance) { klass.new({ :parent => connection, :id => 1 }) }
+      use_vcr_cassette 'payments/cancel'
+
+      it 'applies a payment' do
+        instance.should_receive(:request).with(:POST, '/cancel', { :order_id => 1 })
+        instance.cancel({ :order_id => 1 })
+      end
+    end
+  end
 end
