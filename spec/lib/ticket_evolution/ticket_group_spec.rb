@@ -45,4 +45,16 @@ describe TicketEvolution::TicketGroup do
     end
   end
 
+  describe "#release_take" do
+
+    before do
+      plural_klass.should_receive(:new).with(:parent => connection, :id => instance.id).and_return(plural_klass_instance)
+    end
+
+    it "should pass the request to TicketEvolution::TicketGroups#release_take" do
+      plural_klass_instance.should_receive(:release_take).with({ :ticket_taken_id => 1 }).and_return(:dont_care)
+      instance.release_take({ :ticket_taken_id => 1 })
+    end
+  end
+
 end

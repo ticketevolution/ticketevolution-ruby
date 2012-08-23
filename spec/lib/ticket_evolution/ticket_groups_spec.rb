@@ -53,7 +53,7 @@ describe TicketEvolution::TicketGroups do
 
       it "places a ticket_group's specified tickets on release_take" do
         instance.should_receive(:request).with(:POST, "/release_take/1", nil)
-        instance.release_hold({ :ticket_hold_id => 1 })
+        instance.release_take({ :ticket_taken_id => 1 })
       end
     end
 
