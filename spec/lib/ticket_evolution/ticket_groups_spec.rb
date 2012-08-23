@@ -47,6 +47,16 @@ describe TicketEvolution::TicketGroups do
       end
     end
 
+    describe "release_take" do
+      let(:instance) { klass.new({ :parent => connection, :id => 1 }) }
+      use_vcr_cassette "ticket_groups/release_take"
+
+      it "places a ticket_group's specified tickets on release_take" do
+        instance.should_receive(:request).with(:POST, "/release_take/1", nil)
+        instance.release_hold({ :ticket_hold_id => 1 })
+      end
+    end
+
     describe "index_cart" do
       use_vcr_cassette "ticket_groups/index_cart", :record => :new_episodes
 
