@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe TicketEvolution::Transactions do
-  let(:klass) { TicketEvolution::Transactions }
+describe TicketEvolution::Accounts::Transactions do
+  let(:klass) { TicketEvolution::Accounts::Transactions }
   let(:single_klass) { TicketEvolution::Transaction }
 
   it_behaves_like 'a ticket_evolution endpoint class'
