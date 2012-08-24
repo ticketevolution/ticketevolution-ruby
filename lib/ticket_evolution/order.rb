@@ -1,5 +1,7 @@
 module TicketEvolution
   class Order < Model
+    include Model::ParentalBehavior
+
     def accept(params)
       plural_class.new(:parent => @connection).accept_order(params)
     end
