@@ -3,10 +3,12 @@ require 'spec_helper'
 describe TicketEvolution::Orders::Payments do
   let(:klass) { TicketEvolution::Orders::Payments }
   let(:single_klass) { TicketEvolution::Payment }
+  let(:update_base) { {'url' => '/orders/1/payments/1'} }
 
   it_behaves_like 'a ticket_evolution endpoint class'
   it_behaves_like 'a create endpoint'
   it_behaves_like 'a list endpoint'
+  it_behaves_like 'an update endpoint'
 
   context 'integration tests' do
     let(:instance) { klass.new({ :parent => connection }) }
