@@ -5,6 +5,7 @@ describe TicketEvolution::Order do
   let(:klass) { TicketEvolution::Order }
 
   it_behaves_like "a ticket_evolution model"
+  it_behaves_like "a parental model"
 
   describe "custom methods" do
     let(:connection) { Fake.connection }

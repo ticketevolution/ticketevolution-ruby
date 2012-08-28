@@ -1,4 +1,4 @@
 module TicketEvolution
-  class TakenTicket < Model
+  class FilteredTicket < Model
   end
 end

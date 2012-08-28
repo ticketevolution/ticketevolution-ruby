@@ -12,7 +12,8 @@ module TicketEvolution
       )
 
       response.body['results'].each do |result|
-        collection.entries << "TicketEvolution::#{result['_type']}".
+        type = result['_type'] =~ /order/i ? "Order" : result['_type']
+        collection.entries << "TicketEvolution::#{type}".
         constantize.new(result.merge({:connection => connection}))
       end
 
