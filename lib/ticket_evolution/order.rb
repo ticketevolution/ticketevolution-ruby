@@ -16,6 +16,14 @@ module TicketEvolution
       plural_class.new(:parent => @connection,:id => self.id).email_order(params)
     end
 
+    def email_etickets_link(params)
+      plural_class.new(:parent => @connection,:id => self.id).email_etickets_link(params)
+    end
+
+    def print_etickets
+      plural_class.new(:parent => @connection,:id => self.id).print_etickets
+    end
+
     def print
       plural_class.new(:parent => @connection,:id => self.id).print_order
     end

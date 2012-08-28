@@ -43,6 +43,28 @@ module TicketEvolution
       end
     end
 
+    def email_etickets_link(params = nil)
+      ensure_id
+      request(:POST, "/email_etickets_link", params) do |response|
+        singular_class.new(response.body.merge({
+          :status_code => response.response_code,
+          :server_message => response.server_message,
+          :connection => response.body[:connection]
+        }))
+      end
+    end
+
+    def print_etickets
+      ensure_id
+      request(:GET, "/print_etickets", nil) do |response|
+        singular_class.new(response.body.merge({
+          :status_code => response.response_code,
+          :server_message => response.server_message,
+          :connection => response.body[:connection]
+        }))
+      end
+    end
+
     def print_order
       ensure_id
       request(:GET, "/print", nil) do |response|
