@@ -54,9 +54,9 @@ module TicketEvolution
       end
     end
 
-    def print_etickets
+    def print_etickets(params = nil)
       ensure_id
-      request(:GET, "/print_etickets", nil) do |response|
+      request(:GET, "/print_etickets", params) do |response|
         singular_class.new(response.body.merge({
           :status_code => response.response_code,
           :server_message => response.server_message,
