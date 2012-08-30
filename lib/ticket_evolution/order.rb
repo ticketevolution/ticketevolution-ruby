@@ -22,7 +22,7 @@ module TicketEvolution
       plural_class.new(:parent => @connection,:id => self.id).email_etickets_link(params)
     end
 
-    def print_etickets(params)
+    def print_etickets(params = nil)
       plural_class.new(:parent => @connection,:id => self.id).print_etickets(params)
     end
 
