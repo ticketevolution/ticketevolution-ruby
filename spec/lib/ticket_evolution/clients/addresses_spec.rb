@@ -12,13 +12,13 @@ describe TicketEvolution::Clients::Addresses do
   it_behaves_like 'a show endpoint'
   it_behaves_like 'an update endpoint'
 
-  describe "#fedex_check" do
+  describe "#check" do
     context "with params" do
       let(:params) { }
 
       it "should pass call request as a GET, passing params" do
-        instance.should_receive(:request).with(:GET, "/1/fedex_check", params)
-        instance.fedex_check(1)
+        instance.should_receive(:request).with(:GET, "/1/check", params)
+        instance.check(1)
       end
     end
   end
