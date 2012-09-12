@@ -98,6 +98,7 @@ i.req 'venue'
 
 # Endpoint Classes
 i.req 'accounts'
+i.req 'address_check'
 i.req 'brokerages'
 i.req 'categories'
 i.req 'companies'

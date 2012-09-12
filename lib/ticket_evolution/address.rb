@@ -1,11 +1,11 @@
 module TicketEvolution
   class Address < Model
-    def fedex_check
-      plural_class.new(:parent => @connection,:id => self.id).fedex_check
+    def check
+      plural_class.new(:parent => @connection,:id => self.id).check
     end
 
-    def fedex_check_fields
-      plural_class.new(:parent => @connection).fedex_check_fields
+    def check_fields
+      plural_class.new(:parent => @connection).check_fields
     end
 
   end
