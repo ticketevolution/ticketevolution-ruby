@@ -9,6 +9,7 @@ describe TicketEvolution::Shipment do
     let(:connection) { Fake.connection }
     let(:instance) { TicketEvolution::Shipment.new({:connection => connection, 'id' => 1}) }
     let(:plural_klass) { TicketEvolution::Shipments}
+    let(:params) { {:test => "1... 2... 3..."} }
     let!(:plural_klass_instance) { plural_klass.new(:parent => connection) }
 
     before do
@@ -27,7 +28,7 @@ describe TicketEvolution::Shipment do
       it "should pass the request to TicketEvolution::Shipments#email_airbill" do
         plural_klass_instance.should_receive(:email_airbill).and_return(:dont_care)
 
-        instance.email_airbill
+        instance.email_airbill(params)
       end
     end
 
