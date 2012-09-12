@@ -31,6 +31,25 @@ describe TicketEvolution::Shipments do
     end
   end
 
+  describe "#email_airbill" do
+    context "with an id" do
+      let(:instance) { klass.new({:parent => Fake.connection, :id => 1}) }
+
+      it "should pass call request as a POST" do
+        instance.should_receive(:request).with(:POST, "/email_airbill", nil)
+
+        instance.email_airbill
+      end
+    end
+
+    context "without an id" do
+      it "should raise an UnavailableMethodError if there is no id" do
+        message = "#{klass.to_s}#email_airbill can only be called if there is an id present on this #{klass.to_s} instance"
+        expect { instance.email_airbill }.to raise_error TicketEvolution::MethodUnavailableError, message
+      end
+    end
+  end
+
   describe "#cancel_shipment" do
     context "with an id" do
       let(:instance) { klass.new({:parent => Fake.connection, :id => 1}) }

@@ -23,6 +23,14 @@ describe TicketEvolution::Shipment do
       end
     end
 
+    describe "#email_airbill" do
+      it "should pass the request to TicketEvolution::Shipments#email_airbill" do
+        plural_klass_instance.should_receive(:email_airbill).and_return(:dont_care)
+
+        instance.email_airbill
+      end
+    end
+
     describe "#cancel" do
       it "should pass the request to TicketEvolution::Shipments#cancel_shipment" do
         plural_klass_instance.should_receive(:cancel_shipment).and_return(:dont_care)
