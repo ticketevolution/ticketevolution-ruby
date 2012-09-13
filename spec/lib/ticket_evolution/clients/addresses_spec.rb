@@ -23,4 +23,15 @@ describe TicketEvolution::Clients::Addresses do
     end
   end
 
+  describe "#check_fields" do
+    context "with params" do
+      let(:params) { }
+
+      it "should pass call request as a GET, passing params" do
+        instance.should_receive(:request).with(:POST, "/check_fields", params)
+        instance.check_fields
+      end
+    end
+  end
+
 end

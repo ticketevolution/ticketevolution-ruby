@@ -28,9 +28,19 @@ describe TicketEvolution::Orders::Payments do
       let(:instance) { klass.new({ :parent => connection, :id => 1 }) }
       use_vcr_cassette 'payments/cancel'
 
-      it 'applies a payment' do
+      it 'cancels the payment' do
         instance.should_receive(:request).with(:POST, '/1/cancel', { :order_id => 1, :id => 1 })
         instance.cancel({ :order_id => 1, :id => 1 })
+      end
+    end
+
+    describe 'refund' do
+      let(:instance) { klass.new({ :parent => connection, :id => 1 }) }
+      use_vcr_cassette 'payments/refund'
+
+      it 'refunds the payment' do
+        instance.should_receive(:request).with(:GET, '/1/refund',nil)
+        instance.refund(1)
       end
     end
   end

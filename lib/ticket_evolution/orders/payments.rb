@@ -16,6 +16,20 @@ module TicketEvolution
         request(:POST, "/#{params[:id]}/cancel", params, &method(:build_for_show))
       end
 
+      def refund(id,params=nil, &handler)
+        handler ||= method(:refund_handler)
+        params = { endpoint_name.to_sym => [params] } if params.present?
+        request(:GET, "/#{id}/refund", params, &method(:build_for_show))
+      end
+
+      def refund_handler(response)
+        singular_class.new(response.body.merge({
+          :status_code => response.response_code,
+          :server_message => response.server_message,
+          :connection => response.body[:connection]
+        }))
+      end
+
       private
 
       def _ensure_id(params)
