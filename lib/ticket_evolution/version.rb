@@ -1,3 +1,3 @@
 module TicketEvolution
-  VERSION = '0.7.21'
+  VERSION = '0.7.22'
 end

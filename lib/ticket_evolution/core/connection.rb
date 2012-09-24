@@ -78,8 +78,7 @@ module TicketEvolution
         },
         :ssl => {
           :verify => @config[:ssl_verify]
-        },
-        :timeout => 120
+        }
       }
       options[:params] = params if method == :GET
       options[:headers]["Accept"] = "application/vnd.ticketevolution.api+json; version=#{@config[:version]}" unless @config[:version] > 8
@@ -87,6 +86,8 @@ module TicketEvolution
         builder.use Faraday::Response::VerboseLogger, self.logger if self.logger.present?
         builder.use FaradayLocalhostHeader, [ /(?:^|\.)lvh\.me$/i, /(?:^|\.)((?:\d+\.){4})xip\.io$/i ]
         builder.adapter @adapter
+        builder.options[:timeout] = 120
+        builder.options[:open_timeout] = 120
       end
     end
 
