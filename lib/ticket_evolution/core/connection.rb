@@ -78,7 +78,8 @@ module TicketEvolution
         },
         :ssl => {
           :verify => @config[:ssl_verify]
-        }
+        },
+        :timeout => 120
       }
       options[:params] = params if method == :GET
       options[:headers]["Accept"] = "application/vnd.ticketevolution.api+json; version=#{@config[:version]}" unless @config[:version] > 8
