@@ -18,6 +18,14 @@ module TicketEvolution
       plural_class.new(:parent => @connection,:id => self.id).email_order(params)
     end
 
+    def store_etickets(params)
+      deliver_etickets(params)  # renamed action to deliver_etickets
+    end
+
+    def deliver_etickets(params)
+      plural_class.new(:parent => @connection,:id => self.id).deliver_etickets(params)
+    end
+
     def email_etickets_link(params)
       plural_class.new(:parent => @connection,:id => self.id).email_etickets_link(params)
     end
