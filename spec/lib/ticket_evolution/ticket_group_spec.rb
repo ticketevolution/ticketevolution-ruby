@@ -21,7 +21,19 @@ describe TicketEvolution::TicketGroup do
       instance.hold(params)
     end
   end
- 
+  
+  describe "#update_hold" do
+
+    before do
+      plural_klass.should_receive(:new).with(:parent => connection, :id => instance.id).and_return(plural_klass_instance)
+    end
+
+    it "should pass the request to TicketEvolution::TicketGroups#update_hold" do
+      plural_klass_instance.should_receive(:update_hold).with({ :ticket_hold_id => 1 }).and_return(:dont_care)
+      instance.update_hold({ :ticket_hold_id => 1 })
+    end
+  end
+
   describe "#release_hold" do
 
     before do

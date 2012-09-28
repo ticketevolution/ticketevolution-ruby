@@ -37,6 +37,16 @@ describe TicketEvolution::TicketGroups do
       end
     end
 
+    describe "update_hold" do
+      let(:instance) { klass.new({ :parent => connection, :id => 1 }) }
+      use_vcr_cassette "ticket_groups/update_hold"
+
+      it "places a ticket_group's specified tickets on update_hold" do
+        instance.should_receive(:request).with(:POST, "/update_hold/1", { :ticket_hold_id => 1 })
+        instance.update_hold({ :ticket_hold_id => 1 })
+      end
+    end
+
     describe "release_hold" do
       let(:instance) { klass.new({ :parent => connection, :id => 1 }) }
       use_vcr_cassette "ticket_groups/release_hold"
