@@ -51,6 +51,37 @@ describe TicketEvolution::Orders do
     end
   end
 
+  describe "#pend_to_seller" do
+    context "with an id" do
+      let(:instance) { klass.new({:parent => Fake.connection, :id => 1}) }
+
+      context "with params" do
+        let(:params) { {:reviewer_id => 1} }
+
+        it "should pass call request as a POST, passing params" do
+          instance.should_receive(:request).with(:POST, "/#{instance.id}/pend_to_seller", params)
+
+          instance.pend_to_seller(params)
+        end
+      end
+
+      context "without params" do
+        it "should pass call request as a POST, passing params" do
+          instance.should_receive(:request).with(:POST, "/#{instance.id}/pend_to_seller", nil)
+
+          instance.pend_to_seller
+        end
+      end
+    end
+
+    context "without an id" do
+      it "should raise an UnavailableMethodError if there is no id" do
+        message = "#{klass.to_s}#pend_to_seller can only be called if there is an id present on this #{klass.to_s} instance"
+        expect { instance.pend_to_seller }.to raise_error TicketEvolution::MethodUnavailableError, message
+      end
+    end
+  end
+
   describe "#create_fulfillment_order" do
     context "with params" do
       let(:params) { {'some' => {'order' => 'info'}} }

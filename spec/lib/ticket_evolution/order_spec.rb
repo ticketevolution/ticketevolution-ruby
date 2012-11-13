@@ -26,6 +26,14 @@ describe TicketEvolution::Order do
       end
     end
 
+    describe "#pend_to_seller" do
+      it "should pass the request to TicketEvolution::Orders#pend_to_seller" do
+        plural_klass_instance.should_receive(:pend_to_seller).with(params).and_return(:dont_care)
+
+        instance.pend_to_seller(params)
+      end
+    end
+
     describe "#complete" do
       it "should pass the request to TicketEvolution::Orders#complete_order" do
         plural_klass_instance.should_receive(:complete_order).and_return(:dont_care)

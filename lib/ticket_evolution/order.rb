@@ -6,6 +6,10 @@ module TicketEvolution
       plural_class.new(:parent => @connection).accept_order(params)
     end
 
+    def pend_to_seller(params)
+      plural_class.new(:parent => @connection).pend_to_seller(params)
+    end
+
     def complete
       plural_class.new(:parent => @connection).complete_order
     end
