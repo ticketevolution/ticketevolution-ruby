@@ -6,8 +6,8 @@ module TicketEvolution
       plural_class.new(:parent => @connection).accept_order(params)
     end
 
-    def pend_to_seller(params)
-      plural_class.new(:parent => @connection).pend_to_seller(params)
+    def pend_to_seller
+      plural_class.new(:parent => @connection).pend_to_seller
     end
 
     def complete

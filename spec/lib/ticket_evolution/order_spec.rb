@@ -28,9 +28,9 @@ describe TicketEvolution::Order do
 
     describe "#pend_to_seller" do
       it "should pass the request to TicketEvolution::Orders#pend_to_seller" do
-        plural_klass_instance.should_receive(:pend_to_seller).with(params).and_return(:dont_care)
+        plural_klass_instance.should_receive(:pend_to_seller).and_return(:dont_care)
 
-        instance.pend_to_seller(params)
+        instance.pend_to_seller
       end
     end
 

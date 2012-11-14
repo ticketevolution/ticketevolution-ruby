@@ -55,22 +55,10 @@ describe TicketEvolution::Orders do
     context "with an id" do
       let(:instance) { klass.new({:parent => Fake.connection, :id => 1}) }
 
-      context "with params" do
-        let(:params) { {:reviewer_id => 1} }
+      it "should pass call request as a POST" do
+        instance.should_receive(:request).with(:POST, "/#{instance.id}/pend_to_seller")
 
-        it "should pass call request as a POST, passing params" do
-          instance.should_receive(:request).with(:POST, "/#{instance.id}/pend_to_seller", params)
-
-          instance.pend_to_seller(params)
-        end
-      end
-
-      context "without params" do
-        it "should pass call request as a POST, passing params" do
-          instance.should_receive(:request).with(:POST, "/#{instance.id}/pend_to_seller", nil)
-
-          instance.pend_to_seller
-        end
+        instance.pend_to_seller
       end
     end
 
