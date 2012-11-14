@@ -7,7 +7,7 @@ module TicketEvolution
     end
 
     def pend_to_seller
-      plural_class.new(:parent => @connection).pend_to_seller
+      plural_class.new(:parent => @connection, :id => self.id).pend_to_seller
     end
 
     def complete
