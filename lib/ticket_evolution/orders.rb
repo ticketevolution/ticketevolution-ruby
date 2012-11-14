@@ -20,7 +20,7 @@ module TicketEvolution
 
     def pend_to_seller
       ensure_id
-      request(:POST, "/pend_to_seller", &method(:build_for_create))
+      request(:POST, "/pend_to_seller", &method(:build_for_show))
     end
 
     def create_fulfillment_order(params = nil)
