@@ -3,15 +3,15 @@ module TicketEvolution
     include Model::ParentalBehavior
 
     def accept(params)
-      plural_class.new(:parent => @connection).accept_order(params)
+      plural_class.new(:parent => @connection,:id => self.id).accept_order(params)
     end
 
     def complete
-      plural_class.new(:parent => @connection).complete_order
+      plural_class.new(:parent => @connection,:id => self.id).complete_order
     end
 
     def reject(params)
-      plural_class.new(:parent => @connection).reject_order(params)
+      plural_class.new(:parent => @connection,:id => self.id).reject_order(params)
     end
 
     def email(params)
