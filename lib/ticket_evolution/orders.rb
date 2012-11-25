@@ -15,7 +15,13 @@ module TicketEvolution
 
     def accept_order(params = nil)
       ensure_id
-      request(:POST, "/accept", params, &method(:build_for_create))
+      request(:POST, "/accept", params) do |response|
+        singular_class.new(response.body.merge({
+          :status_code => response.response_code,
+          :server_message => response.server_message,
+          :connection => response.body[:connection]
+        }))
+      end
     end
 
     def pend_to_seller(id)

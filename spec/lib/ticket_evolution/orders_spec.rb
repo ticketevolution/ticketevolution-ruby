@@ -28,7 +28,7 @@ describe TicketEvolution::Orders do
         let(:params) { {:reviewer_id => 1} }
 
         it "should pass call request as a POST, passing params" do
-          instance.should_receive(:request).with(:POST, "/#{instance.id}/accept", params)
+          instance.should_receive(:request).with(:POST, "/accept", params)
 
           instance.accept_order(params)
         end
@@ -36,7 +36,7 @@ describe TicketEvolution::Orders do
 
       context "without params" do
         it "should pass call request as a POST, passing params" do
-          instance.should_receive(:request).with(:POST, "/#{instance.id}/accept", nil)
+          instance.should_receive(:request).with(:POST, "/accept", nil)
 
           instance.accept_order
         end
@@ -56,16 +56,15 @@ describe TicketEvolution::Orders do
       let(:instance) { klass.new({:parent => Fake.connection, :id => 1}) }
 
       it "should pass call request as a POST" do
-        instance.should_receive(:request).with(:POST, "/pend_to_seller")
+        instance.should_receive(:request).with(:POST, "/1/pend_to_seller")
 
-        instance.pend_to_seller
+        instance.pend_to_seller(instance.id)
       end
     end
 
     context "without an id" do
-      it "should raise an UnavailableMethodError if there is no id" do
-        message = "#{klass.to_s}#pend_to_seller can only be called if there is an id present on this #{klass.to_s} instance"
-        expect { instance.pend_to_seller }.to raise_error TicketEvolution::MethodUnavailableError, message
+      it "should raise an ArgumentError if there is no id" do
+        expect { instance.pend_to_seller() }.to raise_error ArgumentError
       end
     end
   end
@@ -98,7 +97,7 @@ describe TicketEvolution::Orders do
         let(:params) { {:rejection_reason => "IT'S A TRAP!!", :reviewer_id => 1} }
 
         it "should pass call request as a POST, passing params" do
-          instance.should_receive(:request).with(:POST, "/#{instance.id}/reject", params)
+          instance.should_receive(:request).with(:POST, "/reject", params)
 
           instance.reject_order(params)
         end
@@ -106,7 +105,7 @@ describe TicketEvolution::Orders do
 
       context "without params" do
         it "should pass call request as a POST, passing params" do
-          instance.should_receive(:request).with(:POST, "/#{instance.id}/reject", nil)
+          instance.should_receive(:request).with(:POST, "/reject", nil)
 
           instance.reject_order
         end
@@ -126,7 +125,7 @@ describe TicketEvolution::Orders do
       let(:instance) { klass.new({:parent => Fake.connection, :id => 1}) }
 
       it "should pass call request as a POST, passing params" do
-        instance.should_receive(:request).with(:POST, "/#{instance.id}/complete", nil)
+        instance.should_receive(:request).with(:POST, "/complete", nil)
 
         instance.complete_order
       end

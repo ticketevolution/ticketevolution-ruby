@@ -74,7 +74,8 @@ module TicketEvolution
       options = {
         :headers => {
           "X-Signature" => sign(method, self.uri(path), params),
-          "X-Token" => @config[:token]
+          "X-Token" => @config[:token],
+          "Content-Type" => "application/json"
         },
         :ssl => {
           :verify => @config[:ssl_verify]

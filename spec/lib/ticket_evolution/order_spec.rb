@@ -16,25 +16,16 @@ describe TicketEvolution::Order do
 
     describe "#accept" do
       it "should pass the request to TicketEvolution::Orders#accept_order" do
-        plural_klass.should_receive(:new).with(:parent => connection).and_return(plural_klass_instance)
+        plural_klass.should_receive(:new).with(:parent => connection, :id => instance.id).and_return(plural_klass_instance)
         plural_klass_instance.should_receive(:accept_order).with(params).and_return(:dont_care)
 
         instance.accept(params)
       end
     end
 
-    describe "#pend_to_seller" do
-      it "should pass the request to TicketEvolution::Orders#pend_to_seller" do
-        plural_klass.should_receive(:new).with(:parent => connection, :id => instance.id).and_return(plural_klass_instance)
-        plural_klass_instance.should_receive(:pend_to_seller).and_return(:dont_care)
-
-        instance.pend_to_seller
-      end
-    end
-
     describe "#complete" do
       it "should pass the request to TicketEvolution::Orders#complete_order" do
-        plural_klass.should_receive(:new).with(:parent => connection).and_return(plural_klass_instance)
+        plural_klass.should_receive(:new).with(:parent => connection, :id => instance.id).and_return(plural_klass_instance)
         plural_klass_instance.should_receive(:complete_order).and_return(:dont_care)
 
         instance.complete
@@ -43,7 +34,7 @@ describe TicketEvolution::Order do
 
     describe "#reject" do
       it "should pass the request to TicketEvolution::Orders#reject_order" do
-        plural_klass.should_receive(:new).with(:parent => connection).and_return(plural_klass_instance)
+        plural_klass.should_receive(:new).with(:parent => connection, :id => instance.id).and_return(plural_klass_instance)
         plural_klass_instance.should_receive(:reject_order).with(params).and_return(:dont_care)
 
         instance.reject(params)

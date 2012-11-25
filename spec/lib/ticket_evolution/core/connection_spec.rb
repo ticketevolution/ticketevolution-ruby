@@ -284,7 +284,9 @@ describe TicketEvolution::Connection do
         {
           "Accept" => "application/vnd.ticketevolution.api+json; version=#{valid_options[:version]}",
           "X-Signature" => "8eaaqg6d4DJ2SEWkCvkdhc05dITmpNbUrcbN75UBGMA=",
-          "X-Token" => valid_options[:token]
+          "X-Token" => valid_options[:token],
+          "Content-Type" => "application/json"
+
         }
       end
       subject { klass.new(req_options).build_request(:GET, '/test', params) }
@@ -296,7 +298,8 @@ describe TicketEvolution::Connection do
       let(:headers) do
         {
           "X-Signature" => "YbwEmJL9P0hvpplEr2q2iL4Mpz+KevHUOjzgYh0ewh4=",
-          "X-Token" => valid_options[:token]
+          "X-Token" => valid_options[:token],
+          "Content-Type" => "application/json"
         }
       end
       subject { klass.new(req_options.merge(:version => 9)).build_request(:GET, '/test', params) }
