@@ -24,8 +24,8 @@ module TicketEvolution
       end
     end
 
-    def pend_to_seller(id)
-      request(:POST, "/#{id}/pend_to_seller", &method(:build_for_show))
+    def pend_to_seller(params)
+      request(:POST, "/#{params[:id]}/pend_to_seller", params, &method(:build_for_show))
     end
 
     def create_fulfillment_order(params = nil)

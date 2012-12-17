@@ -54,11 +54,12 @@ describe TicketEvolution::Orders do
   describe "#pend_to_seller" do
     context "with an id" do
       let(:instance) { klass.new({:parent => Fake.connection, :id => 1}) }
+      let(:params) {{ :id => instance.id }}
 
       it "should pass call request as a POST" do
-        instance.should_receive(:request).with(:POST, "/1/pend_to_seller")
+        instance.should_receive(:request).with(:POST, "/1/pend_to_seller", params)
 
-        instance.pend_to_seller(instance.id)
+        instance.pend_to_seller(params)
       end
     end
 
