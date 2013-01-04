@@ -34,8 +34,8 @@ module TicketEvolution
       plural_class.new(:parent => @connection,:id => self.id).print_etickets(params)
     end
 
-    def print
-      plural_class.new(:parent => @connection,:id => self.id).print_order
+    def print(params)
+      plural_class.new(:parent => @connection,:id => self.id).print_order(params)
     end
   end
 end

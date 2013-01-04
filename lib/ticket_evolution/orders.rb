@@ -96,9 +96,9 @@ module TicketEvolution
       end
     end
 
-    def print_order
+    def print_order(params = nil)
       ensure_id
-      request(:GET, "/print", nil) do |response|
+      request(:GET, "/print", params) do |response|
         singular_class.new(response.body.merge({
           :status_code => response.response_code,
           :server_message => response.server_message,
