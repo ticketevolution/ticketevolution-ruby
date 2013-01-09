@@ -60,9 +60,12 @@ i.req 'errors', 'method_unavailable_error'
 
 # Endpoint modules
 m.req 'create'
+m.req 'create_in_background'
 m.req 'deleted'
 m.req 'destroy'
 m.req 'list'
+m.req 'retrieve_queued_order'
+m.req 'retrieve_queued_order_params'
 m.req 'search'
 m.req 'show'
 m.req 'update'
