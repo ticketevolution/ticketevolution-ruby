@@ -6,6 +6,10 @@ module TicketEvolution
       plural_class.new(:parent => @connection,:id => self.id).accept_order(params)
     end
 
+    def refund(params)
+      plural_class.new(:parent => @connection,:id => self.id).refund_order(params)
+    end
+
     def complete
       plural_class.new(:parent => @connection,:id => self.id).complete_order
     end
