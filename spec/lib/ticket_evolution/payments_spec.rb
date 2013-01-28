@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe TicketEvolution::Orders::Payments do
-  let(:klass) { TicketEvolution::Orders::Payments }
+describe TicketEvolution::Payments do
+  let(:klass) { TicketEvolution::Payments }
   let(:single_klass) { TicketEvolution::Payment }
-  let(:update_base) { {'url' => '/orders/1/payments/1'} }
+  let(:update_base) { {'url' => '/payments/1'} }
 
   it_behaves_like 'a ticket_evolution endpoint class'
   it_behaves_like 'a create endpoint'
@@ -39,8 +39,8 @@ describe TicketEvolution::Orders::Payments do
       use_vcr_cassette 'payments/refund'
 
       it 'refunds the payment' do
-        instance.should_receive(:request).with(:GET, '/1/refund',nil)
-        instance.refund(1)
+        instance.should_receive(:request).with(:POST, '/1/refund', { :order_id => 1, :id => 1 })
+        instance.refund({ :order_id => 1, :id => 1 })
       end
     end
   end

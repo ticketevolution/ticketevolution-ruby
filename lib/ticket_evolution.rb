@@ -111,6 +111,7 @@ i.req 'configurations'
 i.req 'events'
 i.req 'offices'
 i.req 'orders'
+i.req 'payments'
 i.req 'performers'
 i.req 'promotion_codes'
 i.req 'quotes'
@@ -132,7 +133,5 @@ i.req 'clients', 'phone_numbers'
 i.req 'accounts', 'transactions'
 
 i.req 'offices', 'credit_cards'
-
-i.req 'orders', 'payments'
 
 i.req 'ticket_groups', 'ticket_holds'
