@@ -24,9 +24,9 @@ module TicketEvolution
       end
     end
 
-    def refund_order(params = nil)
+    def return_order(params = nil)
       ensure_id
-      request(:POST, "/refund", params) do |response|
+      request(:POST, "/return", params) do |response|
         singular_class.new(response.body.merge({
           :status_code => response.response_code,
           :server_message => response.server_message,

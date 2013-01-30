@@ -1,5 +1,7 @@
 module TicketEvolution
   class Payment < Model
+    include Model::ParentalBehavior
+
     def apply
       plural_class.new(:parent => @connection,:id => self.id).apply
     end
@@ -8,8 +10,8 @@ module TicketEvolution
       plural_class.new(:parent => @connection,:id => self.id).cancel
     end
 
-    def refund
-      plural_class.new(:parent => @connection,:id => self.id).refund
+    def refund(params=nil)
+      plural_class.new(:parent => @connection,:id => self.id).refund(params)
     end
   end
 end

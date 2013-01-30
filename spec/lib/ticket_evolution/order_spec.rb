@@ -23,12 +23,12 @@ describe TicketEvolution::Order do
       end
     end
 
-    describe "#refund" do
-      it "should pass the request to TicketEvolution::Orders#refund_order" do
+    describe "#return" do
+      it "should pass the request to TicketEvolution::Orders#return_order" do
         plural_klass.should_receive(:new).with(:parent => connection, :id => instance.id).and_return(plural_klass_instance)
-        plural_klass_instance.should_receive(:refund_order).with(params).and_return(:dont_care)
+        plural_klass_instance.should_receive(:return_order).with(params).and_return(:dont_care)
 
-        instance.refund(params)
+        instance.return(params)
       end
     end
 
