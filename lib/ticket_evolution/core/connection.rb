@@ -73,16 +73,16 @@ module TicketEvolution
     def build_request(method, path, params = nil)
       options = {
         :headers => {
+          "Accept" => accept_header,
           "X-Signature" => sign(method, self.uri(path), params),
-          "X-Token" => @config[:token],
-          "Content-Type" => "application/json"
+          "X-Token" => @config[:token]
         },
         :ssl => {
           :verify => @config[:ssl_verify]
         }
       }
+      options[:headers]['Content-Type'] = "application/json" unless method == :GET
       options[:params] = params if method == :GET
-      options[:headers]["Accept"] = "application/vnd.ticketevolution.api+json; version=#{@config[:version]}" unless @config[:version] > 8
       Faraday.new(self.uri(path), options) do |builder|
         builder.use Faraday::Response::VerboseLogger, self.logger if self.logger.present?
         builder.use FaradayLocalhostHeader, [ /(?:^|\.)lvh\.me$/i, /(?:^|\.)((?:\d+\.){4})xip\.io$/i ]
@@ -97,6 +97,16 @@ module TicketEvolution
     end
 
     private
+
+    # Return the Accpet header value fot the given version of the API.
+    # Starting at v9 `application/json` is expected (error if not present).
+    #
+    # @return [String] the Accept header value.
+    def accept_header
+      return "application/vnd.ticketevolution.api+json; version=#{@config[:version]}" if @config[:version] < 9
+
+      "application/json"
+    end
 
     def post_body(params)
       MultiJson.encode(params)
