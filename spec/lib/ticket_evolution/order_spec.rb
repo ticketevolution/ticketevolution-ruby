@@ -49,5 +49,14 @@ describe TicketEvolution::Order do
         instance.reject(params)
       end
     end
+
+    describe "#cancel" do
+      it "should pass the request to TicketEvolution::Orders#cancel_order" do
+        plural_klass.should_receive(:new).with(:parent => connection, :id => instance.id).and_return(plural_klass_instance)
+        plural_klass_instance.should_receive(:cancel_order).with(params).and_return(:dont_care)
+
+        instance.cancel(params)
+      end
+    end
   end
 end

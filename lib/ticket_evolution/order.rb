@@ -18,6 +18,10 @@ module TicketEvolution
       plural_class.new(:parent => @connection,:id => self.id).reject_order(params)
     end
 
+    def cancel(params)
+      plural_class.new(:parent => @connection,:id => self.id).cancel_order(params)
+    end
+
     def email(params)
       plural_class.new(:parent => @connection,:id => self.id).email_order(params)
     end

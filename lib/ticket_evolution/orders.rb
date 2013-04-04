@@ -34,7 +34,7 @@ module TicketEvolution
         }))
       end
     end
-    
+
     def pend_to_seller(params)
       request(:POST, "/#{params[:id]}/pend_to_seller", params, &method(:build_for_show))
     end
@@ -46,6 +46,17 @@ module TicketEvolution
     def reject_order(params = nil)
       ensure_id
       request(:POST, "/reject", params) do |response|
+        singular_class.new(response.body.merge({
+          :status_code => response.response_code,
+          :server_message => response.server_message,
+          :connection => response.body[:connection]
+        }))
+      end
+    end
+
+    def cancel_order(params = nil)
+      ensure_id
+      request(:POST, "/cancel", params) do |response|
         singular_class.new(response.body.merge({
           :status_code => response.response_code,
           :server_message => response.server_message,

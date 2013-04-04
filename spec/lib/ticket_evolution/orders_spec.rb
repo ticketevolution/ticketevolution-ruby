@@ -121,6 +121,37 @@ describe TicketEvolution::Orders do
     end
   end
 
+  describe "#cancel_order" do
+    context "with an id" do
+      let(:instance) { klass.new({:parent => Fake.connection, :id => 1}) }
+
+      context "with params" do
+        let(:params) { {:cancellation_reason => "IT'S A TRAP!!", :reviewer_id => 1} }
+
+        it "should pass call request as a POST, passing params" do
+          instance.should_receive(:request).with(:POST, "/cancel", params)
+
+          instance.cancel_order(params)
+        end
+      end
+
+      context "without params" do
+        it "should pass call request as a POST, passing params" do
+          instance.should_receive(:request).with(:POST, "/cancel", nil)
+
+          instance.cancel_order
+        end
+      end
+    end
+
+    context "without an id" do
+      it "should raise an UnavailableMethodError if there is no id" do
+        message = "#{klass.to_s}#cancel_order can only be called if there is an id present on this #{klass.to_s} instance"
+        expect { instance.cancel_order }.to raise_error TicketEvolution::MethodUnavailableError, message
+      end
+    end
+  end
+
   describe "#complete_order" do
     context "with an id" do
       let(:instance) { klass.new({:parent => Fake.connection, :id => 1}) }
