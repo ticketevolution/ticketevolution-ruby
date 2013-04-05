@@ -5,6 +5,11 @@ module TicketEvolution
     include TicketEvolution::Modules::Show
     include TicketEvolution::Modules::Update
 
+    def status(params = {})
+      handler ||= method(:collection_handler)
+      request(:GET, '/status', params, &handler)
+    end
+
     def generate_airbill(params = nil)
       ensure_id
       request(:POST, "/airbill", nil) do |response|
