@@ -9,5 +9,11 @@ module TicketEvolution
     def cancel
       plural_class.new(:parent => @connection, :id => self.id).cancel_shipment
     end
+    def deliver
+      plural_class.new(:parent => @connection, :id => self.id).deliver_shipment
+    end
+    def pend
+      plural_class.new(:parent => @connection, :id => self.id).pend_shipment
+    end
   end
 end

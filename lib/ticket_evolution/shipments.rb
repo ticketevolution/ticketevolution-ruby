@@ -44,5 +44,29 @@ module TicketEvolution
         }))
       end
     end
+
+    def pend_shipment(params = nil)
+      ensure_id
+
+      request(:GET, "/pend", nil) do |response|
+        singular_class.new(response.body.merge({
+          :status_code => response.response_code,
+          :server_message => response.server_message,
+          :connection => response.body[:connection]
+        }))
+      end
+    end
+
+    def deliver_shipment(params = nil)
+      ensure_id
+
+      request(:GET, "/deliver", nil) do |response|
+        singular_class.new(response.body.merge({
+          :status_code => response.response_code,
+          :server_message => response.server_message,
+          :connection => response.body[:connection]
+        }))
+      end
+    end
   end
 end
