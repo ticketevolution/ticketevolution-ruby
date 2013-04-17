@@ -19,8 +19,8 @@ describe TicketEvolution::Payments do
       use_vcr_cassette 'payments/apply'
 
       it 'applies a payment' do
-        instance.should_receive(:request).with(:GET, '/apply', nil)
-        instance.apply({ :order_id => 1, :id => 1 })
+        instance.should_receive(:request).with(:GET, '/apply', { :id => 1, :check_number => 12345 })
+        instance.apply({ :id => 1, :check_number => 12345 })
       end
     end
 

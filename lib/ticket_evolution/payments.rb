@@ -10,9 +10,9 @@ module TicketEvolution
       request(:GET, '/status', params, &handler)
     end
 
-    def apply(params = nil)
+    def apply(params = {})
       ensure_id
-      request(:GET, "/apply", nil) do |response|
+      request(:GET, "/apply", params) do |response|
         singular_class.new(response.body.merge({
           :status_code => response.response_code,
           :server_message => response.server_message,

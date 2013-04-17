@@ -2,8 +2,8 @@ module TicketEvolution
   class Payment < Model
     include Model::ParentalBehavior
 
-    def apply
-      plural_class.new(:parent => @connection,:id => self.id).apply
+    def apply(params=nil)
+      plural_class.new(:parent => @connection,:id => self.id).apply(params)
     end
 
     def cancel
