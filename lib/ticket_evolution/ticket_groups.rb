@@ -13,7 +13,7 @@ module TicketEvolution
       ensure_id
       request(:POST, "/take", params, &method(:build_for_show))
     end
-    
+
     def update_hold(params = nil)
       ensure_id
       request(:POST, "/update_hold/#{params[:ticket_hold_id]}", params, &method(:build_for_show))
@@ -42,6 +42,11 @@ module TicketEvolution
     def index_cart(ids = [])
       handler ||= method(:collection_handler)
       request(:GET, '/index_cart', ids, &handler)
+    end
+
+    def mass_index(params = {})
+      handler ||= method(:collection_handler)
+      request(:GET, '/mass_index', params, &handler)
     end
   end
 end
