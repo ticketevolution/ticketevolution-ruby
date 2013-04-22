@@ -10,6 +10,17 @@ module TicketEvolution
       request(:GET, "/autocomplete", params, &method(:build_for_search))
     end
 
+    def resend
+      ensure_id
+      request(:GET, "/resend", nil) do |response|
+        singular_class.new(response.body.merge({
+          :status_code => response.response_code,
+          :server_message => response.server_message,
+          :connection => response.body[:connection]
+        }))
+      end
+    end
+
     def build_for_search(response)
       collection = TicketEvolution::Collection.new(
         :total_entries => response.body['total_entries'],
