@@ -129,5 +129,27 @@ module TicketEvolution
       end
     end
 
+    def get_ticket_costs(params = nil)
+      ensure_id
+      request(:GET, "/get_ticket_costs", params) do |response|
+        singular_class.new(response.body.merge({
+          :status_code => response.response_code,
+          :server_message => response.server_message,
+          :connection => response.body[:connection]
+        }))
+      end
+    end
+
+    def update_ticket_costs(params = nil)
+      ensure_id
+      request(:POST, "/update_ticket_costs", params) do |response|
+        singular_class.new(response.body.merge({
+          :status_code => response.response_code,
+          :server_message => response.server_message,
+          :connection => response.body[:connection]
+        }))
+      end
+    end
+
   end
 end

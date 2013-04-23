@@ -45,5 +45,13 @@ module TicketEvolution
     def print(params = nil)
       plural_class.new(:parent => @connection,:id => self.id).print_order(params)
     end
+
+    def get_ticket_costs
+      plural_class.new(:parent => @connection,:id => self.id).get_ticket_costs
+    end
+
+    def update_ticket_costs(params)
+      plural_class.new(:parent => @connection,:id => self.id).update_ticket_costs(params)
+    end
   end
 end
