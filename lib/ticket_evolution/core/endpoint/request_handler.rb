@@ -53,7 +53,7 @@ module TicketEvolution
         OpenStruct.new.tap do |resp|
           resp.header = response.headers
           resp.response_code = response.status
-          resp.body = MultiJson.decode(response.body).merge({:connection => self.connection})
+          resp.body = (MultiJson.decode(response.body) rescue {"error" => "Internal Server Error"}).merge({:connection => self.connection})
           resp.server_message = (CODES[resp.response_code] || ['Unknown Error']).last
         end
       end
