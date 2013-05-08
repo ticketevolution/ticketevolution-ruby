@@ -112,6 +112,7 @@ i.req 'companies'
 i.req 'clients'
 i.req 'configurations'
 i.req 'credit_memos'
+i.req 'credit_memo_payment'
 i.req 'events'
 i.req 'offices'
 i.req 'orders'
@@ -138,6 +139,8 @@ i.req 'clients', 'email_addresses'
 i.req 'clients', 'phone_numbers'
 
 i.req 'accounts', 'transactions'
+
+i.req 'credit_memos', 'credit_memo_payments'
 
 i.req 'offices', 'credit_cards'
 
