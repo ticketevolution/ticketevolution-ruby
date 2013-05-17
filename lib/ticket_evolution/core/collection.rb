@@ -1,6 +1,7 @@
 module TicketEvolution
   class Collection
-    attr_accessor :total_entries, :per_page, :current_page, :entries, :status_code, :unique_categories
+    attr_accessor :total_entries, :per_page, :current_page, :entries, :status_code, 
+                  :unique_categories, :balance_sum, :total_sum
 
     include Enumerable
 
@@ -25,6 +26,8 @@ module TicketEvolution
         end
       }
       values[:unique_categories] = response.body['unique_categories'] if response.body['unique_categories']
+      values[:balance_sum] = response.body['balance_sum'] if response.body['balance_sum']
+      values[:total_sum] = response.body['total_sum'] if response.body['total_sum']
       new(values)
     end
   end
