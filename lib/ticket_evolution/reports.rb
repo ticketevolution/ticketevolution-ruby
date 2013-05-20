@@ -9,7 +9,7 @@ module TicketEvolution
     end
 
     def build_for_reports(response)
-      response.body['reports']
+      response.body
     end
   end
 end
