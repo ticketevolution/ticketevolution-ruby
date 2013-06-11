@@ -3,7 +3,15 @@ module TicketEvolution
     module Create
       def create(params = nil, &handler)
         handler ||= method(:build_for_create)
-        params = { endpoint_name.to_sym => [params] } if params.present?
+        if params.present?
+          if params.is_a?(Array)
+            params = { endpoint_name.to_sym => params }
+          else
+            if !params[endpoint_name.to_sym].present?
+              params = { endpoint_name.to_sym => [params] }
+            end
+          end
+        end
         request(:POST, nil, params, &handler)
       end
 
