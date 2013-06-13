@@ -53,5 +53,9 @@ module TicketEvolution
     def update_ticket_costs(params)
       plural_class.new(:parent => @connection,:id => self.id).update_ticket_costs(params)
     end
+
+    def update_spec_tickets(params)
+      plural_class.new(:parent => @connection,:id => self.id).update_spec_tickets(params)
+    end
   end
 end

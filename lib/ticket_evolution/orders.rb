@@ -151,5 +151,15 @@ module TicketEvolution
       end
     end
 
+    def update_spec_tickets(params = nil)
+      ensure_id
+      request(:POST, "/update_spec_tickets", params) do |response|
+        singular_class.new(response.body.merge({
+          :status_code => response.response_code,
+          :server_message => response.server_message,
+          :connection => response.body[:connection]
+        }))
+      end
+    end
   end
 end
