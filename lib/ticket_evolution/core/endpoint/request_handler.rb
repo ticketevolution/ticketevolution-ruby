@@ -61,6 +61,10 @@ module TicketEvolution
       def collection_handler(response)
         TicketEvolution::Collection.build_from_response(response, self.class.name.demodulize.underscore, singular_class)
       end
+
+      def raw_handler(response)
+        response
+      end
     end
   end
 end
