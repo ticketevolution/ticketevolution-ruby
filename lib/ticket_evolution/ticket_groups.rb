@@ -1,6 +1,5 @@
 module TicketEvolution
   class TicketGroups < Endpoint
-    include TicketEvolution::Modules::Raw
     include TicketEvolution::Modules::List
     include TicketEvolution::Modules::Show
     include TicketEvolution::Modules::Create

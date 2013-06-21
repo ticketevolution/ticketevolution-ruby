@@ -69,7 +69,6 @@ m.req 'retrieve_queued_order_params'
 m.req 'search'
 m.req 'show'
 m.req 'update'
-m.req 'raw'
 
 # Builder Classes
 i.req 'account'
