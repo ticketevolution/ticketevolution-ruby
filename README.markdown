@@ -36,7 +36,8 @@ Then
     require 'ticket_evolution'
     @connection = TicketEvolution::Connection.new({
       :token => '<YOUR TOKEN>',
-      :secret => '<YOUR SECRET>'
+      :secret => '<YOUR SECRET>',
+      :version => 9
     })
     @connection.brokerages.list({:per_page => 1})
 
@@ -53,10 +54,10 @@ Each set of API credentials can be combined with a mode and api version to creat
       :token => '',       # => (required) The API token, used to identify you
       :secret => '',      # => (required) The API secret, used to sign requests
                           #               More info: [http://developer.ticketevolution.com/signature_tool](http://developer.ticketevolution.com/signature_tool))
+      :version => 9,      # => (required) API version to use - the correct version
+                                          at the time of this writing is 9
       :mode => :sandbox,  # => (optional) Specifies the server environment to use
                                           Valid options: :production or :sandbox
-      :version => 8,      # => (optional) API version to use - the only available
-                                          version at the time of this writing is 8
       :logger => nil      # => (optional) Object to use for logging requests and
                           #               responses. Any 'Logger' instance object
                           #               is valid. EX: Logger.new('log/te_api.log')
