@@ -141,6 +141,28 @@ describe TicketEvolution::Connection do
     end
   end
 
+  describe ".subdomain" do
+    subject { klass.subdomain }
+
+    after do
+      klass.subdomain = TicketEvolution::Connection::DEFAULT_SUBDOMAIN
+    end
+
+    it { should == "api" }
+
+    it "should allow modification of the subdomain" do
+      klass.subdomain = 'asdf'
+      klass.subdomain.should == 'asdf'
+    end
+
+    it "should use the subdomain in the URL" do
+      klass.subdomain = 'new-api'
+      c = klass.new(basic_options)
+
+      c.url.should match(/new-api/)
+    end
+  end
+
   describe ".url_base" do
     subject { klass.url_base }
 

@@ -2,8 +2,12 @@ require 'faraday/localhost_header'
 
 module TicketEvolution
   class Connection < Base
+    DEFAULT_SUBDOMAIN = 'api'
+    DEFAULT_URL_BASE  = 'ticketevolution.com'
+    DEFAULT_PROTOCOL  = 'https'
+
     cattr_reader :default_options, :expected_options, :oldest_version_in_service
-    cattr_accessor :protocol, :url_base, :adapter
+    cattr_accessor :protocol, :subdomain, :url_base, :adapter
 
     @@oldest_version_in_service = 8
 
@@ -23,8 +27,9 @@ module TicketEvolution
       'logger'
     ]
 
-    @@url_base = "ticketevolution.com"
-    @@protocol = "https"
+    @@subdomain = DEFAULT_SUBDOMAIN
+    @@url_base  = DEFAULT_URL_BASE
+    @@protocol  = DEFAULT_PROTOCOL
 
     @@adapter = :net_http
 
@@ -46,7 +51,7 @@ module TicketEvolution
     def url
       @url ||= [].tap do |parts|
         parts << TicketEvolution::Connection.protocol
-        parts << "://api."
+        parts << "://#{ TicketEvolution::Connection.subdomain }."
         parts << "#{@config[:mode]}." if @config[:mode].present? && @config[:mode].to_sym != :production
         parts << TicketEvolution::Connection.url_base
       end.join
