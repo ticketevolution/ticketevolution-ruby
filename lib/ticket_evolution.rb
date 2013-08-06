@@ -118,6 +118,7 @@ i.req 'credit_memos'
 i.req 'credit_memo_payment'
 i.req 'credentials'
 i.req 'events'
+i.req 'item'
 i.req 'offices'
 i.req 'orders'
 i.req 'payments'
@@ -147,6 +148,7 @@ i.req 'accounts', 'transactions'
 
 i.req 'credit_memos', 'credit_memo_payments'
 i.req 'commissions', 'commission_payments'
+i.req 'orders', 'items'
 
 i.req 'offices', 'credit_cards'
 
