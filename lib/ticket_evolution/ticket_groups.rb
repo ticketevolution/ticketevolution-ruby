@@ -54,5 +54,10 @@ module TicketEvolution
       handler ||= method(:collection_handler)
       request(:POST, '/mass_update', params, &handler)
     end
+
+    def import(params = {})
+      handler ||= method(:collection_handler)
+      request(:POST, '/import', params, &handler)
+    end
   end
 end
