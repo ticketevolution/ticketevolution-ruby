@@ -22,7 +22,10 @@ module TicketEvolution
       plural_class.new(:parent => @connection, :id => self.id).toggle_broadcast(params)
     end
     def import(params)
-      plural_class.new(:parent => @connection, :id => self.id).import(params)
+      plural_class.new(:parent => @connection).import(params)
+    end
+    def upload_history(params)
+      plural_class.new(:parent => @connection).upload_history(params)
     end
   end
 end

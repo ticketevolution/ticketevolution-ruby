@@ -59,5 +59,10 @@ module TicketEvolution
       handler ||= method(:collection_handler)
       request(:POST, '/import', params, &handler)
     end
+
+    def upload_history(params = {})
+      handler ||= method(:upload_history_handler)
+      request(:GET, '/upload_history', params, &handler)
+    end
   end
 end

@@ -62,6 +62,10 @@ module TicketEvolution
         TicketEvolution::Collection.build_from_response(response, self.class.name.demodulize.underscore, singular_class)
       end
 
+      def upload_history_handler(response)
+        TicketEvolution::Collection.build_from_response(response, 'upload_history', singular_class)
+      end
+
       def raw_handler(response)
         response
       end
