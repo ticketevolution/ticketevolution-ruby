@@ -15,5 +15,9 @@ module TicketEvolution
     def finalize_etickets(params = {})
       plural_class.new(:parent => self.endpoint.parent, :id => self.id).finalize_etickets(params)
     end
+
+    def convert_to_etickets(params = {})
+      plural_class.new(:parent => self.endpoint.parent, :id => self.id).convert_to_etickets
+    end
   end
 end

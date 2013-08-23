@@ -47,6 +47,17 @@ module TicketEvolution
           }))
         end
       end
+
+      def convert_to_etickets
+        ensure_id
+        request(:GET, '/convert_to_etickets', nil) do |response|
+          singular_class.new(response.body.merge({
+            :status_code => response.response_code,
+            :server_message => response.server_message,
+            :connection => response.body[:connection]
+          }))
+        end
+      end
     end
   end
 end
