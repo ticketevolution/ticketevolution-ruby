@@ -118,6 +118,17 @@ module TicketEvolution
       end
     end
 
+    def show_light(params = nil)
+      ensure_id
+      request(:GET, "/show_light", params) do |response|
+        singular_class.new(response.body.merge({
+          :status_code => response.response_code,
+          :server_message => response.server_message,
+          :connection => response.body[:connection]
+        }))
+      end
+    end
+
     def print_etickets(params = nil)
       ensure_id
       request(:GET, "/print_etickets", params) do |response|
