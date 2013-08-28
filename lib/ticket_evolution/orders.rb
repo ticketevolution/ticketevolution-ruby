@@ -108,7 +108,6 @@ module TicketEvolution
     end
 
     def show_lite(params = nil)
-      ensure_id
       request(:GET, "/show_lite", params) do |response|
         singular_class.new(response.body.merge({
           :status_code => response.response_code,

@@ -6,6 +6,10 @@ module TicketEvolution
       plural_class.new(:parent => @connection,:id => self.id).accept_order(params)
     end
 
+    def show_lite(id, &handler)
+      handler ||= method(:build_for_show)
+      request(:GET, "show_lite/#{id}", &handler)
+    end
     def return(params)
       plural_class.new(:parent => @connection,:id => self.id).return_order(params)
     end
