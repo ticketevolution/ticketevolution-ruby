@@ -21,6 +21,9 @@ module TicketEvolution
     def toggle_broadcast(params)
       plural_class.new(:parent => @connection, :id => self.id).toggle_broadcast(params)
     end
+    def export(params)
+      plural_class.new(:parent => @connection).export(params)
+    end
     def import(params)
       plural_class.new(:parent => @connection).import(params)
     end
