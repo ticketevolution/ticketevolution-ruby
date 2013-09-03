@@ -51,13 +51,17 @@ module TicketEvolution
     end
 
     def mass_update(params = {})
-      handler ||= method(:collection_handler)
       request(:POST, '/mass_update', params, &handler)
     end
 
     def export(params = {})
-      handler ||= method(:collection_handler)
-      request(:POST, '/export', params, &handler)
+        request(:POST, '/export', params) do |response|
+          singular_class.new(response.body.merge({
+            :status_code => response.response_code,
+            :server_message => response.server_message,
+            :connection => response.body[:connection]
+          }))
+        end
     end
 
     def import(params = {})
