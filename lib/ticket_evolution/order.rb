@@ -10,6 +10,12 @@ module TicketEvolution
       handler ||= method(:build_for_show)
       request(:GET, "show_lite/#{id}", &handler)
     end
+
+    def show_lean(id, &handler)
+      handler ||= method(:build_for_show)
+      request(:GET, "show_lean/#{id}", &handler)
+    end
+
     def return(params)
       plural_class.new(:parent => @connection,:id => self.id).return_order(params)
     end
