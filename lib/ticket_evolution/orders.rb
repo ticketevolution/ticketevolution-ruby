@@ -9,6 +9,16 @@ module TicketEvolution
     alias :create_client_order :create
     alias :create_customer_order :create
 
+    def orders_by_event(params = nil)
+      request(:GET, "/orders_by_event", params) do |response|
+        singular_class.new(response.body.merge({
+          :status_code => response.response_code,
+          :server_message => response.server_message,
+          :connection => response.body[:connection]
+        }))
+      end
+    end
+
     def balance(params = nil)
       request(:GET, '/balance', params, &method(:build_for_show))
     end

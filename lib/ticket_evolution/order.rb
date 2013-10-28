@@ -48,6 +48,10 @@ module TicketEvolution
       plural_class.new(:parent => @connection,:id => self.id).email_etickets_link(params)
     end
 
+    def orders_by_event(params = nil)
+      plural_class.new(:parent => @connection).orders_by_event(params)
+    end
+
     def print_etickets(params = nil)
       plural_class.new(:parent => @connection,:id => self.id).print_etickets(params)
     end
