@@ -37,6 +37,17 @@ module TicketEvolution
         end
       end
 
+      def eticket_download_link(params = nil)
+        ensure_id
+        request(:POST, "/eticket_download_link", params) do |response|
+          singular_class.new(response.body.merge({
+            :status_code => response.response_code,
+            :server_message => response.server_message,
+            :connection => response.body[:connection]
+          }))
+        end
+      end
+
       def finalize_etickets(params = nil)
         ensure_id
         request(:POST, "/finalize_etickets", params) do |response|

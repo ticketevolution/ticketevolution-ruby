@@ -8,6 +8,10 @@ module TicketEvolution
       plural_class.new(:parent => self.endpoint.parent, :id => self.id).remove_etickets
     end
 
+    def eticket_download_link(params = {})
+      plural_class.new(:parent => self.endpoint.parent, :id => self.id).eticket_download_link(params)
+    end
+
     def add_etickets(params = {})
       plural_class.new(:parent => self.endpoint.parent, :id => self.id).add_etickets(params)
     end
