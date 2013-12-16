@@ -72,6 +72,7 @@ m.req 'update'
 
 # Builder Classes
 i.req 'account'
+i.req 'affiliate'
 i.req 'address'
 i.req 'brokerage'
 i.req 'category'
@@ -107,6 +108,7 @@ i.req 'venue'
 
 # Endpoint Classes
 i.req 'accounts'
+i.req 'affiliates'
 i.req 'address_check'
 i.req 'brokerages'
 i.req 'categories'
