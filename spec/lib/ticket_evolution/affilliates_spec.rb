@@ -6,6 +6,8 @@ describe TicketEvolution::Affiliates do
   let(:instance) { klass.new({:parent => Fake.connection}) }
 
   it_behaves_like 'a ticket_evolution endpoint class'
+  it_behaves_like 'a create endpoint'
+  it_behaves_like 'a show endpoint'
 
   it "should respond to create_affiliate" do
     instance.should respond_to :create_affiliate
