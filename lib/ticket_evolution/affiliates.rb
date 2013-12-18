@@ -1,10 +1,12 @@
 module TicketEvolution
   class Affiliates < Endpoint
     include TicketEvolution::Modules::Create
+    include TicketEvolution::Modules::Show
 
     alias :create_affiliate :create
 
     def create_affiliate_credential(params)
+      ensure_id
       request(:POST, "/#{params[:id]}/create_affiliate_credential", params) do |response|
         singular_class.new(response.body.merge({
           :status_code => response.response_code,
