@@ -19,7 +19,7 @@ describe TicketEvolution::Affiliates do
       let(:params) {{ :id => instance.id }}
 
       it "should pass call request as a POST, with no params" do
-        instance.should_receive(:request).with(:POST, "/1/create_affiliate_credential", params)
+        instance.should_receive(:request).with(:POST, "/create_affiliate_credential", params)
 
         instance.create_affiliate_credential(params)
       end
