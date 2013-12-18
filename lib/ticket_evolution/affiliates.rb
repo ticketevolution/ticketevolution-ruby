@@ -5,9 +5,9 @@ module TicketEvolution
 
     alias :create_affiliate :create
 
-    def create_affiliate_credential(params)
+    def create_affiliate_credential(params=nil)
       ensure_id
-      request(:POST, "/#{params[:id]}/create_affiliate_credential", params) do |response|
+      request(:POST, "/create_affiliate_credential", params) do |response|
         singular_class.new(response.body.merge({
           :status_code => response.response_code,
           :server_message => response.server_message,
