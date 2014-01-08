@@ -1,5 +1,11 @@
 module TicketEvolution
   class Settings < Endpoint
+    include TicketEvolution::Modules::Show
+
+    def shipping_setting(params= {})
+      request(:GET, "/shipping_setting", params, &method(:build_for_show))
+    end
+
     def shipping(params = {})
       request(:GET, "/shipping", params, &method(:build_for_shipping))
     end
