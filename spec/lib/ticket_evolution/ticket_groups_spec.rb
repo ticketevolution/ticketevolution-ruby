@@ -48,21 +48,23 @@ describe TicketEvolution::TicketGroups do
     end
 
     describe "release_hold" do
+      let(:params) { {:ticket_hold_id => 1}}
       let(:instance) { klass.new({ :parent => connection, :id => 1 }) }
       use_vcr_cassette "ticket_groups/release_hold"
 
       it "places a ticket_group's specified tickets on release_hold" do
-        instance.should_receive(:request).with(:POST, "/release_hold/1", nil)
+        instance.should_receive(:request).with(:POST, "/release_hold/1", params)
         instance.release_hold({ :ticket_hold_id => 1 })
       end
     end
 
     describe "release_take" do
+      let(:params) { { :ticket_taken_id => 1 }}
       let(:instance) { klass.new({ :parent => connection, :id => 1 }) }
       use_vcr_cassette "ticket_groups/release_take"
 
       it "places a ticket_group's specified tickets on release_take" do
-        instance.should_receive(:request).with(:POST, "/release_take/1", nil)
+        instance.should_receive(:request).with(:POST, "/release_take/1", params)
         instance.release_take({ :ticket_taken_id => 1 })
       end
     end
