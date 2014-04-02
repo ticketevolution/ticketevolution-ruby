@@ -80,5 +80,10 @@ module TicketEvolution
         }))
       end
     end
+
+    def suggestion(params, &handler)
+      request(:POST, "/suggestion", params, &method(:raw_handler))
+    end
+
   end
 end
