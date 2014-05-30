@@ -1,17 +1,3 @@
-class TestResponse
-  def response_code
-    200
-  end
-  def server_message
-    response_code
-  end
-  def body
-    {}
-  end
-  def header
-    {'location' => '127.0.0.1'}
-  end
-end
 module TicketEvolution
   class Endpoint < Base
     module RequestHandler
@@ -38,7 +24,8 @@ module TicketEvolution
         request = self.build_request(method, path, params, redirecting)
 
         if Rails.env == 'test'
-          response = TestResponse.new
+          response = TicketEvolution::TestResponse.new(path, request.url_prefix.to_s, self.connection.url)
+          response = self.naturalize_response(response)
         else
           response = self.naturalize_response do
             method = method.to_s.downcase.to_sym
@@ -72,6 +59,7 @@ module TicketEvolution
           resp.header = response.headers
           resp.response_code = response.status
           resp.body = (MultiJson.decode(response.body) rescue {"error" => "Internal Server Error"}).merge({:connection => self.connection})
+          binding.pry 
           resp.server_message = (CODES[resp.response_code] || ['Unknown Error']).last
         end
       end

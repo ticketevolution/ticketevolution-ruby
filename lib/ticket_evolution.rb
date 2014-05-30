@@ -49,6 +49,7 @@ c.req 'endpoint', 'request_handler'
 c.req 'endpoint'
 c.req 'model'
 c.req 'model/parental_behavior'
+c.req 'test_response'
 c.req 'time'
 
 # Errors
