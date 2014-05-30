@@ -1,3 +1,17 @@
+class TestResponse
+  def response_code
+    200
+  end
+  def server_message
+    response_code
+  end
+  def body
+    {}
+  end
+  def header
+    {'location' => '127.0.0.1'}
+  end
+end
 module TicketEvolution
   class Endpoint < Base
     module RequestHandler
@@ -23,13 +37,17 @@ module TicketEvolution
         redirecting = caller.first =~ /request_handler/ ? false : true
         request = self.build_request(method, path, params, redirecting)
 
-        response = self.naturalize_response do
-          method = method.to_s.downcase.to_sym
-          if method == :get
-            request.send(method)
-          else
-            request.send(method) do |req|
-              req.body = MultiJson.encode(params) if params.present?
+        if Rails.env == 'test'
+          response = TestResponse.new
+        else
+          response = self.naturalize_response do
+            method = method.to_s.downcase.to_sym
+            if method == :get
+              request.send(method)
+            else
+              request.send(method) do |req|
+                req.body = MultiJson.encode(params) if params.present?
+              end
             end
           end
         end
