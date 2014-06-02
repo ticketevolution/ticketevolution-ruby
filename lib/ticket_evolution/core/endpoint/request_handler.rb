@@ -23,7 +23,7 @@ module TicketEvolution
         redirecting = caller.first =~ /request_handler/ ? false : true
         request = self.build_request(method, path, params, redirecting)
 
-        if Rails.env == 'test'
+        if parent.config["test_responses"]
           response = TicketEvolution::TestResponse.new(path, request.url_prefix.to_s, self.connection.url)
           response = self.naturalize_response(response)
         else
@@ -59,7 +59,6 @@ module TicketEvolution
           resp.header = response.headers
           resp.response_code = response.status
           resp.body = (MultiJson.decode(response.body) rescue {"error" => "Internal Server Error"}).merge({:connection => self.connection})
-          binding.pry 
           resp.server_message = (CODES[resp.response_code] || ['Unknown Error']).last
         end
       end

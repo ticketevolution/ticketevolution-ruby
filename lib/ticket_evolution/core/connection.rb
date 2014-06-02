@@ -15,6 +15,7 @@ module TicketEvolution
       :version => @@oldest_version_in_service,
       :mode => :sandbox,
       :ssl_verify => true,
+      :test_responses => false,
       :logger => nil
     })
 
@@ -24,6 +25,7 @@ module TicketEvolution
       'token',
       'secret',
       'ssl_verify',
+      'test_responses',
       'logger'
     ]
 
@@ -46,6 +48,10 @@ module TicketEvolution
       else
         raise InvalidConfiguration.new("Missing: #{(self.class.expected_options - @config.keys).join(', ')}")
       end
+    end
+
+    def config
+      @config
     end
 
     def url
