@@ -1,5 +1,16 @@
 module TicketEvolution
   class TestResponse
+    def self.connection_in_test_mode(object)
+      connection = self.get_connection(object)
+      connection ? connection.config["test_responses"] : false
+    end
+
+    def self.get_connection(object)
+      return object if object.class.is_a? TicketEvolution::Connection
+      return false  if !object.respond_to?(:parent)
+      return self.get_connection(object.parent)
+    end
+
     def initialize(path, request, base)
       @path = request.sub base, ''
       @path = "#{@path}.json"

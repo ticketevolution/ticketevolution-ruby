@@ -23,7 +23,7 @@ module TicketEvolution
         redirecting = caller.first =~ /request_handler/ ? false : true
         request = self.build_request(method, path, params, redirecting)
 
-        if parent.config["test_responses"]
+        if TicketEvolution::TestResponse.connection_in_test_mode(parent)
           response = TicketEvolution::TestResponse.new(path, request.url_prefix.to_s, self.connection.url)
           response = self.naturalize_response(response)
         else
