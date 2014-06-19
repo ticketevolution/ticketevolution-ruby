@@ -6,7 +6,7 @@ module TicketEvolution
     end
 
     def self.get_connection(object)
-      return object if object.class.is_a? TicketEvolution::Connection
+      return object if object.is_a? TicketEvolution::Connection
       return false  if !object.respond_to?(:parent)
       return self.get_connection(object.parent)
     end

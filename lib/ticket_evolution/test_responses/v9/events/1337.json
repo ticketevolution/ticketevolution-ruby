@@ -3,6 +3,8 @@
   "occurs_at": "2014-06-05T00:00:00Z",
   "venue": {
     "url":       "/venues/1337",
-    "name":      "1337 Center"
+    "name":      "1337 Center",
+    "location":  "New York, New York"
+    }
   }
 }
