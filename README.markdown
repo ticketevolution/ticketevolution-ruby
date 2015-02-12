@@ -10,7 +10,8 @@ _NOTE: Known issues and missing functionality are documented in the [Github Issu
 
 **Rubies supported**
 
-- 1.9.2
+- 2.2.x
+- 1.9.x
 - 1.8.7
 - ree
 
