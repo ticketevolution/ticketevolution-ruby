@@ -134,74 +134,74 @@ Available endpoints
 -------------------
 Click on the links next to each endpoint for more detail.
 
-**Accounts** - [http://developer.ticketevolution.com/endpoints/accounts](http://developer.ticketevolution.com/endpoints/accounts)
+**Accounts** - [http://ticketevolution.atlassian.net/wiki/display/API/Accounts](http://ticketevolution.atlassian.net/wiki/display/API/Accounts)
 
     @account = @connection.accounts.list(params)
     @account = @connection.accounts.show(id)
 
-**Addresses** - [http://developer.ticketevolution.com/endpoints/addresses](http://developer.ticketevolution.com/endpoints/addresses)
+**Addresses** - [http://ticketevolution.atlassian.net/wiki/display/API/Addresses](http://ticketevolution.atlassian.net/wiki/display/API/Addresses)
 
     @address = @client.addresses.create(params)
     @address = @client.addresses.list(params)
     @address = @client.addresses.show(id)
     @address = @address.update_attributes(params)
 
-**Brokerages** - [http://developer.ticketevolution.com/endpoints/brokerages](http://developer.ticketevolution.com/endpoints/brokerages)
+**Brokerages** - [http://ticketevolution.atlassian.net/wiki/display/API/Brokerages](http://ticketevolution.atlassian.net/wiki/display/API/Brokerages)
 
     @brokerage = @connection.brokerages.list(params)
     @brokerage = @connection.brokerages.search(params)
     @brokerage = @connection.brokerages.show(id)
 
-**Categories** - [http://developer.ticketevolution.com/endpoints/categories](http://developer.ticketevolution.com/endpoints/categories)
+**Categories** - [http://ticketevolution.atlassian.net/wiki/display/API/Categories](http://ticketevolution.atlassian.net/wiki/display/API/Categories)
 
     @category = @connection.categories.deleted(params)
     @category = @connection.categories.list(params)
     @category = @connection.categories.show(id)
 
-**Clients** - [http://developer.ticketevolution.com/endpoints/clients](http://developer.ticketevolution.com/endpoints/clients)
+**Clients** - [http://ticketevolution.atlassian.net/wiki/display/API/Clients](http://ticketevolution.atlassian.net/wiki/display/API/Clients)
 
     @client = @connection.clients.create(params)
     @client = @connection.clients.list(params)
     @client = @connection.clients.show(id)
     @client = @client.update_attributes(params)
 
-**Companies** - [http://developer.ticketevolution.com/endpoints/companies](http://developer.ticketevolution.com/endpoints/companies)
+**Companies** - [http://ticketevolution.atlassian.net/wiki/display/API/Companies](http://ticketevolution.atlassian.net/wiki/display/API/Companies)
 
     @company = @connection.companies.create(params)
     @company = @connection.companies.list(params)
     @company = @connection.companies.show(id)
     @company = @company.update_attributes(params)
 
-**Configurations** - [http://developer.ticketevolution.com/endpoints/configurations](http://developer.ticketevolution.com/endpoints/configurations)
+**Configurations** - [http://ticketevolution.atlassian.net/wiki/display/API/Venue+Configurations](http://ticketevolution.atlassian.net/wiki/display/API/Venue+Configurations)
 
     @configuration = @connection.configurations.list(params)
     @configuration = @connection.configurations.show(id)
 
-**Credit Cards** - [http://developer.ticketevolution.com/endpoints/credit-cards](http://developer.ticketevolution.com/endpoints/credit-cards)
+**Credit Cards** - [http://https://ticketevolution.atlassian.net/wiki/display/API/Credit+Cards](http://https://ticketevolution.atlassian.net/wiki/display/API/Credit+Cards)
 
     @credit_card = @client.credit_cards.create(params)
     @credit_card = @client.credit_cards.list(params)
 
-**Email Addresses** - [http://developer.ticketevolution.com/endpoints/email-addresses](http://developer.ticketevolution.com/endpoints/email-addresses)
+**Email Addresses** - [http://ticketevolution.atlassian.net/wiki/display/API/Email+Addresses](http://ticketevolution.atlassian.net/wiki/display/API/Email+Addresses)
 
     @email_address = @client.email_addresses.create(params)
     @email_address = @client.email_addresses.list(params)
     @email_address = @client.email_addresses.show(id)
     @email_address = @email_address.update_attributes(params)
 
-**Events** - [http://developer.ticketevolution.com/endpoints/events](http://developer.ticketevolution.com/endpoints/events)
+**Events** - [http://ticketevolution.atlassian.net/wiki/display/API/Events](http://ticketevolution.atlassian.net/wiki/display/API/Events)
 
     @event = @connection.events.deleted(params)
     @event = @connection.events.list(params)
     @event = @connection.events.show(id)
 
-**Offices** - [http://developer.ticketevolution.com/endpoints/offices](http://developer.ticketevolution.com/endpoints/offices)
+**Offices** - [http://ticketevolution.atlassian.net/wiki/display/API/Offices](http://ticketevolution.atlassian.net/wiki/display/API/Offices)
 
     @office = @connection.offices.list(params)
     @office = @connection.offices.search(params)
     @office = @connection.offices.show(id)
 
-**Orders** - [http://developer.ticketevolution.com/endpoints/orders](http://developer.ticketevolution.com/endpoints/orders)
+**Orders** - [http://ticketevolution.atlassian.net/wiki/display/API/Orders](http://ticketevolution.atlassian.net/wiki/display/API/Orders)
 
     @order = @order.accept(params)
     @order = @order.complete
@@ -213,55 +213,57 @@ Click on the links next to each endpoint for more detail.
     @order = @connection.orders.show(id)
     @order = @order.update_attributes(params)
 
-**Performers** - [http://developer.ticketevolution.com/endpoints/performers](http://developer.ticketevolution.com/endpoints/performers)
+**Performers** - [http://ticketevolution.atlassian.net/wiki/display/API/Performers](http://ticketevolution.atlassian.net/wiki/display/API/Performers)
 
     @performer = @connection.performers.deleted(params)
     @performer = @connection.performers.list(params)
     @performer = @connection.performers.search(params)
     @performer = @connection.performers.show(id)
 
-**Phone Numbers** - [http://developer.ticketevolution.com/endpoints/phone-numbers](http://developer.ticketevolution.com/endpoints/phone-numbers)
+**Phone Numbers** - [http://ticketevolution.atlassian.net/wiki/display/API/Phone+Numbers](http://ticketevolution.atlassian.net/wiki/display/API/Phone+Numbers)
 
     @phone_number = @client.phone_numbers.create(params)
     @phone_number = @client.phone_numbers.list(params)
     @phone_number = @client.phone_numbers.show(id)
     @phone_number = @phone_number.update_attributes(params)
 
-**Quotes** - [http://developer.ticketevolution.com/endpoints/quotes](http://developer.ticketevolution.com/endpoints/quotes)
+**Quotes** - [http://ticketevolution.atlassian.net/wiki/display/API/Quotes](http://ticketevolution.atlassian.net/wiki/display/API/Quotes)
 
     @quote = @connection.quotes.list(params)
     @quote = @connection.quotes.search(params)
     @quote = @connection.quotes.show(id)
 
-**Search** - [http://developer.ticketevolution.com/endpoints/search](http://developer.ticketevolution.com/endpoints/search)
+**Search** - [http://ticketevolution.atlassian.net/wiki/pages/viewpage.action?pageId=6455316](http://ticketevolution.atlassian.net/wiki/pages/viewpage.action?pageId=6455316)
 
     @search = @connection.search.list(params)
+    @search = @connection.searches.suggestions(params)
 
-**Shipments** - [http://developer.ticketevolution.com/endpoints/shipments](http://developer.ticketevolution.com/endpoints/shipments)
+**Shipments** - [http://ticketevolution.atlassian.net/wiki/display/API/Shipments](http://ticketevolution.atlassian.net/wiki/display/API/Shipments)
 
     @shipment = @connection.shipments.create(params)
     @shipment = @connection.shipments.create_airbill(params)
     @shipment = @connection.shipments.list(params)
     @shipment = @connection.shipments.show(id)
+    @shipment = @connection.shipments.suggestion(params)
     @shipment = @shipment.update_attributes(params)
 
-**Ticket Groups** - [http://developer.ticketevolution.com/endpoints/ticket-groups](http://developer.ticketevolution.com/endpoints/ticket-groups)
+**Ticket Groups** - [http://ticketevolution.atlassian.net/wiki/display/API/Ticket+Groups](http://ticketevolution.atlassian.net/wiki/display/API/Ticket+Groups)
 
     @ticket_group = @connection.ticket_groups.list(params)
     @ticket_group = @connection.ticket_groups.show(id)
 
-**Transactions** - [http://developer.ticketevolution.com/endpoints/transactions](http://developer.ticketevolution.com/endpoints/transactions)
+**Transactions** - [http://ticketevolution.atlassian.net/wiki/display/API/Transactions](http://ticketevolution.atlassian.net/wiki/display/API/Transactions)
 
     @transaction = @account.transactions.list(params)
     @transaction = @account.transactions.show(id)
 
-**Users** - [http://developer.ticketevolution.com/endpoints/users](http://developer.ticketevolution.com/endpoints/users)
+**Users** - [http://ticketevolution.atlassian.net/wiki/display/API/Users](http://ticketevolution.atlassian.net/wiki/display/API/Users)
 
     @user = @connection.users.list(params)
     @user = @connection.users.search(params)
     @user = @connection.users.show(id)
 
-**Venues** - [http://developer.ticketevolution.com/endpoints/venues](http://developer.ticketevolution.com/endpoints/venues)
+**Venues** - [http://ticketevolution.atlassian.net/wiki/display/API/Venues](http://ticketevolution.atlassian.net/wiki/display/API/Venues)
 
     @venue = @connection.venues.deleted(params)
     @venue = @connection.venues.list(params)
