@@ -260,6 +260,7 @@ Click on the links next to each endpoint for more detail.
 
 **Users** - [http://ticketevolution.atlassian.net/wiki/display/API/Users](http://ticketevolution.atlassian.net/wiki/display/API/Users)
 
+    @user = @connection.users.create(params)
     @user = @connection.users.list(params)
     @user = @connection.users.search(params)
     @user = @connection.users.show(id)
