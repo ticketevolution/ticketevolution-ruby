@@ -1,6 +1,7 @@
 module TicketEvolution
   class Orders < Endpoint
     include TicketEvolution::Modules::Create
+    include TicketEvolution::Modules::CreateInBackground
     include TicketEvolution::Modules::List
     include TicketEvolution::Modules::Show
     include TicketEvolution::Modules::Update
