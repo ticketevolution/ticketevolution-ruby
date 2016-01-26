@@ -75,7 +75,7 @@ module TicketEvolution
       d = "#{method} #{process_params(method, path, content).gsub(TicketEvolution::Connection.protocol+'://', '').gsub(/\:\d{2,5}\//, '/')}"
       Base64.encode64(
         OpenSSL::HMAC.digest(
-          OpenSSL::Digest::Digest.new('sha256'),
+          OpenSSL::Digest.new('sha256'),
           @config[:secret],
           d
       )).chomp
