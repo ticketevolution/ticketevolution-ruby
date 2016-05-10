@@ -23,7 +23,7 @@ module TicketEvolution
 
       def new_ostruct_member(name)
         name = name.to_sym
-        unless self.respond_to?(name)
+        unless self.methods.include?(name)
           class << self; self; end.class_eval do
             define_method(name) { @table[name.to_sym] }
             define_method("#{name}=") { |x| modifiable[name] = process_datum(x, name) }
