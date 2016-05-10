@@ -10,7 +10,7 @@ module TicketEvolution
     module ParentalBehavior
       def process_datum(v, k = nil)
         v = super
-        if k and v.is_a? Array and v.singleton_class.ancestors.first == Array
+        if k and v.is_a? Array and !v.singleton_class.ancestors.member?(TicketEvolution::EndpointBehavior)
           e = "#{self.plural_class_name}::#{k.to_s.chomp('=').camelize}".constantize.new({
             :parent => endpoint
           })
