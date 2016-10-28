@@ -10,7 +10,7 @@ module TicketEvolution
     module ParentalBehavior
       def process_datum(v, k = nil)
         v = super
-        if k and v.is_a? Array and v.singleton_class.ancestors.first == Array
+        if k and v.is_a? Array and !v.singleton_class.ancestors.member?(TicketEvolution::EndpointBehavior)
           e = "#{self.plural_class_name}::#{k.to_s.chomp('=').camelize}".constantize.new({
             :parent => endpoint
           })
@@ -23,7 +23,7 @@ module TicketEvolution
 
       def new_ostruct_member(name)
         name = name.to_sym
-        unless self.respond_to?(name)
+        unless self.methods.include?(name)
           class << self; self; end.class_eval do
             define_method(name) { @table[name.to_sym] }
             define_method("#{name}=") { |x| modifiable[name] = process_datum(x, name) }
