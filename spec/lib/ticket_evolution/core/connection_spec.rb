@@ -309,7 +309,7 @@ describe TicketEvolution::Connection do
           "X-Signature" => "8eaaqg6d4DJ2SEWkCvkdhc05dITmpNbUrcbN75UBGMA=",
           "X-Token" => valid_options[:token],
           "Content-Type" => "application/json",
-          "User-Agent"=>"Faraday v0.8.8"
+          "User-Agent"=>"Faraday v0.9.2"
         }
       end
       subject { klass.new(req_options).build_request(:GET, '/test', params) }
@@ -323,7 +323,7 @@ describe TicketEvolution::Connection do
           "X-Signature" => "YbwEmJL9P0hvpplEr2q2iL4Mpz+KevHUOjzgYh0ewh4=",
           "X-Token" => valid_options[:token],
           "Content-Type" => "application/json",
-          "User-Agent"=>"Faraday v0.8.8"
+          "User-Agent"=>"Faraday v0.9.2"
         }
       end
       subject { klass.new(req_options.merge(:version => 9)).build_request(:GET, '/test', params) }
