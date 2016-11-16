@@ -1,5 +1,5 @@
 module TicketEvolution
   class AffiliateCommissions < Endpoint
-    include TicketEvolution::Modules::Show
+    include TicketEvolution::Modules::List
   end
 end
