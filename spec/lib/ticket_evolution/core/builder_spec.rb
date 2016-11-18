@@ -7,7 +7,7 @@ describe TicketEvolution::Builder do
 
   subject { klass }
 
-  its(:ancestors) { should include OpenStruct }
+  it(:ancestors) { should include OpenStruct }
 
   describe "#initialize" do
     let(:params) do

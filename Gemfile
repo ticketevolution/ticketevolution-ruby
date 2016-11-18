@@ -1,7 +1,3 @@
-source :gemcutter
-
-group :no_travis do
-  RUBY_VERSION =~ /^1\.9/ ? gem('ruby-debug19') : gem('ruby-debug')
-end
+source 'https://rubygems.org'
 
 gemspec

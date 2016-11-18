@@ -13,17 +13,17 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = '>= 1.3.5'
 
-  s.add_dependency 'activesupport', '>= 3.0.0'
-  s.add_dependency 'faraday', '= 0.8.8'
+  s.add_dependency 'activesupport', '5.0.0.1'
+  s.add_dependency 'faraday', '= 0.9.2'
   s.add_dependency 'yajl-ruby', '>= 0.7.7'
   s.add_dependency 'multi_json', '>= 0.0.4'
-  s.add_dependency 'nokogiri', '>= 1.4.3'
+  s.add_dependency 'nokogiri', '1.6.7.2'
 
-  s.add_development_dependency 'rspec', '>= 2.7.1'
-  s.add_development_dependency 'vcr', '< 2'
-  s.add_development_dependency 'webmock', '>= 1.7.0', '< 1.8.0'
-  s.add_development_dependency 'awesome_print'
-  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec', '3.5.0'
+  s.add_development_dependency 'vcr', '3.0.3'
+  s.add_development_dependency 'webmock', '2.1.0'
+  s.add_development_dependency 'awesome_print', '1.7.0'
+  s.add_development_dependency 'rake', '11.3.0'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

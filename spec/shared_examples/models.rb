@@ -4,7 +4,7 @@ shared_examples_for "a ticket_evolution model" do
   let(:klass) { subject }
   let(:instance) { klass.new({:connection => Fake.connection}) }
 
-  its(:ancestors) { should include TicketEvolution::Model }
+  it(:ancestors) { should include TicketEvolution::Model }
 
   describe "#attributes" do
     let(:hash) { { "hash" => { "test" => "1.. 2... 3...." } } }

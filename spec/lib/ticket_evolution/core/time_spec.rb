@@ -5,7 +5,7 @@ describe TicketEvolution::Time do
 
   subject { klass }
 
-  its(:ancestors) { should include ::Time }
+  it(:ancestors) { should include ::Time }
 
   describe "#parse" do
     context "with a valid string" do

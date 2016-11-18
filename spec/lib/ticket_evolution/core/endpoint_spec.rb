@@ -6,7 +6,7 @@ describe TicketEvolution::Endpoint do
 
   subject { klass }
 
-  its(:ancestors) { should include TicketEvolution::Base }
+  it(:ancestors) { should include TicketEvolution::Base }
 
   it_behaves_like "a ticket_evolution endpoint class"
 end

@@ -117,13 +117,13 @@ shared_examples_for "a ticket_evolution endpoint class" do
     context "the connection object is the parent" do
       subject { klass.new({:parent => connection}) }
 
-      its(:connection) { should == connection }
+      it(:connection) { should == connection }
     end
 
     context "the connection object is not the parent" do
       subject { klass.new({:parent => TicketEvolution::Endpoint.new({:parent => connection})}) }
 
-      its(:connection) { should == connection }
+      it(:connection) { should == connection }
     end
   end
 
@@ -251,23 +251,23 @@ shared_examples_for "a ticket_evolution endpoint class" do
       subject { instance.naturalize_response response }
       let(:body_str) { "{\"test\": \"hello\"}" }
 
-      its(:header) { should == response.headers }
-      its(:body) { should == MultiJson.decode(response.body).merge({:connection => connection}) }
+      it(:header) { should == response.headers }
+      it(:body) { should == MultiJson.decode(response.body).merge({:connection => connection}) }
 
       TicketEvolution::Endpoint::RequestHandler::CODES.each do |code, value|
         context "with response code #{code}" do
           let(:response_code) { code }
 
-          its(:response_code) { should == code }
-          its(:server_message) { should == value.last }
+          it(:response_code) { should == code }
+          it(:server_message) { should == value.last }
         end
       end
 
       context "with a missing response code" do
         let(:response_code) { 900 }
 
-        its(:response_code) { should == 900 }
-        its(:server_message) { should == "Unknown Error" }
+        it(:response_code) { should == 900 }
+        it(:server_message) { should == "Unknown Error" }
       end
     end
   end

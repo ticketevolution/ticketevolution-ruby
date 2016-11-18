@@ -6,7 +6,7 @@ describe TicketEvolution::Datum do
 
   subject { klass }
 
-  its(:ancestors) { should include TicketEvolution::Builder }
+  it(:ancestors) { should include TicketEvolution::Builder }
 
   it "should respond to []" do
     instance.test = :testing

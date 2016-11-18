@@ -21,7 +21,7 @@ describe TicketEvolution::Connection do
 
   subject { klass }
 
-  its(:ancestors) { should include TicketEvolution::Base }
+  it(:ancestors) { should include TicketEvolution::Base }
 
   describe ".default_options" do
     subject { klass.default_options }
@@ -179,19 +179,19 @@ describe TicketEvolution::Connection do
     context "mode is blank" do
       subject { klass.new(valid_options.merge({:mode => nil}))}
 
-      its(:url) { should == "https://api.ticketevolution.com" }
+      it(:url) { should == "https://api.ticketevolution.com" }
     end
 
     context "production" do
       subject { klass.new(valid_options.merge({:mode => :production}))}
 
-      its(:url) { should == "https://api.ticketevolution.com" }
+      it(:url) { should == "https://api.ticketevolution.com" }
     end
 
     context "sandbox" do
       subject { klass.new(valid_options) }
 
-      its(:url) { should == "https://api.sandbox.ticketevolution.com" }
+      it(:url) { should == "https://api.sandbox.ticketevolution.com" }
     end
   end
 
@@ -313,7 +313,7 @@ describe TicketEvolution::Connection do
       end
       subject { klass.new(req_options).build_request(:GET, '/test', params) }
 
-      its(:headers) { should == headers }
+      it(:headers) { should == headers }
     end
 
     context "api version 9 or above" do
@@ -326,7 +326,7 @@ describe TicketEvolution::Connection do
       end
       subject { klass.new(req_options.merge(:version => 9)).build_request(:GET, '/test', params) }
 
-      its(:headers) { should == headers }
+      it(:headers) { should == headers }
     end
   end
 end

@@ -8,12 +8,12 @@ describe TicketEvolution::Collection do
     context "#build_from_response" do
       it { should be_instance_of(TicketEvolution::Collection) }
       it { should be_kind_of(Enumerable) }
-      its(:per_page) { should == 2 }
-      its(:total_entries) { should == 1379 }
-      its(:current_page) { should == 1 }
-      its(:status_code) { should == 200 }
-      its(:code) { should == 200 }
-      its(:unique_categories) { should be_nil }
+      it(:per_page) { should == 2 }
+      it(:total_entries) { should == 1379 }
+      it(:current_page) { should == 1 }
+      it(:status_code) { should == 200 }
+      it(:code) { should == 200 }
+      it(:unique_categories) { should be_nil }
     end
 
     context "#each" do
@@ -54,12 +54,12 @@ describe TicketEvolution::Collection do
     context "#build_from_response" do
       it { should be_instance_of(TicketEvolution::Collection) }
       it { should be_kind_of(Enumerable) }
-      its(:per_page) { should == 2 }
-      its(:total_entries) { should == 1379 }
-      its(:current_page) { should == 1 }
-      its(:status_code) { should == 200 }
-      its(:code) { should == 200 }
-      its(:unique_categories) { should == [1,2,3,4,5] }
+      it(:per_page) { should == 2 }
+      it(:total_entries) { should == 1379 }
+      it(:current_page) { should == 1 }
+      it(:status_code) { should == 200 }
+      it(:code) { should == 200 }
+      it(:unique_categories) { should == [1,2,3,4,5] }
     end
 
     context "#each" do

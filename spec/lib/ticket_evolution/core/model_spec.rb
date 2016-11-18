@@ -8,7 +8,7 @@ describe TicketEvolution::Model do
 
   subject { klass }
 
-  its(:ancestors) { should include TicketEvolution::Builder }
+  it(:ancestors) { should include TicketEvolution::Builder }
 
   describe "#initialize" do
     context "when it receives an instance of connection" do
